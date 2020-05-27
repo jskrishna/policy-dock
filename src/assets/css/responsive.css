@@ -1,0 +1,41 @@
+@media(max-width:991px) {
+
+  .mat-checkbox-layout .mat-checkbox-label,
+  .form-group label,
+  .fgot-pass {
+    font-size: 13px;
+  }
+
+  .mat-raised-button.mat-primary {
+    padding: 0 36px;
+  }
+
+}
+
+@media(max-width:767px) {
+  .grid-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .login-form {
+    height: initial;
+    padding: 0 20px;
+  }
+
+  .login-wrapper {
+    flex-direction: column;
+  }
+
+  .logo {
+    padding: 15px;
+    position: static;
+  }
+
+  .heading-1 {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 25px;
+  }
+
+}

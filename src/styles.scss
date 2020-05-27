@@ -1,5 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import '~@angular/material/theming';
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+$custom-typography: mat-typography-config($font-family: 'Montserrat',
+  $title: mat-typography-level(20px, 32px, 500),
+);
+
+@include mat-base-typography($custom-typography);
+
+// Override typography for a specific Angular Material components.
+@include mat-checkbox-typography($custom-typography);
+
+// Override typography for all Angular Material, including mat-base-typography and all components.
+@include angular-material-typography($custom-typography);
+
+@include mat-core($custom-typography);
+
+// custom styles
+@import 'assets/css/style.css';
+@import 'assets/css/responsive.css';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #4080FE;
+  text-decoration: none;
+}
+
+// override input
+// .mat-form-field-appearance-outline .mat-form-field-outline {
+//   height: 32px;
+// }
+
+// .form-group .mat-form-field-appearance-outline .mat-form-field-outline-end,
+// .form-group .mat-form-field-appearance-outline .mat-form-field-outline-start {
+//   border-color: #D4D3E0;
+// }
+
+// .mat-form-field-appearance-outline .mat-form-field-infix {
+//   padding: 0;
+// }
+
+// .mat-form-field {
+//   line-height: 0;
+// }
+
+// input.mat-input-element {
+//   font-size: 12px;
+// }
+
+// .mat-form-field-appearance-outline .mat-form-field-outline-start {
+//   border-radius: 0 8px 8px 0 !important;
+// }
+
+// .mat-form-field-appearance-outline .mat-form-field-outline-end {
+//   border-radius: 0 5px 5px 0 !important;
+// }

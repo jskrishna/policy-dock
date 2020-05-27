@@ -1,0 +1,189 @@
+/* Flex */
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.grid-2 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* Input  */
+.customInput {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #D4D3E0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  transition: 300ms all;
+}
+
+.customInput:hover,
+.customInput:focus {
+  outline: none;
+  border-color: #B8CCFF;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  color: #384053;
+  margin-bottom: 10px;
+}
+
+.form-group .mat-form-field {
+  display: block;
+}
+
+.form-group+.form-group {
+  margin-top: 25px;
+}
+
+
+/* heading */
+.heading-1 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  margin: 0;
+  color: #4080FE;
+  margin-bottom: 35px;
+}
+
+/* Buttons */
+.mat-fab.mat-primary,
+.mat-flat-button.mat-primary,
+.mat-mini-fab.mat-primary,
+.mat-raised-button.mat-primary {
+  background-color: #4080FE;
+}
+
+button.mat-raised-button {
+  min-width: auto;
+  padding: 0 46px;
+  border-radius: 5px;
+  box-shadow: none !important;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+
+.mat-raised-button.mat-secondary {
+  background-color: #EEF3FF;
+  color: #4080FE;
+}
+
+.mat-raised-button+.mat-raised-button {
+  margin-left: 20px;
+}
+
+/* Checkbox */
+.mat-checkbox-layout .mat-checkbox-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #384053;
+}
+
+.mat-checkbox-frame {
+  border-width: 1px !important;
+  border-style: solid;
+  border-color: #4080FE;
+  border-radius: 3px !important;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: #4080fe;
+}
+
+.mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element,
+.mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element {
+  background: #4080fe;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: transparent;
+}
+
+.mat-checkbox-checked .mat-checkbox-checkmark-path {
+  stroke: #4080fe !important;
+}
+
+
+/* Login */
+.login-wrapper {
+  width: 100%;
+}
+
+.login-wrapper>div {
+  min-height: 100vh;
+}
+
+.logo {
+  padding: 50px 7.5% 0 7.5%;
+  position: absolute;
+}
+
+.login-form {
+  height: 100%;
+  padding: 0 15%;
+}
+
+.remember-login {
+  margin-top: 40px;
+}
+
+.fgot-pass {
+  font-size: 14px;
+  color: #4080FE;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.fgot-pass a:hover {
+  text-decoration: underline;
+}
+
+.login-right {
+  background: #F2F9FF;
+}
+
+
+/* Forgot Password */
+.f-got-subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 30px;
+  color: #4080fe;
+  font-weight: 600;
+}
