@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SidenavbarComponent } from './sidenavbar.component';
+import { CurrentPoliciesComponent } from './current-policies.component';
 
-describe('SidenavbarComponent', () => {
-  let component: SidenavbarComponent;
-  let fixture: ComponentFixture<SidenavbarComponent>;
+describe('CurrentPoliciesComponent', () => {
+  let component: CurrentPoliciesComponent;
+  let fixture: ComponentFixture<CurrentPoliciesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SidenavbarComponent ]
+      declarations: [ CurrentPoliciesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SidenavbarComponent);
+    fixture = TestBed.createComponent(CurrentPoliciesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

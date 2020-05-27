@@ -2,21 +2,21 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { SidenavbarComponent } from './sidenavbar/sidenavbar.component';
-
+import { TablePolicyComponent } from './table-policy/table-policy.component';
+import { MaterialModule } from 'src/app/material/material.module';
 
 @NgModule({
   declarations: [
-    SidenavbarComponent
-  ],
+    TablePolicyComponent],
   imports: [
     CommonModule,
     RouterModule,
     ReactiveFormsModule,
     FormsModule,
+    MaterialModule
   ],
   exports: [
-    SidenavbarComponent
+    TablePolicyComponent
   ]
 })
 export class ComponentsModule { }
