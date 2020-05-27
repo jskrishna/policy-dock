@@ -43,12 +43,17 @@
   font-family: 'Montserrat', sans-serif;
   color: #000;
   transition: 300ms all;
+  background: #FAFAFD;
 }
 
-.customInput:hover,
+.customInput:hover {
+  border-color: #B8CCFF;
+  outline: none;
+}
+
 .customInput:focus {
   outline: none;
-  border-color: #B8CCFF;
+  border-color: #4080FE;
 }
 
 .form-group label {
@@ -93,6 +98,14 @@ button.mat-raised-button {
   box-shadow: none !important;
   line-height: 40px;
   text-transform: capitalize;
+}
+
+.mat-raised-button.mat-primary:hover {
+  background: #3b76e8;
+}
+
+.mat-raised-button.mat-secondary:hover {
+  background: #dae5ff;
 }
 
 .mat-raised-button.mat-secondary {
@@ -141,6 +154,10 @@ button.mat-raised-button {
 /* Login */
 .login-wrapper {
   width: 100%;
+}
+
+.login-left {
+  background: #FAFAFD;
 }
 
 .login-wrapper>div {

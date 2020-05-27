@@ -12,6 +12,17 @@
 
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+  .login-wrapper>div {
+    padding: 126px 0 0;
+  }
+
+  .logo {
+    top: 0;
+  }
+
+}
+
 @media(max-width:767px) {
   .grid-2 {
     flex: 0 0 100%;
