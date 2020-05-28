@@ -1,2 +1,80 @@
-<app-sidenavbar></app-sidenavbar>
-<router-outlet></router-outlet>
+<div class="navbar-container" [class.example-is-mobile]="mobileQuery.matches">
+
+    <!-- Top navbar -->
+    <!-- <mat-toolbar class="navbar" color="primary">
+
+        <button mat-icon-button (click)="snav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <a class="navbar-brand" [routerLink]="['/']" matTooltip="Home">
+            <h1>
+                Angular-material
+            </h1>
+        </a>
+
+    </mat-toolbar> -->
+
+    <mat-sidenav-container class="navbar-sidenav-container">
+        <!-- Side nav -->
+        <mat-sidenav #snav [opened]="!mobileQuery.matches" [mode]="mobileQuery.matches ? 'over' : 'side'"
+            [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" class="sidenav">
+
+            <mat-nav-list>
+                <a href="javascript:void(0);">
+                    <img src="assets/img/PolicyDock-Logo.svg">
+                </a>
+
+                <a mat-list-item href="javascript:void(0);" [routerLink]="['/admin/current-policies']">
+                    <mat-icon mat-list-icon>
+                        dashboard
+                    </mat-icon>
+                    <p mat-line> My Current Policies </p>
+                </a>
+
+                <a mat-list-item href="javascript:void(0);">
+                    <mat-icon mat-list-icon>
+                        layers
+                    </mat-icon>
+                    <p mat-line> My Applications </p>
+                </a>
+                <a mat-list-item href="javascript:void(0);">
+                    <mat-icon mat-list-icon>
+                        description
+                    </mat-icon>
+                    <p mat-line> Quotations </p>
+                </a>
+
+                <a mat-list-item [routerLink]="['/admin/dashboard']" routerLinkActive="active">
+                    <mat-icon mat-list-icon>book</mat-icon>
+                    <p mat-line> Dashboard </p>
+                </a>
+
+                <a mat-list-item href="javascript:void(0);">
+                    <mat-icon mat-list-icon>settings</mat-icon>
+                    <p mat-line> Settings </p>
+                </a>
+
+
+                <!-- <mat-divider></mat-divider> -->
+
+                <a id="push-bottom" mat-list-item [routerLink]="['/auth/login']" routerLinkActive="active">
+                    <mat-icon mat-list-icon>exit_to_app</mat-icon>
+                    <p mat-line> Logout </p>
+                </a>
+            </mat-nav-list>
+
+        </mat-sidenav>
+
+        <!-- Main content -->
+        <mat-sidenav-content class="sidenav-content">
+
+            <div class="progress-bar-container">
+            </div>
+
+            <router-outlet></router-outlet>
+
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+</div>
