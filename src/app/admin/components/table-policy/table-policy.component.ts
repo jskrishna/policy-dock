@@ -62,6 +62,7 @@ export class TablePolicyComponent implements OnInit {
     "policyHolder",
     "insurance",
     "payment",
+    "renew",
     "action",
     "check-policy",
   ];
