@@ -1,0 +1,17 @@
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-payments',
+  templateUrl: './payments.component.html',
+  styleUrls: ['./payments.component.scss']
+})
+export class PaymentsComponent implements OnInit {
+
+  @Input('payments') payments: string;
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
