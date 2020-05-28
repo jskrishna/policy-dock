@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DefaultLayoutComponent } from './containers/default-layout/default-layout.component';
 import { CurrentPoliciesComponent } from './views/current-policies/current-policies.component';
+import { ApplicationsComponent } from './views/applications/applications.component';
+import { SettingsComponent } from './views/settings/settings.component';
+import { QuotationComponent } from './views/quotation/quotation.component';
 
 
 export const routes: Routes = [
@@ -21,9 +24,21 @@ export const routes: Routes = [
         component: CurrentPoliciesComponent
       },
       {
+        path: 'applications',
+        component: ApplicationsComponent
+      },
+      {
+        path: 'settings',
+        component: SettingsComponent
+      },
+      {
+        path: 'quotation',
+        component: QuotationComponent
+      },
+      {
         path: 'dashboard',
         redirectTo: ''
-      },
+      }
     ]
   },
   // { path: '**', component: P404Component }

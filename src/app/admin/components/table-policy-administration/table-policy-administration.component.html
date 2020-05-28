@@ -1,0 +1,58 @@
+<table mat-table [dataSource]="dataSource">
+
+    <!--  username Column -->
+    <ng-container matColumnDef="username">
+        <th mat-header-cell *matHeaderCellDef> Username </th>
+        <td mat-cell *matCellDef="let element"> {{element.username}} </td>
+    </ng-container>
+
+    <!--  nameCompany Column -->
+    <ng-container matColumnDef="nameCompany">
+        <th mat-header-cell *matHeaderCellDef> Name/Company </th>
+        <td mat-cell *matCellDef="let element"> {{element.nameCompany}} </td>
+    </ng-container>
+
+    <!--  apiKey Column -->
+    <ng-container matColumnDef="apiKey">
+        <th mat-header-cell *matHeaderCellDef> API Key </th>
+        <td mat-cell *matCellDef="let element"> {{element.apiKey}} </td>
+    </ng-container>
+
+    <!--  totalQueries Column -->
+    <ng-container matColumnDef="totalQueries">
+        <th mat-header-cell *matHeaderCellDef> Total Queries </th>
+        <td mat-cell *matCellDef="let element"> {{element.totalQueries}} </td>
+    </ng-container>
+
+    <!--  quotesProvided Column -->
+    <ng-container matColumnDef="quotesProvided">
+        <th mat-header-cell *matHeaderCellDef> Quotes Provided </th>
+        <td mat-cell *matCellDef="let element"> {{element.quotesProvided}} </td>
+    </ng-container>
+
+    <!--  policiesSold Column -->
+    <ng-container matColumnDef="policiesSold">
+        <th mat-header-cell *matHeaderCellDef> Policies Sold </th>
+        <td mat-cell *matCellDef="let element"> {{element.policiesSold}} </td>
+    </ng-container>
+
+    <!--  permissions Column -->
+    <ng-container matColumnDef="permissions">
+        <th mat-header-cell *matHeaderCellDef> Permissions </th>
+        <td mat-cell *matCellDef="let element">
+            <button mat-stroked-button color="success">Set Permissions</button>
+        </td>
+    </ng-container>
+
+    <!--  action Column -->
+    <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef> Action </th>
+        <td mat-cell *matCellDef="let element">
+            <button mat-stroked-button color="primary">Delete</button>
+        </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

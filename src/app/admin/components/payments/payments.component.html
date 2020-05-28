@@ -1,0 +1,6 @@
+<div class="payment-card-container">
+    <mat-card class="pay-card" *ngFor="let payment of payments">
+        <img mat-card-image src="{{payment.imagePath}}" alt="payment" class="card-image">
+        <mat-card-title>{{payment.text}}</mat-card-title>
+    </mat-card>
+</div>
