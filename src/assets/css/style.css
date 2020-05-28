@@ -112,9 +112,75 @@ button.mat-raised-button {
   color: #4080fe;
 }
 
+
 .mat-raised-button+.mat-raised-button {
   margin-left: 20px;
 }
+
+
+button.mat-raised-button.btn-small {
+  padding: 0 10px;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 115px;
+}
+
+button.mat-raised-button.btn-small:hover {
+  color: #fff;
+}
+
+button.mat-raised-button.btn-green {
+  background: #F0FEF8;
+  color: #60C798;
+}
+
+button.mat-raised-button.btn-green:hover {
+  background: #60C798;
+}
+
+button.mat-raised-button.btn-blue {
+  background: #E7EFFF;
+  color: #4080FE;
+}
+
+button.mat-raised-button.btn-blue:hover {
+  background: #4080FE;
+}
+
+button.mat-button-base {
+  border: 0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 27px;
+  min-width: 115px;
+  border-radius: 5px;
+  transition: 300ms all;
+}
+
+button.mat-button-base:hover {
+  color: #fff !important;
+}
+
+button.mat-button-base.mat-success {
+  background: #F0FEF8;
+  color: #60C798;
+}
+
+button.mat-button-base.mat-success:hover {
+  background: #60C798;
+}
+
+button.mat-button-base.mat-primary {
+  background: #E7EFFF;
+  color: #4080FE;
+}
+
+button.mat-button-base.mat-primary:hover {
+  background: #4080FE;
+}
+
+
 
 /* Checkbox */
 .mat-checkbox-layout .mat-checkbox-label {
@@ -240,4 +306,44 @@ td.mat-cell {
   font-weight: 500;
   color: #8584A8;
   font-size: 14px;
+}
+
+
+/* Tootlip */
+.custom-tooltip {
+  background: #0B295C;
+  color: #fff;
+  font-size: 9px;
+}
+
+.mat-tooltip:after {
+  content: "" !important;
+  background: #0B295C;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.mat-tooltip {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.btn-action {
+  height: 26px;
+}
+
+.btn-action+.btn-action {
+  padding-left: 10px;
+}
+
+.btn-action:first-child img {
+  position: relative;
+  top: 1px;
 }

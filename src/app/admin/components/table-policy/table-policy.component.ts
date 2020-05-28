@@ -10,7 +10,6 @@ export interface PeriodicElement {
   policyHolder: string;
   insurance: string;
   payment: string;
-  renew: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
@@ -21,7 +20,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
     policyHolder: "Bob Brown",
     payment: "Car",
     insurance: "Monthly",
-    renew: "Apply to Renew ",
   },
   {
     date: "12/02/2020",
@@ -30,7 +28,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
     policyHolder: "Bob Brown",
     payment: "Car",
     insurance: "Monthly",
-    renew: "Apply to Renew ",
   },
   {
     date: "12/02/2020",
@@ -39,7 +36,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
     policyHolder: "Bob Brown",
     payment: "Car",
     insurance: "Monthly",
-    renew: "Apply to Renew ",
   },
   {
     date: "12/02/2020",
@@ -48,7 +44,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
     policyHolder: "Bob Brown",
     payment: "Car",
     insurance: "Monthly",
-    renew: "Apply to Renew ",
   },
 ];
 
@@ -67,7 +62,8 @@ export class TablePolicyComponent implements OnInit {
     "policyHolder",
     "insurance",
     "payment",
-    "renew",
+    "action",
+    "check-policy",
   ];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 

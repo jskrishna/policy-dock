@@ -36,16 +36,38 @@
     <td mat-cell *matCellDef="let element"> {{element.payment}} </td>
   </ng-container>
 
+
+
   <!-- Symbol Column -->
   <ng-container matColumnDef="renew">
     <th mat-header-cell *matHeaderCellDef> Renew </th>
-    <td mat-cell *matCellDef="let element"> {{element.renew}} </td>
+    <td mat-cell *matCellDef="let element">
+      <button mat-stroked-button color="primary">Apply to Renew</button>
+    </td>
+  </ng-container>
+
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="action">
+    <th mat-header-cell *matHeaderCellDef> Action </th>
+    <td mat-cell *matCellDef="let element">
+      <a class="btn-action" matTooltip="Cancel" matTooltipPosition="above" matTooltipClass="custom-tooltip">
+        <img src="assets/img/icn_cancel.svg" alt="" />
+      </a>
+      <a class="btn-action" matTooltip="Amends" matTooltipPosition="above" matTooltipClass="custom-tooltip">
+        <img src="assets/img/icn_edit.svg" alt="" />
+      </a>
+
+    </td>
   </ng-container>
 
   <!-- Symbol Column -->
-  <ng-container>
-    <th mat-header-cell *matHeaderCellDef> Action </th>
-    <td mat-cell *matCellDef="let element"> </td>
+  <ng-container matColumnDef="check-policy">
+    <th mat-header-cell *matHeaderCellDef> </th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-stroked-button color="success">Add to review</button>
+      <button mat-stroked-button color="primary">Check Policy</button>
+    </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
