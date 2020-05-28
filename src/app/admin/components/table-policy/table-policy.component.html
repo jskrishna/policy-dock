@@ -42,7 +42,8 @@
   <ng-container matColumnDef="renew">
     <th mat-header-cell *matHeaderCellDef> Renew </th>
     <td mat-cell *matCellDef="let element">
-      <button mat-stroked-button color="primary">Apply to Renew</button>
+      <!-- <button mat-stroked-button color="primary">Apply to Renew</button> -->
+      <button mat-stroked-button color="success">Add to review</button>
     </td>
   </ng-container>
 
@@ -54,7 +55,7 @@
       <a class="btn-action" matTooltip="Cancel" matTooltipPosition="above" matTooltipClass="custom-tooltip">
         <img src="assets/img/icn_cancel.svg" alt="" />
       </a>
-      <a class="btn-action" matTooltip="Amends" matTooltipPosition="above" matTooltipClass="custom-tooltip">
+      <a class="btn-action" matTooltip="Amend" matTooltipPosition="above" matTooltipClass="custom-tooltip">
         <img src="assets/img/icn_edit.svg" alt="" />
       </a>
 
@@ -65,7 +66,7 @@
   <ng-container matColumnDef="check-policy">
     <th mat-header-cell *matHeaderCellDef> </th>
     <td mat-cell *matCellDef="let element">
-      <button mat-stroked-button color="success">Add to review</button>
+      <!-- <button mat-stroked-button color="success">Add to review</button> -->
       <button mat-stroked-button color="primary">Check Policy</button>
     </td>
   </ng-container>
