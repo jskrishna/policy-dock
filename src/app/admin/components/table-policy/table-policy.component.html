@@ -43,9 +43,25 @@
   </ng-container>
 
   <!-- Symbol Column -->
-  <ng-container>
+  <ng-container matColumnDef="action">
     <th mat-header-cell *matHeaderCellDef> Action </th>
-    <td mat-cell *matCellDef="let element"> </td>
+    <td mat-cell *matCellDef="let element">
+
+      <button mat-icon-button color="primary" aria-label="Example icon button with a delete icon" matTooltip="Cancel" matTooltipClass="example-tooltip-blue">
+        <mat-icon>cancel</mat-icon>
+      </button>
+      <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon" matTooltip="Amend" matTooltipClass="example-tooltip-blue">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="check-policy">
+    <th mat-header-cell *matHeaderCellDef> </th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-stroked-button color="primary">Check Policy</button>
+    </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

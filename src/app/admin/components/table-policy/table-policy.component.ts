@@ -68,6 +68,8 @@ export class TablePolicyComponent implements OnInit {
     "insurance",
     "payment",
     "renew",
+    "action",
+    "check-policy"
   ];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
