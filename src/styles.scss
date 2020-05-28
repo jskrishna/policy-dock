@@ -39,6 +39,12 @@ a {
   text-decoration: none;
 }
 
+.mat-card {
+  border-radius: 8px !important;
+  box-shadow: 0 2px 90px rgba(38, 80, 119, 0.10) !important;
+}
+
+
 // override input
 // .mat-form-field-appearance-outline .mat-form-field-outline {
 //   height: 32px;

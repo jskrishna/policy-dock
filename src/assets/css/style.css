@@ -37,23 +37,23 @@
   width: 100%;
   height: 40px;
   border-radius: 8px;
-  border: 1px solid #D4D3E0;
+  border: 1px solid #d4d3e0;
   padding: 10px;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #000;
   transition: 300ms all;
-  background: #FAFAFD;
+  background: #fafafd;
 }
 
 .customInput:hover {
-  border-color: #B8CCFF;
+  border-color: #b8ccff;
   outline: none;
 }
 
 .customInput:focus {
   outline: none;
-  border-color: #4080FE;
+  border-color: #4080fe;
 }
 
 .form-group label {
@@ -72,14 +72,13 @@
   margin-top: 25px;
 }
 
-
 /* heading */
 .heading-1 {
   font-size: 20px;
   font-weight: bold;
   line-height: 28px;
   margin: 0;
-  color: #4080FE;
+  color: #4080fe;
   margin-bottom: 35px;
 }
 
@@ -88,7 +87,7 @@
 .mat-flat-button.mat-primary,
 .mat-mini-fab.mat-primary,
 .mat-raised-button.mat-primary {
-  background-color: #4080FE;
+  background-color: #4080fe;
 }
 
 button.mat-raised-button {
@@ -109,8 +108,8 @@ button.mat-raised-button {
 }
 
 .mat-raised-button.mat-secondary {
-  background-color: #EEF3FF;
-  color: #4080FE;
+  background-color: #eef3ff;
+  color: #4080fe;
 }
 
 .mat-raised-button+.mat-raised-button {
@@ -127,7 +126,7 @@ button.mat-raised-button {
 .mat-checkbox-frame {
   border-width: 1px !important;
   border-style: solid;
-  border-color: #4080FE;
+  border-color: #4080fe;
   border-radius: 3px !important;
 }
 
@@ -150,14 +149,13 @@ button.mat-raised-button {
   stroke: #4080fe !important;
 }
 
-
 /* Login */
 .login-wrapper {
   width: 100%;
 }
 
 .login-left {
-  background: #FAFAFD;
+  background: #fafafd;
 }
 
 .login-wrapper>div {
@@ -180,7 +178,7 @@ button.mat-raised-button {
 
 .fgot-pass {
   font-size: 14px;
-  color: #4080FE;
+  color: #4080fe;
   font-weight: 500;
   margin: 0;
   padding-top: 40px;
@@ -191,9 +189,8 @@ button.mat-raised-button {
 }
 
 .login-right {
-  background: #F2F9FF;
+  background: #f2f9ff;
 }
-
 
 /* Forgot Password */
 .f-got-subtitle {
@@ -203,4 +200,44 @@ button.mat-raised-button {
   margin-bottom: 30px;
   color: #4080fe;
   font-weight: 600;
+}
+
+/* Heading */
+.heading-main {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #4080FE;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.no-gutter {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+mat-footer-row,
+mat-header-row,
+mat-row,
+td.mat-cell,
+td.mat-footer-cell,
+th.mat-header-cell {
+  border-bottom-color: #D4D3E0;
+}
+
+tbody tr:last-child td.mat-cell {
+  border-bottom: 0;
+}
+
+.mat-header-row .mat-header-cell {
+  font-size: 13px;
+  font-weight: 600;
+  color: #384053;
+}
+
+td.mat-cell {
+  font-weight: 500;
+  color: #8584A8;
+  font-size: 14px;
 }

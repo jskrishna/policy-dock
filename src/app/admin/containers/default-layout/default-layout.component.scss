@@ -1,70 +1,122 @@
 .navbar-spacer {
-    flex: 1 1 auto;
-  }
-  
-  .navbar {
-    z-index: 2;
-  }
-  
-  .navbar-brand {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .navbar-container {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .navbar-is-mobile .navbar {
-    position: fixed;
-    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
-    z-index: 2;
-  }
-  
-  .navbar-sidenav-container {
-    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
-             causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
-    flex: 1;
-  }
-  
-  .navbar-is-mobile .navbar-sidenav-container {
-    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
-             `<body>` to be our scrolling element for mobile layouts. */
-    flex: 1 0 auto;
-  }
-  
-  /*Set sidenav width*/
-  
-  mat-sidenav {
-    min-width: 180px !important;
-    border-right: 1px solid #eee;
-    box-shadow: 6px 0 6px rgba(0, 0, 0, .1);
-    /* background-color:rgb(63, 81, 181); */
-  }
-  
-  /* Set height of wrapper to stop content from moving up & down */
-  
-  .progress-bar-container {
-    height: 5px;
-  }
-  
-  a.mat-list-item.active {
-    background: rgba(0, 0, 0, .04);
-  }
-  
-  #push-bottom {
-    position: absolute;
-    bottom: 0;
-  }
+  flex: 1 1 auto;
+}
 
-  // This CSS is not applying
-  .mat-drawer-inner-container {
-    background-color: #4080FE;
-    color: #ffffff;
-  }
+.navbar {
+  z-index: 2;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-is-mobile .navbar {
+  position: fixed;
+  z-index: 2;
+}
+
+.navbar-sidenav-container {
+  flex: 1;
+}
+
+.navbar-is-mobile .navbar-sidenav-container {
+  flex: 1 0 auto;
+}
+
+mat-sidenav {
+  min-width: 224px !important;
+  border-right: 0;
+  box-shadow: none;
+  background: #4080FE;
+  border-radius: 0 30px 30px 0;
+}
+
+
+.progress-bar-container {
+  height: 5px;
+}
+
+a.mat-list-item.active {
+  background: rgba(0, 0, 0, .04);
+}
+
+#push-bottom {
+  position: absolute;
+  bottom: 20px;
+}
+
+mat-sidenav .mat-list-base .mat-list-item {
+  color: #B8CCFF;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.mat-list-base {
+  padding-top: 0;
+}
+
+.admin-logo {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  display: block;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.admin-logo img {
+  width: 60px;
+}
+
+mat-sidenav .mat-list-base .mat-list-item .mat-list-item-content {
+  padding: 0 18px;
+}
+
+.nav-menus img {
+  vertical-align: middle;
+  padding-right: 18px;
+  opacity: 0.4;
+  transition: 300ms all;
+}
+
+.nav-menus .mat-list-item-content {
+  padding: 0 18px;
+}
+
+a.mat-list-item {
+  transition: 300ms all;
+}
+
+
+a.mat-list-item.active,
+a.mat-list-item:hover {
+  background: #3070FF;
+}
+
+a.mat-list-item.active img,
+a.mat-list-item:hover img {
+  opacity: 1;
+}
+
+mat-sidenav .mat-list-base .mat-list-item.active,
+mat-sidenav .mat-list-base .mat-list-item:hover {
+  color: #fff;
+}
+
+.main-wrapper {
+  padding: 40px 25px 40px 25px;
+}
+
+.mat-drawer-content {
+  background: #F2F9FF;
+}

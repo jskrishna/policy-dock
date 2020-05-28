@@ -39,14 +39,26 @@
   }
 
   .logo {
-    padding: 15px;
+    padding: 0 20px 20px;
     position: static;
+  }
+
+  .login-left {
+    padding: 20px 0;
+  }
+
+  .login-wrapper>div {
+    min-height: calc(100vh - 40px);
   }
 
   .heading-1 {
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 25px;
+  }
+
+  .login-right {
+    display: none;
   }
 
 }
