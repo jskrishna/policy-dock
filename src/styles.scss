@@ -34,6 +34,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+body * {
+  box-sizing: border-box;
+}
+
 a {
   color: #4080FE;
   text-decoration: none;
@@ -44,6 +48,16 @@ a {
   border-radius: 8px !important;
   box-shadow: 0 2px 90px rgba(38, 80, 119, 0.10) !important;
 }
+
+.row {
+  margin: 0 -10px;
+}
+
+[class^="grid-"] {
+  padding: 0 10px;
+}
+
+
 
 
 // override input

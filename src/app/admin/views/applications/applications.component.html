@@ -1,42 +1,44 @@
-<div class="card-container">
-    <mat-card layout-align="center">Quotation is being processed, you will be notified when your quote is ready
-    </mat-card>
+<div>
+  <mat-card layout-align="center" class="alert alert-pending mt40">
+    <span>Quotation is being processed, you will be notified when
+      your quote is ready</span>
+  </mat-card>
 </div>
 
 <h2 class="heading-main">Application Details</h2>
 
 <mat-card class="no-gutter">
-    <mat-card-content>
-        <app-table-application></app-table-application>
-    </mat-card-content>
+  <mat-card-content>
+    <app-table-application class="trFirstTd"></app-table-application>
+  </mat-card-content>
 </mat-card>
 
 <h2 class="heading-main">Specified Motor Vehicle</h2>
 
 <mat-card class="no-gutter">
-    <mat-card-content>
-        <app-table-application></app-table-application>
-    </mat-card-content>
+  <mat-card-content>
+    <app-table-application class="trFirstTd"></app-table-application>
+  </mat-card-content>
 </mat-card>
 
 <h2 class="heading-main">Clauses & Extensions</h2>
 
 <mat-card class="no-gutter">
-    <mat-card-content>
-        <app-table-application></app-table-application>
-    </mat-card-content>
+  <mat-card-content>
+    <app-table-application class="trFirstTd"></app-table-application>
+  </mat-card-content>
 </mat-card>
 
 <h2 class="heading-main">Clauses & Extensions</h2>
 
 <mat-card class="no-gutter">
-    <mat-card-content>
-        <app-table-application></app-table-application>
-    </mat-card-content>
+  <mat-card-content>
+    <app-table-application class="trFirstTd"></app-table-application>
+  </mat-card-content>
 </mat-card>
 
-<h2 class="heading-main">E-Signature & Pay</h2>
+<h2 class="heading-main-2">E-Signature & Pay</h2>
 
-<mat-checkbox>Agree to all terms of policy Schedule</mat-checkbox>
+<mat-checkbox class="mb-40 checkSmall">Agree to all terms of policy Schedule</mat-checkbox>
 
 <app-payments [payments]="PAYMENT_DATA"></app-payments>

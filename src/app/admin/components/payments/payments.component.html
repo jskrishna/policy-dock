@@ -1,6 +1,13 @@
-<div class="payment-card-container">
-    <mat-card class="pay-card" *ngFor="let payment of payments">
-        <img mat-card-image src="{{payment.imagePath}}" alt="payment" class="card-image">
-        <mat-card-title>{{payment.text}}</mat-card-title>
-    </mat-card>
+<div class="payment-card">
+  <div class="d-flex align-items-center row">
+    <div class="grid-3" *ngFor="let payment of payments">
+      <mat-card class="pay-card no-gutter">
+        <input type="radio" id="{{payment.id}}" name="radio-group">
+        <label for="{{payment.id}}">
+          <img src="{{payment.imagePath}}" alt="" class="pay-img" />
+          <span>{{payment.text}}</span>
+        </label>
+      </mat-card>
+    </div>
+  </div>
 </div>

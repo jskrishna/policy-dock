@@ -1,16 +1,16 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { DefaultComponent } from "./default/default.component";
-import { NewsLetterComponent } from './views/news-letter/news-letter.component';
-import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
-import { SuccessPaymentComponent } from './views/success-payment/success-payment.component';
-import { ErrorPaymentComponent } from './views/error-payment/error-payment.component';
+import { NewsLetterComponent } from "./views/news-letter/news-letter.component";
+import { PageNotFoundComponent } from "./views/page-not-found/page-not-found.component";
+import { SuccessPaymentComponent } from "./views/success-payment/success-payment.component";
+import { ErrorPaymentComponent } from "./views/error-payment/error-payment.component";
 
 const routes: Routes = [
   {
     path: "",
     pathMatch: "full",
-    redirectTo: "auth/login",
+    redirectTo: "/admin/current-policies",
   },
   {
     path: "",
@@ -30,19 +30,19 @@ const routes: Routes = [
   },
   {
     path: "newsletter",
-    component: NewsLetterComponent
+    component: NewsLetterComponent,
   },
   {
     path: "not-found",
-    component: PageNotFoundComponent
+    component: PageNotFoundComponent,
   },
   {
     path: "payment-success",
-    component: SuccessPaymentComponent
+    component: SuccessPaymentComponent,
   },
   {
     path: "payment-error",
-    component: ErrorPaymentComponent
+    component: ErrorPaymentComponent,
   },
 ];
 
@@ -50,4 +50,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class FrontRoutingModule { }
+export class FrontRoutingModule {}

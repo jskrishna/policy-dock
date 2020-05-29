@@ -28,7 +28,9 @@
 
 .navbar-sidenav-container {
   flex: 1;
+  background: #F2F9FF
 }
+
 
 .navbar-is-mobile .navbar-sidenav-container {
   flex: 1 0 auto;
@@ -115,8 +117,4 @@ mat-sidenav .mat-list-base .mat-list-item:hover {
 
 .main-wrapper {
   padding: 40px 25px 40px 25px;
-}
-
-.mat-drawer-content {
-  background: #F2F9FF;
 }

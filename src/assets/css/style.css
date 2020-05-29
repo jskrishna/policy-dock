@@ -28,6 +28,11 @@
   max-width: 50%;
 }
 
+.grid-3 {
+  flex: 0 0 33.3%;
+  max-width: 33.33%;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -44,6 +49,11 @@
   color: #000;
   transition: 300ms all;
   background: #fafafd;
+}
+
+textarea.customInput {
+  min-height: 100px;
+  height: auto;
 }
 
 .customInput:hover {
@@ -104,7 +114,9 @@ button.mat-raised-button {
 }
 
 .mat-raised-button.mat-secondary:hover {
-  background: #dae5ff;
+  /* background: #dae5ff; */
+  background: #4080fe;
+  color: #fff;
 }
 
 .mat-raised-button.mat-secondary {
@@ -118,37 +130,7 @@ button.mat-raised-button {
 }
 
 
-button.mat-raised-button.btn-small {
-  padding: 0 10px;
-  line-height: 24px;
-  font-size: 12px;
-  font-weight: 600;
-  min-width: 115px;
-}
-
-button.mat-raised-button.btn-small:hover {
-  color: #fff;
-}
-
-button.mat-raised-button.btn-green {
-  background: #F0FEF8;
-  color: #60C798;
-}
-
-button.mat-raised-button.btn-green:hover {
-  background: #60C798;
-}
-
-button.mat-raised-button.btn-blue {
-  background: #E7EFFF;
-  color: #4080FE;
-}
-
-button.mat-raised-button.btn-blue:hover {
-  background: #4080FE;
-}
-
-button.mat-button-base {
+button.mat-button-base.btn-small {
   border: 0;
   font-size: 12px;
   font-weight: 600;
@@ -158,28 +140,45 @@ button.mat-button-base {
   transition: 300ms all;
 }
 
-button.mat-button-base:hover {
+button.mat-button-base.btn-small:hover {
   color: #fff !important;
 }
 
-button.mat-button-base.mat-success {
+button.mat-button-base.mat-success.btn-small {
   background: #F0FEF8;
   color: #60C798;
 }
 
-button.mat-button-base.mat-success:hover {
+button.mat-button-base.mat-success.btn-small:hover {
   background: #60C798;
 }
 
-button.mat-button-base.mat-primary {
+button.mat-button-base.mat-primary.btn-small {
   background: #E7EFFF;
   color: #4080FE;
 }
 
-button.mat-button-base.mat-primary:hover {
+button.mat-button-base.mat-primary.btn-small:hover {
   background: #4080FE;
 }
 
+button.mat-button-base.mat-warn.btn-small {
+  background: #FFDFD8;
+  color: #FF785A;
+}
+
+button.mat-button-base.mat-warn.btn-small:hover {
+  background: #FF785A;
+}
+
+
+button.btn-large {
+  min-width: 200px;
+}
+
+button.btn-medium {
+  min-width: 150px;
+}
 
 
 /* Checkbox */
@@ -192,8 +191,14 @@ button.mat-button-base.mat-primary:hover {
 .mat-checkbox-frame {
   border-width: 1px !important;
   border-style: solid;
-  border-color: #4080fe;
+  border-color: #D4D3E0;
   border-radius: 3px !important;
+  transition: 300ms all;
+}
+
+.mat-checkbox:hover .mat-checkbox-frame,
+.mat-checkbox.mat-checkbox-checked .mat-checkbox-frame {
+  border-color: #4080fe !important;
 }
 
 .mat-checkbox-checked.mat-accent .mat-checkbox-background,
@@ -269,13 +274,20 @@ button.mat-button-base.mat-primary:hover {
 }
 
 /* Heading */
-.heading-main {
+.heading-main,
+.heading-main-2 {
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
   color: #4080FE;
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+.heading-main-2 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .no-gutter {
@@ -346,4 +358,105 @@ td.mat-cell {
 .btn-action:first-child img {
   position: relative;
   top: 1px;
+}
+
+
+mat-card.alert {
+  padding: 20px;
+  text-align: center;
+  border-radius: 9px;
+  line-height: 32px;
+  font-size: 18px;
+}
+
+mat-card.alert span {
+  font-weight: 600;
+}
+
+.alert.alert-pending {
+  color: #F8A92F;
+  background: #FFF3E0;
+}
+
+.no-border mat-footer-row,
+.no-border mat-header-row,
+.no-border mat-row,
+.no-border td.mat-cell,
+.no-border td.mat-footer-cell,
+.no-border th.mat-header-cell {
+  border-bottom-color: transparent;
+}
+
+.mat-card+h2 {
+  margin-top: 40px;
+}
+
+.mt40 {
+  margin-bottom: 40px;
+}
+
+.colored-th th {
+  background: #DCE9FF;
+}
+
+
+/* custom radio button */
+.pay-card input {
+  display: none;
+}
+
+.pay-card {
+  position: relative;
+}
+
+.pay-card input:checked+label {
+  border-color: #4080fe;
+}
+
+.pay-card input+label {
+  padding: 15px 15px 15px 120px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  transition: 300ms all;
+  font-size: 14px;
+  font-weight: 500;
+  color: #384053;
+  cursor: pointer;
+}
+
+.pay-card img {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+  display: block;
+}
+
+.checkSmall .mat-checkbox-label {
+  font-size: 12px;
+  color: #4080fe;
+}
+
+.checkSmall .mat-checkbox-inner-container {
+  margin-right: 15px;
+}
+
+.trFirstTd table tr td:first-child {
+  color: #4080fe;
+  font-weight: 600;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.text-right {
+  text-align: right;
 }
