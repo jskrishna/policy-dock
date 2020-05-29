@@ -30,9 +30,6 @@ export class DefaultLayoutComponent implements OnInit, OnDestroy, AfterViewInit 
     
   }
 
-  selectedRoute(route: string){
-    this.title = route;
-  }
 
   ngOnDestroy(): void {
     // tslint:disable-next-line: deprecation

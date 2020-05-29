@@ -81,5 +81,14 @@
   .login-right {
     display: none;
   }
+  .stage-content h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    line-height: 25px;
+  }
+  .stage-content h4 {
+    font-size: 16px;
+    line-height: 25px;
+  }
 
 }

@@ -3,7 +3,6 @@
   <!-- Top navbar -->
     <button mat-icon-button (click)="snav.toggle()" class="responsive-toggle">
       <mat-icon>menu</mat-icon>
-      <span> {{title}}</span>
     </button>
 
 
@@ -19,7 +18,7 @@
         </a>
 
         <div class="nav-sidebar">
-          <a class="nav-menus" mat-list-item [routerLink]="['/admin/current-policies']" routerLinkActive="active" (click)="snav.toggle()">
+          <a class="nav-menus" mat-list-item [routerLink]="['/admin/current-policies']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_grid.svg" alt="" />
               <span>My Current Policies </span>
             </p>
@@ -50,11 +49,11 @@
             </p>
           </a>
 
-          <a class="nav-menus" mat-list-item >
+          <!-- <a class="nav-menus" mat-list-item >
             <p mat-line> <img src="assets/img/icn_settings.svg" alt="" />
               <span>Sitemap</span>
             </p>
-          </a>
+          </a> -->
         </div>
 
 
