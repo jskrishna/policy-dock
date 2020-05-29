@@ -56,10 +56,32 @@ a {
 [class^="grid-"] {
   padding: 0 10px;
 }
+mat-sidenav .mat-drawer-inner-container{
+  overflow: hidden !important;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0#F2F9FF; 
+  border-radius: 10px;
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3070FF; 
+}
 
-
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3070FF; 
+}
+.mat-drawer-backdrop{
+  position: fixed !important;
+}
 // override input
 // .mat-form-field-appearance-outline .mat-form-field-outline {
 //   height: 32px;

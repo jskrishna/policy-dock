@@ -1,11 +1,14 @@
 <div class="navbar-container" [class.example-is-mobile]="mobileQuery.matches">
 
   <!-- Top navbar -->
+    <button mat-icon-button (click)="snav.toggle()" class="responsive-toggle">
+      <mat-icon>menu</mat-icon>
+      <span> {{title}}</span>
+    </button>
+
+
 
   <mat-sidenav-container class="navbar-sidenav-container">
-    <button mat-icon-button (click)="snav.toggle()">
-      <mat-icon>menu</mat-icon>
-    </button>
     <!-- Side nav -->
     <mat-sidenav #snav [opened]="!mobileQuery.matches" [mode]="mobileQuery.matches ? 'over' : 'side'"
       [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" class="sidenav">
@@ -15,36 +18,44 @@
           <img src="assets/img/PolicyDock-Logo-White.svg">
         </a>
 
-        <a class="nav-menus" mat-list-item [routerLink]="['/admin/current-policies']" routerLinkActive="active">
-          <p mat-line> <img src="assets/img/icn_grid.svg" alt="" />
-            <span>My Current Policies </span>
-          </p>
-        </a>
+        <div class="nav-sidebar">
+          <a class="nav-menus" mat-list-item [routerLink]="['/admin/current-policies']" routerLinkActive="active" (click)="snav.toggle()">
+            <p mat-line> <img src="assets/img/icn_grid.svg" alt="" />
+              <span>My Current Policies </span>
+            </p>
+          </a>
+  
+          <a class="nav-menus" mat-list-item [routerLink]="['/admin/applications']" routerLinkActive="active">
+            <p mat-line> <img src="assets/img/icn_aplications.svg" alt="" />
+              <span>My Applications</span>
+            </p>
+          </a>
+  
+          <a class="nav-menus" mat-list-item [routerLink]="['/admin/quotation']" routerLinkActive="active">
+            <p mat-line> <img src="assets/img/icn_file-text.svg" alt="" />
+              <span>Quotations</span>
+            </p>
+          </a>
+  
+          <a class="nav-menus" mat-list-item [routerLink]="['/admin/dashboard']" routerLinkActive="active">
+            <p mat-line> <img src="assets/img/icn_dasboard.svg" alt="" />
+              <span>Dashboard</span>
+            </p>
+          </a>
+  
+  
+          <a class="nav-menus" mat-list-item [routerLink]="['/admin/settings']" routerLinkActive="active">
+            <p mat-line> <img src="assets/img/icn_settings.svg" alt="" />
+              <span>Settings</span>
+            </p>
+          </a>
 
-        <a class="nav-menus" mat-list-item [routerLink]="['/admin/applications']" routerLinkActive="active">
-          <p mat-line> <img src="assets/img/icn_aplications.svg" alt="" />
-            <span>My Applications</span>
-          </p>
-        </a>
-
-        <a class="nav-menus" mat-list-item [routerLink]="['/admin/quotation']" routerLinkActive="active">
-          <p mat-line> <img src="assets/img/icn_file-text.svg" alt="" />
-            <span>Quotations</span>
-          </p>
-        </a>
-
-        <a class="nav-menus" mat-list-item [routerLink]="['/admin/dashboard']" routerLinkActive="active">
-          <p mat-line> <img src="assets/img/icn_dasboard.svg" alt="" />
-            <span>Dashboard</span>
-          </p>
-        </a>
-
-
-        <a class="nav-menus" mat-list-item [routerLink]="['/admin/settings']" routerLinkActive="active">
-          <p mat-line> <img src="assets/img/icn_settings.svg" alt="" />
-            <span>Settings</span>
-          </p>
-        </a>
+          <a class="nav-menus" mat-list-item >
+            <p mat-line> <img src="assets/img/icn_settings.svg" alt="" />
+              <span>Sitemap</span>
+            </p>
+          </a>
+        </div>
 
 
         <a id="push-bottom" class="nav-menus" mat-list-item [routerLink]="['/auth/login']">
@@ -72,5 +83,4 @@
 
     </mat-sidenav-content>
   </mat-sidenav-container>
-
 </div>

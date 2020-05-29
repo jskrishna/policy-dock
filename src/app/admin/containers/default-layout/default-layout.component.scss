@@ -42,6 +42,8 @@ mat-sidenav {
   box-shadow: none;
   background: #4080FE;
   border-radius: 0 30px 30px 0;
+  overflow: hidden;
+  top: 0 !important;
 }
 
 
@@ -70,7 +72,7 @@ mat-sidenav .mat-list-base .mat-list-item {
 
 .admin-logo {
   padding-top: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   display: block;
   padding-left: 18px;
   padding-right: 18px;
@@ -117,4 +119,47 @@ mat-sidenav .mat-list-base .mat-list-item:hover {
 
 .main-wrapper {
   padding: 40px 25px 40px 25px;
+}
+.nav-sidebar {
+  height: calc(100vh - 170px);
+  overflow: auto;
+}
+
+.nav-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+/* Handle */
+.nav-sidebar::-webkit-scrollbar-thumb {
+  background:rgba(255, 255, 253, 0.38);
+}
+
+/* Handle on hover */
+.nav-sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 253, 0.38);
+}
+
+
+@media(min-width:1001px){
+  .responsive-toggle{
+    display: none;
+  }
+}
+@media(max-width:1000px){
+  .responsive-toggle{
+    color: #3070ff;
+    border: 1px solid #3070ff;
+    line-height: 1;
+    border-radius: 0;
+    position: relative;
+    left: 20px;
+    height: auto;
+    padding: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+}
+@media(max-width:767px) {
+  .main-wrapper{
+    padding: 30px 15px;
+}
 }

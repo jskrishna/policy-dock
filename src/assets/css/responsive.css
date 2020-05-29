@@ -22,18 +22,39 @@
   }
 
 }
-
+@media screen and (max-width: 1249px){
+.responsive-table {
+    width: 100%;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .responsive-table>table>tbody>tr>td, .responsive-table>table>tbody>tr>th, .responsive-table>table>tfoot>tr>td, .responsive-table>table>tfoot>tr>th, .responsive-table>table>thead>tr>td, .responsive-table>table>thead>tr>th {
+    white-space: nowrap;
+    padding: 8px;
+}
+}
 @media(max-width:767px) {
-  .grid-2 {
+  mat-card.alert {
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 24px;
+    font-size: 14px;
+}
+  .grid-2, .grid-3 {
     flex: 0 0 100%;
     max-width: 100%;
+    width: 100%;
   }
-
+  .d-flex {
+    flex-direction: column;
+}
   .login-form {
     height: initial;
     padding: 0 20px;
   }
-
+  .payment-card > div > div + div {
+    margin-top: 15px;
+}
   .login-wrapper {
     flex-direction: column;
   }

@@ -460,3 +460,7 @@ mat-card.alert span {
 .text-right {
   text-align: right;
 }
+.responsive-table {
+  min-height: .01%;
+  overflow-x: auto;
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectorRef, OnDestroy, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, OnDestroy, AfterViewInit, ViewChild } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
 
 @Component({
@@ -6,12 +6,12 @@ import { MediaMatcher } from '@angular/cdk/layout';
   templateUrl: './default-layout.component.html',
   styleUrls: ['./default-layout.component.scss']
 })
-export class DefaultLayoutComponent implements OnInit, OnDestroy, AfterViewInit {
 
+export class DefaultLayoutComponent implements OnInit, OnDestroy, AfterViewInit {
   private _mobileQueryListener: () => void;
   mobileQuery: MediaQueryList;
   showSpinner: boolean;
-
+  title: string;
   constructor(
     private changeDetectorRef: ChangeDetectorRef,
     private media: MediaMatcher) {
@@ -20,9 +20,18 @@ export class DefaultLayoutComponent implements OnInit, OnDestroy, AfterViewInit 
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     // tslint:disable-next-line: deprecation
     this.mobileQuery.addListener(this._mobileQueryListener);
+
+
   }
 
+ 
+
   ngOnInit(): void {
+    
+  }
+
+  selectedRoute(route: string){
+    this.title = route;
   }
 
   ngOnDestroy(): void {

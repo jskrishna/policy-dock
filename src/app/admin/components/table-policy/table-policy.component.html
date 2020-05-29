@@ -1,74 +1,76 @@
-<table mat-table [dataSource]="dataSource" matSort>
+<div class="responsive-table">
+  <table mat-table [dataSource]="dataSource" matSort>
 
-  <!-- Position Column -->
-  <ng-container matColumnDef="date">
-    <th mat-header-cell *matHeaderCellDef> Start Date </th>
-    <td mat-cell *matCellDef="let element"> {{element.date}} </td>
-  </ng-container>
-
-  <!-- Name Column -->
-  <ng-container matColumnDef="renewDate">
-    <th mat-header-cell *matHeaderCellDef> Renewal Date </th>
-    <td mat-cell *matCellDef="let element"> {{element.renewDate}} </td>
-  </ng-container>
-
-  <!-- Weight Column -->
-  <ng-container matColumnDef="policy">
-    <th mat-header-cell *matHeaderCellDef> Policy # </th>
-    <td mat-cell *matCellDef="let element"> {{element.policy}} </td>
-  </ng-container>
-
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="policyHolder">
-    <th mat-header-cell *matHeaderCellDef> Policy Holder </th>
-    <td mat-cell *matCellDef="let element"> {{element.policyHolder}} </td>
-  </ng-container>
-
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="insurance">
-    <th mat-header-cell *matHeaderCellDef> Insurance Type </th>
-    <td mat-cell *matCellDef="let element"> {{element.insurance}} </td>
-  </ng-container>
-
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="payment">
-    <th mat-header-cell *matHeaderCellDef> Payment </th>
-    <td mat-cell *matCellDef="let element"> {{element.payment}} </td>
-  </ng-container>
-
-
-
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="renew">
-    <th mat-header-cell *matHeaderCellDef> Renew </th>
-    <td mat-cell *matCellDef="let element">
-      <button mat-stroked-button color="success" class="btn-small">Add to review</button>
-    </td>
-  </ng-container>
-
-
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="action">
-    <th mat-header-cell *matHeaderCellDef> Action </th>
-    <td mat-cell *matCellDef="let element">
-      <a class="btn-action" matTooltip="Cancel" matTooltipPosition="above" matTooltipClass="custom-tooltip">
-        <img src="assets/img/icn_cancel.svg" alt="" />
-      </a>
-      <a class="btn-action" matTooltip="Amend" matTooltipPosition="above" matTooltipClass="custom-tooltip">
-        <img src="assets/img/icn_edit.svg" alt="" />
-      </a>
-
-    </td>
-  </ng-container>
-
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="check-policy">
-    <th mat-header-cell *matHeaderCellDef> </th>
-    <td mat-cell *matCellDef="let element">
-      <button mat-stroked-button color="primary" class="btn-small">Check Policy</button>
-    </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table>
+    <!-- Position Column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef> Start Date </th>
+      <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="renewDate">
+      <th mat-header-cell *matHeaderCellDef> Renewal Date </th>
+      <td mat-cell *matCellDef="let element"> {{element.renewDate}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="policy">
+      <th mat-header-cell *matHeaderCellDef> Policy # </th>
+      <td mat-cell *matCellDef="let element"> {{element.policy}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="policyHolder">
+      <th mat-header-cell *matHeaderCellDef> Policy Holder </th>
+      <td mat-cell *matCellDef="let element"> {{element.policyHolder}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="insurance">
+      <th mat-header-cell *matHeaderCellDef> Insurance Type </th>
+      <td mat-cell *matCellDef="let element"> {{element.insurance}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="payment">
+      <th mat-header-cell *matHeaderCellDef> Payment </th>
+      <td mat-cell *matCellDef="let element"> {{element.payment}} </td>
+    </ng-container>
+  
+  
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="renew">
+      <th mat-header-cell *matHeaderCellDef> Renew </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-stroked-button color="success" class="btn-small">Add to review</button>
+      </td>
+    </ng-container>
+  
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef> Action </th>
+      <td mat-cell *matCellDef="let element">
+        <a class="btn-action" matTooltip="Cancel" matTooltipPosition="above" matTooltipClass="custom-tooltip">
+          <img src="assets/img/icn_cancel.svg" alt="" />
+        </a>
+        <a class="btn-action" matTooltip="Amend" matTooltipPosition="above" matTooltipClass="custom-tooltip">
+          <img src="assets/img/icn_edit.svg" alt="" />
+        </a>
+  
+      </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="check-policy">
+      <th mat-header-cell *matHeaderCellDef> </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-stroked-button color="primary" class="btn-small">Check Policy</button>
+      </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
