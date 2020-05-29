@@ -5,6 +5,7 @@ import { CurrentPoliciesComponent } from './views/current-policies/current-polic
 import { ApplicationsComponent } from './views/applications/applications.component';
 import { SettingsComponent } from './views/settings/settings.component';
 import { QuotationComponent } from './views/quotation/quotation.component';
+import { SitemapComponent } from './views/sitemap/sitemap.component';
 
 
 export const routes: Routes = [
@@ -33,7 +34,11 @@ export const routes: Routes = [
       },
       {
         path: 'quotation',
-        component: QuotationComponent
+        component: QuotationComponent,
+      },
+      {
+        path: 'sitemap',
+        component: SitemapComponent
       },
       {
         path: 'dashboard',
