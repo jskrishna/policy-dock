@@ -8,6 +8,7 @@ import { NewsLetterComponent } from './views/news-letter/news-letter.component';
 import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
 import { SuccessPaymentComponent } from './views/success-payment/success-payment.component';
 import { ErrorPaymentComponent } from './views/error-payment/error-payment.component';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ErrorPaymentComponent } from './views/error-payment/error-payment.compo
   imports: [
     CommonModule,
     FrontRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    MaterialModule
   ]
 })
 export class FrontModule { }

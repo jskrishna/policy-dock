@@ -464,3 +464,33 @@ mat-card.alert span {
   min-height: .01%;
   overflow-x: auto;
 }
+
+/* stage */
+.stage-content {
+  text-align: center;
+}
+.stage-content h2 {
+  color: #4080fe;
+  font-size: 24px;
+  margin-bottom: 0;
+  line-height: 28px;
+}
+.stage-content h4 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #4080fe;
+  max-width: 531px;
+  margin: 15px auto 25px;
+}
+.component-stage {
+  height: 100%;
+  padding: 15px;
+}
+.stage-img {
+text-align: center;
+}
+.stage-img img {
+  width: 80%;
+}
