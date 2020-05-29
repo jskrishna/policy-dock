@@ -1,11 +1,11 @@
 <div class="navbar-container" [class.example-is-mobile]="mobileQuery.matches">
 
   <!-- Top navbar -->
-    <button mat-icon-button (click)="snav.toggle()" class="responsive-toggle">
-      <mat-icon>menu</mat-icon>
-      <span> {{title}}</span>
-    </button>
-
+  <!-- (click)="toggleSidenav()" -->
+  <button mat-icon-button (click)="snav.toggle()" class="responsive-toggle">
+    <mat-icon>menu</mat-icon>
+    <span class="small-title">{{title}}</span>
+  </button>
 
 
   <mat-sidenav-container class="navbar-sidenav-container">
@@ -19,38 +19,38 @@
         </a>
 
         <div class="nav-sidebar">
-          <a class="nav-menus" mat-list-item [routerLink]="['/admin/current-policies']" routerLinkActive="active" (click)="snav.toggle()">
+          <a class="nav-menus" mat-list-item [routerLink]="['/admin/current-policies']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_grid.svg" alt="" />
               <span>My Current Policies </span>
             </p>
           </a>
-  
+
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/applications']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_aplications.svg" alt="" />
               <span>My Applications</span>
             </p>
           </a>
-  
+
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/quotation']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_file-text.svg" alt="" />
               <span>Quotations</span>
             </p>
           </a>
-  
+
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/dashboard']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_dasboard.svg" alt="" />
               <span>Dashboard</span>
             </p>
           </a>
-  
-  
+
+
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/settings']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_settings.svg" alt="" />
               <span>Settings</span>
             </p>
           </a>
 
-          <a class="nav-menus" mat-list-item >
+          <a class="nav-menus" mat-list-item [routerLink]="['/admin/sitemap']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_settings.svg" alt="" />
               <span>Sitemap</span>
             </p>
@@ -74,9 +74,7 @@
       </div>
 
       <div class="main-wrapper">
-        <router-outlet>
-
-
+        <router-outlet (activate)="onActivate($event)">
         </router-outlet>
 
       </div>

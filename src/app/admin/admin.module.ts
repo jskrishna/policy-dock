@@ -9,6 +9,7 @@ import { CurrentPoliciesComponent } from './views/current-policies/current-polic
 import { ApplicationsComponent } from './views/applications/applications.component';
 import { SettingsComponent } from './views/settings/settings.component';
 import { QuotationComponent } from './views/quotation/quotation.component';
+import { SitemapComponent } from './views/sitemap/sitemap.component';
 
 const APP_CONTAINERS = [
   DefaultLayoutComponent
@@ -21,6 +22,7 @@ const APP_CONTAINERS = [
     ApplicationsComponent,
     SettingsComponent,
     QuotationComponent,
+    SitemapComponent,
   ],
   imports: [
     CommonModule,
