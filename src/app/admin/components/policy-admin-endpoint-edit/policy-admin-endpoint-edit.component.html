@@ -16,7 +16,9 @@
         <ng-container matColumnDef="col3">
             <th mat-header-cell *matHeaderCellDef> </th>
             <td mat-cell *matCellDef="let element">
-                <button mat-stroked-button color="primary" class="btn-small">Choose to Edit</button>
+                <a class="btn-action" matTooltip="Edit" matTooltipPosition="above" matTooltipClass="custom-tooltip">
+                    <img src="assets/img/icn_edit.svg" alt="" />
+                  </a>
             </td>
         </ng-container>
 

@@ -13,6 +13,9 @@ import { TablePolicyScheduleComponent } from './table-policy-schedule/table-poli
 import { TableProductProviderPolicyAdminComponent } from './table-product-provider-policy-admin/table-product-provider-policy-admin.component';
 import { BannerButtonComponent } from './banner-button/banner-button.component';
 import { ApiEndpointsComponent } from './api-endpoints/api-endpoints.component';
+import { PolicyAdminEndpointComponent } from './policy-admin-endpoint/policy-admin-endpoint.component';
+import { PolicyAdminEnpointCodeComponent } from './policy-admin-enpoint-code/policy-admin-enpoint-code.component';
+import { PolicyAdminEndpointEditComponent } from './policy-admin-endpoint-edit/policy-admin-endpoint-edit.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { ApiEndpointsComponent } from './api-endpoints/api-endpoints.component';
     TablePolicyScheduleComponent,
     TableProductProviderPolicyAdminComponent,
     BannerButtonComponent,
-    ApiEndpointsComponent
+    ApiEndpointsComponent,
+    PolicyAdminEndpointComponent,
+    PolicyAdminEnpointCodeComponent,
+    PolicyAdminEndpointEditComponent
   ],
   imports: [
     CommonModule,
@@ -44,7 +50,10 @@ import { ApiEndpointsComponent } from './api-endpoints/api-endpoints.component';
     TablePolicyScheduleComponent,
     TableProductProviderPolicyAdminComponent,
     BannerButtonComponent,
-    ApiEndpointsComponent
+    ApiEndpointsComponent,
+    PolicyAdminEndpointComponent,
+    PolicyAdminEnpointCodeComponent,
+    PolicyAdminEndpointEditComponent
   ]
 })
 export class ComponentsModule { }
