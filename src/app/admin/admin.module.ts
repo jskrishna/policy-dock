@@ -12,6 +12,7 @@ import { QuotationComponent } from './views/quotation/quotation.component';
 import { SitemapComponent } from './views/sitemap/sitemap.component';
 import { QuotationOneComponent } from './views/quotation-one/quotation-one.component';
 import { ProductProviderComponent } from './views/product-provider/product-provider.component';
+import { AdministartionSettingsComponent } from './views/administartion-settings/administartion-settings.component';
 
 const APP_CONTAINERS = [
   DefaultLayoutComponent
@@ -27,6 +28,7 @@ const APP_CONTAINERS = [
     SitemapComponent,
     QuotationOneComponent,
     ProductProviderComponent,
+    AdministartionSettingsComponent,
   ],
   imports: [
     CommonModule,
