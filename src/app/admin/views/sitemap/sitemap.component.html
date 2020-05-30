@@ -1,10 +1,48 @@
-<p>Sitemap</p>
+<h2 class="heading-main">Sitemap</h2>
 
-<a [routerLink]="['/admin/quotation1']">
-  <h2 class="heading-main">Process of Quotation-1</h2>
-</a>
-
-
-<a [routerLink]="['/admin/product-provider']">
-  <h2 class="heading-main">Product-provider</h2>
-</a>
+<mat-card>
+  <mat-card-content>
+   <ul class="sitemap">
+     <li class="grid-4">
+      <a [routerLink]="['/admin/quotation1']">
+        Process of Quotation
+      </a>
+     </li>
+     <li class="grid-4">
+      <a [routerLink]="['/admin/product-provider']">
+        Product Provider
+      </a>
+     </li>
+     <li class="grid-4">
+      <a [routerLink]="['/payment-error']">
+        Error Payment
+      </a>
+     </li>
+     <li class="grid-4">
+      <a [routerLink]="['/payment-success']">
+        Success Payment 
+      </a>
+     </li>
+     <li class="grid-4">
+      <a [routerLink]="['/not-found']">
+        404 Error
+      </a>
+     </li>
+     <li class="grid-4">
+      <a [routerLink]="['/auth/login']">
+        Login
+      </a>
+     </li>
+     <li class="grid-4">
+      <a [routerLink]="['/auth/forgot-password']">
+        Forgot Password
+      </a>
+     </li>
+     <li class="grid-4">
+      <a [routerLink]="['/newsletter']">
+        Newsletter
+      </a>
+     </li>
+   </ul>
+  </mat-card-content>
+</mat-card>

@@ -4,14 +4,14 @@
   <!-- (click)="toggleSidenav()" -->
   <button mat-icon-button (click)="snav.toggle()" class="responsive-toggle">
     <mat-icon>menu</mat-icon>
-    <span class="small-title">{{title}}</span>
+    <span class="page-title">{{title}}</span>
   </button>
 
 
   <mat-sidenav-container class="navbar-sidenav-container">
     <!-- Side nav -->
     <mat-sidenav #snav [opened]="!mobileQuery.matches" [mode]="mobileQuery.matches ? 'over' : 'side'"
-      [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" class="sidenav">
+      [fixedInViewport]="mobileQuery.matches" fixedTopGap="0" class="sidenav">
 
       <mat-nav-list>
         <a class="admin-logo" href="javascript:void(0);">
@@ -37,11 +37,11 @@
             </p>
           </a>
 
-          <a class="nav-menus" mat-list-item [routerLink]="['/admin/dashboard']" routerLinkActive="active">
+          <!-- <a class="nav-menus" mat-list-item [routerLink]="['/admin/dashboard']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_dasboard.svg" alt="" />
               <span>Dashboard</span>
             </p>
-          </a>
+          </a> -->
 
 
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/settings']" routerLinkActive="active">
@@ -51,7 +51,7 @@
           </a>
 
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/sitemap']" routerLinkActive="active">
-            <p mat-line> <img src="assets/img/icn_settings.svg" alt="" />
+            <p mat-line> <img src="assets/img/icn_sitemap.svg" alt="" />
               <span>Sitemap</span>
             </p>
           </a>

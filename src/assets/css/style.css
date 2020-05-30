@@ -22,7 +22,13 @@
 .justify-content-end {
   justify-content: flex-end;
 }
-
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.grid-1 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
 .grid-2 {
   flex: 0 0 50%;
   max-width: 50%;
@@ -31,6 +37,16 @@
 .grid-3 {
   flex: 0 0 33.3%;
   max-width: 33.33%;
+}
+
+.grid-4 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.grid-5 {
+  flex: 0 0 20%;
+  max-width: 20%;
 }
 
 .w-100 {
@@ -493,4 +509,80 @@ text-align: center;
 }
 .stage-img img {
   width: 80%;
+}
+.colored-head th{
+color: #4080FE !important;
+}
+.colored-head tr td{
+  color: #384053;
+}
+.colored-head tr td:first-child{
+  font-weight: 600;
+}
+.td-odd tr td:nth-child(odd){
+  background: #EFFBFF;
+}
+tfoot tr td {
+  font-weight: 600;
+  color: #4080fe !important;
+}
+.foot-colored tfoot tr td {
+  background: #dce9ff !important;
+  border-top: 1px solid #4080FE;
+}
+.no-color .td-odd tr td:nth-child(odd) {
+  background: transparent;
+}
+.odd-colored .td-odd tr td:nth-child(5n) {
+  background: #FFEEEB;
+}
+
+.odd-colored .td-odd tr td:nth-child(7n) {
+  background: #FFFEEB;
+}
+.td-odd tr td:nth-child(1) {
+  width: 200px;
+}
+.td-odd tr td:nth-child(2) {
+  width: 170px;
+}
+.td-odd tr td:nth-child(5) {
+  width: 100px;
+}
+
+/* sitemap */
+.sitemap {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sitemap li {
+  text-align: center;
+  padding: 10px;
+}
+.sitemap li a {
+  display: block;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 300ms all;
+}
+.sitemap li a:hover{
+  background: 
+#eef3ff;
+}
+.sitemap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+button.btn-large.btn-icon {
+  padding: 0 15px;
+  min-width: auto;
+}
+.heading-main button {
+  margin-left: 25px;
+}.login-wrapper {
+  height: 100%;
 }

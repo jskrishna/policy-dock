@@ -166,6 +166,26 @@ export class QuotationOneComponent implements OnInit {
         overridePremium: 0,
         premiumAmount: "$100"
       },
+      {
+        productItems: "Contingent Liability",
+        detail: "0",
+        included: "yes",
+        insuredAmount: "0",
+        rate: 0,
+        calculatedPremium: "$1000",
+        overridePremium: 0,
+        premiumAmount: "$100"
+      },
+      {
+        productItems: "Contingent Liability",
+        detail: "0",
+        included: "yes",
+        insuredAmount: "0",
+        rate: 0,
+        calculatedPremium: "$1000",
+        overridePremium: 0,
+        premiumAmount: "$100"
+      },
     ]
   }
 

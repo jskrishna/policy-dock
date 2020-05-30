@@ -82,6 +82,13 @@ mat-sidenav .mat-drawer-inner-container{
 .mat-drawer-backdrop{
   position: fixed !important;
 }
+.mat-button-focus-overlay {
+  opacity: 0 !important;
+  background: transparent !important;
+}
+table td.mat-cell, table td.mat-footer-cell, table th.mat-header-cell {
+  padding: 15px;
+}
 // override input
 // .mat-form-field-appearance-outline .mat-form-field-outline {
 //   height: 32px;

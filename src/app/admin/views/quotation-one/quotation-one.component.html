@@ -1,8 +1,14 @@
-<h2 class="heading-main">Application Details</h2>
+<h2 class="heading-main">Application Details
+    <button  mat-raised-button class="btn-large btn-icon" type="submit" color="primary">
+      <mat-icon><img src="assets/img/icn_cloud.svg" alt="" /></mat-icon>
+      Cloud download
+    </button>
+  
+  </h2>
 
 <mat-card class="no-gutter">
   <mat-card-content>
-    <app-table-quotation [tableData]="quotation"></app-table-quotation>
+    <app-table-quotation [tableData]="quotation" class="no-color"></app-table-quotation>
   </mat-card-content>
 </mat-card>
 
@@ -10,7 +16,7 @@
 
 <mat-card class="no-gutter">
   <mat-card-content>
-    <app-table-quotation [tableData]="specifiedMotorVehicle"></app-table-quotation>
+    <app-table-quotation [tableData]="specifiedMotorVehicle" class="odd-colored"></app-table-quotation>
   </mat-card-content>
 </mat-card>
 
