@@ -12,6 +12,7 @@ import { TableQuotationComponent } from './table-quotation/table-quotation.compo
 import { TablePolicyScheduleComponent } from './table-policy-schedule/table-policy-schedule.component';
 import { TableProductProviderPolicyAdminComponent } from './table-product-provider-policy-admin/table-product-provider-policy-admin.component';
 import { BannerButtonComponent } from './banner-button/banner-button.component';
+import { ApiEndpointsComponent } from './api-endpoints/api-endpoints.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BannerButtonComponent } from './banner-button/banner-button.component';
     TableQuotationComponent,
     TablePolicyScheduleComponent,
     TableProductProviderPolicyAdminComponent,
-    BannerButtonComponent
+    BannerButtonComponent,
+    ApiEndpointsComponent
   ],
   imports: [
     CommonModule,
@@ -41,7 +43,8 @@ import { BannerButtonComponent } from './banner-button/banner-button.component';
     TableQuotationComponent,
     TablePolicyScheduleComponent,
     TableProductProviderPolicyAdminComponent,
-    BannerButtonComponent
+    BannerButtonComponent,
+    ApiEndpointsComponent
   ]
 })
 export class ComponentsModule { }

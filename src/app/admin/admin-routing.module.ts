@@ -9,6 +9,7 @@ import { SitemapComponent } from './views/sitemap/sitemap.component';
 import { QuotationOneComponent } from './views/quotation-one/quotation-one.component';
 import { ProductProviderComponent } from './views/product-provider/product-provider.component';
 import { AdministartionSettingsComponent } from './views/administartion-settings/administartion-settings.component';
+import { PolicyAdministrationComponent } from './views/policy-administration/policy-administration.component';
 
 
 export const routes: Routes = [
@@ -26,6 +27,10 @@ export const routes: Routes = [
       {
         path: 'current-policies',
         component: CurrentPoliciesComponent
+      },
+      {
+        path: 'policy-administration',
+        component: PolicyAdministrationComponent
       },
       {
         path: 'applications',
