@@ -1,13 +1,35 @@
 <h2 class="heading-main">Policy Administration</h2>
 
+<label>Name of product:</label>
+<h3 class="heading-main"> Jim's Car Insurance</h3>
+
+<label>Times Updated:</label>
+<h3 class="heading-main"> 4</h3>
+
+<label>Version:</label>
+<h3 class="heading-main"> 1.4</h3>
+<app-table-product-provider-policy-admin></app-table-product-provider-policy-admin>
+
+
 <div class="mt-30 text-right">
     <button mat-raised-button class="btn-medium" type="submit" color="primary">Add</button>
 </div>
 
 <h2 class="heading-main">Policy Schedule</h2>
+<app-table-policy-schedule></app-table-policy-schedule>
 
 <div class="mt-30 text-right">
     <button mat-raised-button class="btn-medium" type="submit" color="primary">
         Open Policy Schedule Editor
     </button>
 </div>
+
+<app-banner-button [bannerDetails]="bannerDetail[0]"></app-banner-button>
+
+<h2 class="heading-main">Product Information Pages</h2>
+
+<app-banner-button [bannerDetails]="bannerDetail[1]"></app-banner-button>
+
+<h2 class="heading-main">API Documentation Pages</h2>
+
+<app-banner-button [bannerDetails]="bannerDetail[1]"></app-banner-button>

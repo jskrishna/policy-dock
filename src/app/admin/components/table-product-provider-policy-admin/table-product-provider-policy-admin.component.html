@@ -1,0 +1,71 @@
+<div class="responsive-table">
+    <table mat-table [dataSource]="dataSource" matSort>
+
+        <!-- sections Column -->
+        <ng-container matColumnDef="sections">
+            <th mat-header-cell *matHeaderCellDef> Sections </th>
+            <td mat-cell *matCellDef="let element"> {{element.sections}} </td>
+        </ng-container>
+
+        <!-- sumInsuredMin Column -->
+        <ng-container matColumnDef="sumInsuredMin">
+            <th mat-header-cell *matHeaderCellDef> Sum Insured Min. </th>
+            <td mat-cell *matCellDef="let element"> {{element.sumInsuredMin}} </td>
+        </ng-container>
+
+        <!-- sumInsuredMax Column -->
+        <ng-container matColumnDef="sumInsuredMax">
+            <th mat-header-cell *matHeaderCellDef> Sum Insured Max. </th>
+            <td mat-cell *matCellDef="let element"> {{element.sumInsuredMax}} </td>
+        </ng-container>
+
+        <!-- rate Column -->
+        <ng-container matColumnDef="rate">
+            <th mat-header-cell *matHeaderCellDef> Rate % </th>
+            <td mat-cell *matCellDef="let element">
+
+                <mat-form-field>
+                    <mat-label>Manual</mat-label>
+                    <mat-select disableRipple>
+                        <mat-option value="1">Manual</mat-option>
+                        <mat-option value="2">Rate Table</mat-option>
+                        <mat-option value="3">Formula</mat-option>
+                        <mat-option value="4">Set. Value</mat-option>
+                        <mat-option value="5">Ext. API</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </td>
+        </ng-container>
+
+        <!-- overridePremium Column -->
+        <ng-container matColumnDef="overridePremium">
+            <th mat-header-cell *matHeaderCellDef> Override Premium % </th>
+            <td mat-cell *matCellDef="let element">
+
+                <mat-form-field>
+                    <mat-label>Default Value</mat-label>
+                    <mat-select disableRipple>
+                        <mat-option value="1">Default Value</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </td>
+        </ng-container>
+
+        <!-- possibleTypes Column -->
+        <ng-container matColumnDef="possibleTypes">
+            <th mat-header-cell *matHeaderCellDef> Possible Types/ Values </th>
+            <td mat-cell *matCellDef="let element">
+
+                <mat-form-field>
+                    <mat-label>Manual</mat-label>
+                    <mat-select disableRipple>
+                        <mat-option value="1">Manual</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>
