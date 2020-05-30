@@ -1,20 +1,21 @@
 <h2 class="heading-main">Product Provider Admin - Policy Administration</h2>
 
-<mat-card>
-    <h2 class="heading-main">API Endpoints <span>(carmvp.microserver.com/(endpoint)</span></h2>
-    <app-api-endpoints></app-api-endpoints>
+<mat-card class="big-radius big-padding">
+    <h3 class="sub-heading text-center"><b>API Endpoints <span>(carmvp.microserver.com/(endpoint)</span></b></h3>
+    <app-api-endpoints class="pl-0 color-text mx-80"></app-api-endpoints>
 </mat-card>
 
-<div class="row">
-    <div class="col-md-6">
-        <mat-card>
+<div class="d-flex row mt-30 flex-wrap">
+    <div class="grid-2">
+        <mat-card class="big-radius big-padding">
             <app-policy-admin-endpoint></app-policy-admin-endpoint>
         </mat-card>
     </div>
 
-    <div class="col-md-6">
-
-        <app-policy-admin-enpoint-code></app-policy-admin-enpoint-code>
+    <div class="grid-2">
+        <mat-card class="big-radius big-padding card-colored">
+            <app-policy-admin-enpoint-code></app-policy-admin-enpoint-code>
+        </mat-card>
     </div>
 
 </div>
