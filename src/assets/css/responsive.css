@@ -110,5 +110,15 @@
     font-size: 16px;
     line-height: 25px;
   }
-
+  .mat-raised-button.mat-primary {
+    padding: 0 20px;
+    font-size: 12px;
+}
+  .heading-main, .heading-main-2 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .product-name label {
+    font-size: 12px;
+}
 }
