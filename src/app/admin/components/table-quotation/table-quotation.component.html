@@ -1,56 +1,85 @@
 <div class="responsive-table">
-<table mat-table [dataSource]="dataSource">
+    <table mat-table [dataSource]="dataSource">
 
-    <!--  productItems Column -->
-    <ng-container matColumnDef="productItems">
-        <th mat-header-cell *matHeaderCellDef> Product Items </th>
-        <td mat-cell *matCellDef="let element"> {{element.productItems}} </td>
-    </ng-container>
+        <!--  productItems Column -->
+        <ng-container matColumnDef="productItems">
+            <th mat-header-cell *matHeaderCellDef> Product Items </th>
+            <td mat-cell *matCellDef="let element"> {{element.productItems}} </td>
+            <td mat-footer-cell *matFooterCellDef> </td>
+        </ng-container>
 
-    <!--  detail Column -->
-    <ng-container matColumnDef="detail">
-        <th mat-header-cell *matHeaderCellDef> Detail </th>
-        <td mat-cell *matCellDef="let element"> {{element.detail}} </td>
-    </ng-container>
+        <!--  detail Column -->
+        <ng-container matColumnDef="detail">
+            <th mat-header-cell *matHeaderCellDef> Detail </th>
+            <td mat-cell *matCellDef="let element"> {{element.detail}} </td>
+            <ng-container *ngIf="tableData?.name == 'clausesAndExtensions'">
+                <td mat-footer-cell *matFooterCellDef> Total </td>
+            </ng-container>
+        </ng-container>
 
-    <!--  included Column -->
-    <ng-container matColumnDef="included">
-        <th mat-header-cell *matHeaderCellDef> Included </th>
-        <td mat-cell *matCellDef="let element"> {{element.included}} </td>
-    </ng-container>
+        <!--  included Column -->
+        <ng-container matColumnDef="included">
+            <th mat-header-cell *matHeaderCellDef> Included </th>
+            <td mat-cell *matCellDef="let element"> {{element.included}} </td>
+            <td mat-footer-cell *matFooterCellDef> </td>
 
+        </ng-container>
 
-    <!--  insuredAmount Column -->
-    <ng-container matColumnDef="insuredAmount">
-        <th mat-header-cell *matHeaderCellDef> Insured Amount </th>
-        <td mat-cell *matCellDef="let element"> {{element.insuredAmount}} </td>
-    </ng-container>
+        <!--  insuredAmount Column -->
+        <ng-container matColumnDef="insuredAmount">
+            <th mat-header-cell *matHeaderCellDef> Insured Amount </th>
 
-    <!--  rate Column -->
-    <ng-container matColumnDef="rate">
-        <th mat-header-cell *matHeaderCellDef> Rate % </th>
-        <td mat-cell *matCellDef="let element"> {{element.rate}} </td>
-    </ng-container>
+            <ng-container *ngIf="!element?.insuredAmount">
+                <td mat-cell *matCellDef="let element"> {{element?.insuredAmount}} </td>
+            </ng-container>
+            <ng-container *ngIf="!element?.insuredAmount">
+                <td mat-cell *matCellDef="let element">
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Enter">
+                    </mat-form-field>
+                </td>
+            </ng-container>
 
-    <!--  calculatedPremium Column -->
-    <ng-container matColumnDef="calculatedPremium">
-        <th mat-header-cell *matHeaderCellDef> Calculated Premium </th>
-        <td mat-cell *matCellDef="let element"> {{element.calculatedPremium}} </td>
-    </ng-container>
+            <ng-container *ngIf="tableData?.name == 'clausesAndExtensions'">
+                <td mat-footer-cell *matFooterCellDef> $12000 </td>
+            </ng-container>
+        </ng-container>
 
-    <!--  overridePremium Column -->
-    <ng-container matColumnDef="overridePremium">
-        <th mat-header-cell *matHeaderCellDef> Override Premium </th>
-        <td mat-cell *matCellDef="let element"> {{element.overridePremium}} </td>
-    </ng-container>
+        <!--  rate Column -->
+        <ng-container matColumnDef="rate">
+            <th mat-header-cell *matHeaderCellDef> Rate % </th>
+            <td mat-cell *matCellDef="let element"> {{element.rate}} </td>
+            <td mat-footer-cell *matFooterCellDef> </td>
 
-    <!--  premiumAmount Column -->
-    <ng-container matColumnDef="premiumAmount">
-        <th mat-header-cell *matHeaderCellDef> Premium Amount </th>
-        <td mat-cell *matCellDef="let element"> {{element.premiumAmount}} </td>
-    </ng-container>
+        </ng-container>
 
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table>
+        <!--  calculatedPremium Column -->
+        <ng-container matColumnDef="calculatedPremium">
+            <th mat-header-cell *matHeaderCellDef> Calculated Premium </th>
+            <td mat-cell *matCellDef="let element"> {{element.calculatedPremium}} </td>
+            <td mat-footer-cell *matFooterCellDef> </td>
+        </ng-container>
+
+        <!--  overridePremium Column -->
+        <ng-container matColumnDef="overridePremium">
+            <th mat-header-cell *matHeaderCellDef> Override Premium </th>
+            <td mat-cell *matCellDef="let element"> {{element.overridePremium}} </td>
+            <td mat-footer-cell *matFooterCellDef> </td>
+        </ng-container>
+
+        <!--  premiumAmount Column -->
+        <ng-container matColumnDef="premiumAmount">
+            <th mat-header-cell *matHeaderCellDef> Premium Amount </th>
+            <td mat-cell *matCellDef="let element"> {{element.premiumAmount}} </td>
+            <ng-container *ngIf="tableData?.name == 'clausesAndExtensions'">
+                <td mat-footer-cell *matFooterCellDef> $12000 </td>
+            </ng-container>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        <ng-container *ngIf="tableData?.name == 'clausesAndExtensions'">
+            <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+        </ng-container>
+    </table>
 </div>
