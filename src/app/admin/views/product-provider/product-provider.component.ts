@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductProviderComponent implements OnInit {
 
-  constructor() { }
+  public bannerDetail: Array<any>;
+
+  constructor() {
+    this.bannerDetail = [
+      { id: 1, imagePath: 'assets/img/icn_credit_card.svg', name: 'Check Report and Send to Authorization' },
+      { id: 2, imagePath: 'assets/img/icn_bank_wire.svg', name: 'Go to page Editor' },
+      { id: 3, imagePath: 'assets/img/icn_direct_debit.svg', name: 'Go to API Documentation Editor' }
+    ]
+  }
 
   ngOnInit() {
   }

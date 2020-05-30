@@ -9,6 +9,9 @@ import { PaymentsComponent } from './payments/payments.component';
 import { TablePolicyAdministrationComponent } from './table-policy-administration/table-policy-administration.component';
 import { TableAvailableEndpointsComponent } from './table-available-endpoints/table-available-endpoints.component';
 import { TableQuotationComponent } from './table-quotation/table-quotation.component';
+import { TablePolicyScheduleComponent } from './table-policy-schedule/table-policy-schedule.component';
+import { TableProductProviderPolicyAdminComponent } from './table-product-provider-policy-admin/table-product-provider-policy-admin.component';
+import { BannerButtonComponent } from './banner-button/banner-button.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { TableQuotationComponent } from './table-quotation/table-quotation.compo
     PaymentsComponent,
     TablePolicyAdministrationComponent,
     TableAvailableEndpointsComponent,
-    TableQuotationComponent
+    TableQuotationComponent,
+    TablePolicyScheduleComponent,
+    TableProductProviderPolicyAdminComponent,
+    BannerButtonComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +38,10 @@ import { TableQuotationComponent } from './table-quotation/table-quotation.compo
     PaymentsComponent,
     TablePolicyAdministrationComponent,
     TableAvailableEndpointsComponent,
-    TableQuotationComponent
+    TableQuotationComponent,
+    TablePolicyScheduleComponent,
+    TableProductProviderPolicyAdminComponent,
+    BannerButtonComponent
   ]
 })
 export class ComponentsModule { }
