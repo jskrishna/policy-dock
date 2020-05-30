@@ -58,6 +58,16 @@
   /* .d-flex {
     flex-direction: column;
 } */
+.product-name{
+  flex-direction: column;
+}
+.pro-del-in {
+  width: 100%;
+}
+.pro-del-in + .pro-del-in {
+  padding-left: 0;
+  padding-top: 15px;
+}
 .login-form {
   height: initial;
   padding: 0 15px;

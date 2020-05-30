@@ -586,3 +586,19 @@ button.btn-large.btn-icon {
 }.login-wrapper {
   height: 100%;
 }
+.product-name label{
+  font-size: 14px;
+  margin-right: 20px;
+}
+.product-name p{
+    font-size: 14px;
+    color: #4080FE;
+    font-weight: 600;
+    margin: 0;
+}
+.pro-del-in + .pro-del-in {
+  padding-left: 80px;
+}
+.product-name {
+  padding-bottom: 30px;
+}

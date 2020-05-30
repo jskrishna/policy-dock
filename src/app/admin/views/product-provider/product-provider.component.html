@@ -1,14 +1,31 @@
 <h2 class="heading-main">Policy Administration</h2>
 
-<label>Name of product:</label>
-<h3 class="heading-main"> Jim's Car Insurance</h3>
+<div class="product-name d-flex align-items-center">
 
-<label>Times Updated:</label>
-<h3 class="heading-main"> 4</h3>
+    <div class="pro-del-in  d-flex align-items-center">
+        <label>Name of product:</label>
+        <p> Jim's Car Insurance</p>
+    </div>
 
-<label>Version:</label>
-<h3 class="heading-main"> 1.4</h3>
-<app-table-product-provider-policy-admin></app-table-product-provider-policy-admin>
+    <div class="pro-del-in  d-flex align-items-center">
+        <label>Times Updated:</label>
+        <p> 4</p>
+    </div>
+
+    <div class="pro-del-in  d-flex align-items-center">
+        <label>Version:</label>
+        <p> 1.4</p>
+    </div>
+
+</div>
+
+<mat-card class="no-gutter">
+    <mat-card-content>
+        <app-table-product-provider-policy-admin></app-table-product-provider-policy-admin>
+    </mat-card-content>
+</mat-card>
+
+
 
 
 <div class="mt-30 text-right">
@@ -16,7 +33,15 @@
 </div>
 
 <h2 class="heading-main">Policy Schedule</h2>
-<app-table-policy-schedule></app-table-policy-schedule>
+
+
+<mat-card class="no-gutter">
+    <mat-card-content>
+        <app-table-policy-schedule></app-table-policy-schedule>
+    </mat-card-content>
+</mat-card>
+
+
 
 <div class="mt-30 text-right">
     <button mat-raised-button class="btn-medium" type="submit" color="primary">
