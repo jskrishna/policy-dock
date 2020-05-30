@@ -602,3 +602,10 @@ button.btn-large.btn-icon {
 .product-name {
   padding-bottom: 30px;
 }
+.banner-btn {
+  padding: 50px 0;
+}
+.banner-wrapper {
+  text-align: center;
+  margin-top: 50px;
+}
