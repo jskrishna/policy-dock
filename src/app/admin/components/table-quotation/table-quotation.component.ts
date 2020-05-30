@@ -1,39 +1,5 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { MatTableDataSource } from "@angular/material/table";
-
-export interface Quotation {
-  productItems: string;
-  detail: string;
-  included: number;
-  insuredAmount: number;
-  rate: number;
-  calculatedPremium: number;
-  overridePremium: number;
-  premiumAmount: number;
-}
-
-const ELEMENT_DATA: Quotation[] = [
-  {
-    productItems: "Insured Driver",
-    detail: "Abe Lincoln",
-    included: 0,
-    insuredAmount: 0,
-    rate: 0,
-    calculatedPremium: 0,
-    overridePremium: 0,
-    premiumAmount: 0
-  },
-  {
-    productItems: "Gender",
-    detail: "Male",
-    included: 0,
-    insuredAmount: 0,
-    rate: 0,
-    calculatedPremium: 0,
-    overridePremium: 0,
-    premiumAmount: 0
-  }
-];
 
 @Component({
   selector: 'app-table-quotation',
@@ -42,6 +8,8 @@ const ELEMENT_DATA: Quotation[] = [
 })
 
 export class TableQuotationComponent implements OnInit {
+
+  @Input('tableData') tableData: any;
 
   displayedColumns: string[] = [
     "productItems",
@@ -53,9 +21,14 @@ export class TableQuotationComponent implements OnInit {
     "overridePremium",
     "premiumAmount"
   ];
-  dataSource = new MatTableDataSource(ELEMENT_DATA);
 
-  constructor() { }
+  dataSource;
+
+  constructor() {
+    setTimeout(() => {
+      this.dataSource = new MatTableDataSource(this.tableData.value);
+    }, 0);
+  }
 
   ngOnInit() {
   }

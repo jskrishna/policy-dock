@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
 export interface QuotationSpecifiedMotorVehicle {
   productItems: string;
   detail: string;
@@ -11,6 +10,7 @@ export interface QuotationSpecifiedMotorVehicle {
   overridePremium: number;
   premiumAmount: number;
 }
+
 export interface Quotation {
   productItems: string;
   detail: string;
@@ -34,11 +34,11 @@ export interface ClausesAndExtensions {
 }
 
 @Component({
-  selector: 'app-quotation',
-  templateUrl: './quotation.component.html',
-  styleUrls: ['./quotation.component.scss']
+  selector: 'app-quotation-one',
+  templateUrl: './quotation-one.component.html',
+  styleUrls: ['./quotation-one.component.scss']
 })
-export class QuotationComponent implements OnInit {
+export class QuotationOneComponent implements OnInit {
 
   public ELEMENT_DATA_QuotationSpecifiedMotorVehicle: QuotationSpecifiedMotorVehicle[];
   public ELEMENT_DATA_Quotation: Quotation[];
@@ -170,9 +170,9 @@ export class QuotationComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.quotation = { name: 'quotation', value: this.ELEMENT_DATA_Quotation, component: 'quotation' };
-    this.specifiedMotorVehicle = { name: 'specifiedMotorVehicle', value: this.ELEMENT_DATA_QuotationSpecifiedMotorVehicle, component: 'quotation' };
-    this.clausesAndExtensions = { name: 'clausesAndExtensions', value: this.ELEMENT_DATA_ClausesAndExtensions, component: 'quotation' };
+    this.quotation = { name: 'quotation', value: this.ELEMENT_DATA_Quotation, component: 'quotation-one' };
+    this.specifiedMotorVehicle = { name: 'specifiedMotorVehicle', value: this.ELEMENT_DATA_QuotationSpecifiedMotorVehicle, component: 'quotation-one' };
+    this.clausesAndExtensions = { name: 'clausesAndExtensions', value: this.ELEMENT_DATA_ClausesAndExtensions, component: 'quotation-one' };
   }
 
 }
