@@ -1,21 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatTableDataSource } from '@angular/material';
-
-export interface ApiEndpoints {
-  row1: string;
-  row2: string;
-}
-
-const ELEMENT_DATA: ApiEndpoints[] = [
-  {
-    row1: "API ID",
-    row2: "The API ID of person accesing the API"
-  },
-  {
-    row1: "API Key",
-    row2: "The API key for specific API ID"
-  },
-];
 
 @Component({
   selector: 'app-policy-admin-endpoint-edit',
@@ -24,16 +7,29 @@ const ELEMENT_DATA: ApiEndpoints[] = [
 })
 export class PolicyAdminEndpointEditComponent implements OnInit {
 
-  displayedColumns: string[] = [
-    "col1",
-    "col2",
-    "col3"
-  ];
-  dataSource = new MatTableDataSource(ELEMENT_DATA);
-  
+  public listUpdate1: boolean = false;
+  public listUpdate2: boolean = false;
+
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onEdit1() {
+    this.listUpdate1 = true;
+  }
+
+  onEdit2() {
+    this.listUpdate2 = true;
+  }
+
+  update1() {
+    this.listUpdate1 = false;
+  }
+
+  update2() {
+    this.listUpdate2 = false;
   }
 
 }

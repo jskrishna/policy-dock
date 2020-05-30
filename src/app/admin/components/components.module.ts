@@ -16,6 +16,11 @@ import { ApiEndpointsComponent } from './api-endpoints/api-endpoints.component';
 import { PolicyAdminEndpointComponent } from './policy-admin-endpoint/policy-admin-endpoint.component';
 import { PolicyAdminEnpointCodeComponent } from './policy-admin-enpoint-code/policy-admin-enpoint-code.component';
 import { PolicyAdminEndpointEditComponent } from './policy-admin-endpoint-edit/policy-admin-endpoint-edit.component';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { PortalModule } from '@angular/cdk/portal';
+import { CustomSelectComponent } from './custom-dropdown/custom-select.component';
+import { CustomSelectOptionComponent } from './custom-dropdown/custom-select-option.component';
+import { DropdownComponent } from './custom-dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -31,14 +36,20 @@ import { PolicyAdminEndpointEditComponent } from './policy-admin-endpoint-edit/p
     ApiEndpointsComponent,
     PolicyAdminEndpointComponent,
     PolicyAdminEnpointCodeComponent,
-    PolicyAdminEndpointEditComponent
+    PolicyAdminEndpointEditComponent,
+    CustomSelectComponent,
+    CustomSelectOptionComponent,
+    DropdownComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     ReactiveFormsModule,
     FormsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    OverlayModule,
+    PortalModule
   ],
   exports: [
     TablePolicyComponent,
@@ -53,7 +64,10 @@ import { PolicyAdminEndpointEditComponent } from './policy-admin-endpoint-edit/p
     ApiEndpointsComponent,
     PolicyAdminEndpointComponent,
     PolicyAdminEnpointCodeComponent,
-    PolicyAdminEndpointEditComponent
+    PolicyAdminEndpointEditComponent,
+    CustomSelectComponent,
+    CustomSelectOptionComponent,
+    DropdownComponent
   ]
 })
 export class ComponentsModule { }

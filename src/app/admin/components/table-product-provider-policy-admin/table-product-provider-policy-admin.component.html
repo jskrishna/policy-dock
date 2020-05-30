@@ -24,16 +24,13 @@
             <th mat-header-cell *matHeaderCellDef> Rate % </th>
             <td mat-cell *matCellDef="let element">
 
-                <mat-form-field>
-                    <mat-label>Manual</mat-label>
-                    <mat-select disableRipple>
-                        <mat-option value="1">Manual</mat-option>
-                        <mat-option value="2">Rate Table</mat-option>
-                        <mat-option value="3">Formula</mat-option>
-                        <mat-option value="4">Set. Value</mat-option>
-                        <mat-option value="5">Ext. API</mat-option>
-                    </mat-select>
-                </mat-form-field>
+                <custom-select placeholder="Manual">
+                    <custom-select-option key="1" value="Manual"></custom-select-option>
+                    <custom-select-option key="2" value="Rate Table"></custom-select-option>
+                    <custom-select-option key="3" value="Formula"></custom-select-option>
+                    <custom-select-option key="4" value="Set. Value"></custom-select-option>
+                    <custom-select-option key="5" value="Ext. API"></custom-select-option>
+                </custom-select>
             </td>
         </ng-container>
 
@@ -42,12 +39,10 @@
             <th mat-header-cell *matHeaderCellDef> Override Premium % </th>
             <td mat-cell *matCellDef="let element">
 
-                <mat-form-field>
-                    <mat-label>Default Value</mat-label>
-                    <mat-select disableRipple>
-                        <mat-option value="1">Default Value</mat-option>
-                    </mat-select>
-                </mat-form-field>
+                <custom-select placeholder="Default Value">
+                    <custom-select-option key="1" value="Default Value"></custom-select-option>
+                    <custom-select-option key="2" value="xxxx"></custom-select-option>
+                </custom-select>
             </td>
         </ng-container>
 
@@ -56,12 +51,13 @@
             <th mat-header-cell *matHeaderCellDef> Possible Types/ Values </th>
             <td mat-cell *matCellDef="let element">
 
-                <mat-form-field>
-                    <mat-label>Manual</mat-label>
-                    <mat-select disableRipple>
-                        <mat-option value="1">Manual</mat-option>
-                    </mat-select>
-                </mat-form-field>
+                <custom-select placeholder="Manual">
+                    <custom-select-option key="1" value="Manual"></custom-select-option>
+                    <custom-select-option key="2" value="Rate Table"></custom-select-option>
+                    <custom-select-option key="3" value="Formula"></custom-select-option>
+                    <custom-select-option key="4" value="Set. Value"></custom-select-option>
+                    <custom-select-option key="5" value="Ext. API"></custom-select-option>
+                </custom-select>
             </td>
         </ng-container>
 
