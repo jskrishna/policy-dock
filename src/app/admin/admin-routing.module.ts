@@ -8,6 +8,7 @@ import { QuotationComponent } from './views/quotation/quotation.component';
 import { SitemapComponent } from './views/sitemap/sitemap.component';
 import { QuotationOneComponent } from './views/quotation-one/quotation-one.component';
 import { ProductProviderComponent } from './views/product-provider/product-provider.component';
+import { AdministartionSettingsComponent } from './views/administartion-settings/administartion-settings.component';
 
 
 export const routes: Routes = [
@@ -45,6 +46,10 @@ export const routes: Routes = [
       {
         path: 'product-provider',
         component: ProductProviderComponent
+      },
+      {
+        path: 'administartion-settings',
+        component: AdministartionSettingsComponent
       },
       {
         path: 'sitemap',
