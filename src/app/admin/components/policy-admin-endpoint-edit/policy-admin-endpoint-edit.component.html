@@ -1,31 +1,31 @@
-<div class="d-flex row mt-30 flex-wrap">
-    <div class="grid-3">
-        <mat-list role="list">
-            <mat-list-item role="listitem">API ID</mat-list-item>
-            <mat-list-item role="listitem">API Key</mat-list-item>
-        </mat-list>
-    </div>
+<div class="d-flex row flex-wrap">
+  <div class="grid-30">
+    <mat-list role="list">
+      <mat-list-item role="listitem">API ID</mat-list-item>
+      <mat-list-item role="listitem">API Key</mat-list-item>
+    </mat-list>
+  </div>
 
-    <div class="grid-3">
-        <mat-list role="list">
-            <mat-list-item role="listitem" *ngIf="!listUpdate1">The API ID of person accesing the API</mat-list-item>
-            <mat-list-item role="listitem" *ngIf="listUpdate1">
-                <mat-form-field>
-                    <input matInput value="The API ID of person accesing the API">
-                </mat-form-field>
-            </mat-list-item>
+  <div class="grid-70">
+    <mat-list role="list">
+      <mat-list-item role="listitem" *ngIf="!listUpdate1">The API ID of person accesing the API</mat-list-item>
+      <mat-list-item role="listitem" *ngIf="listUpdate1">
+        <mat-form-field>
+          <input matInput value="The API ID of person accesing the API">
+        </mat-form-field>
+      </mat-list-item>
 
-            <mat-list-item role="listitem" *ngIf="!listUpdate2">The API key for specific API ID</mat-list-item>
-            <mat-list-item role="listitem" *ngIf="listUpdate2">
-                <mat-form-field>
-                    <input matInput value="The API key for specific API ID">
-                </mat-form-field>
-            </mat-list-item>
+      <mat-list-item role="listitem" *ngIf="!listUpdate2">The API key for specific API ID</mat-list-item>
+      <mat-list-item role="listitem" *ngIf="listUpdate2">
+        <mat-form-field>
+          <input matInput value="The API key for specific API ID">
+        </mat-form-field>
+      </mat-list-item>
 
-        </mat-list>
-    </div>
+    </mat-list>
+  </div>
 
-    <div class="grid-3">
+  <!-- <div class="grid-3">
         <mat-list role="list">
             <mat-list-item role="listitem">
                 <a *ngIf="!listUpdate1" class="btn-action" matTooltip="Edit" matTooltipPosition="above"
@@ -45,6 +45,6 @@
 
             </mat-list-item>
         </mat-list>
-    </div>
+    </div> -->
 
 </div>

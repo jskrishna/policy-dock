@@ -1,3 +1,10 @@
+@media(max-width:1100px) {
+  .grid-8a {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+}
+
 @media(max-width:991px) {
 
   .mat-checkbox-layout .mat-checkbox-label,
@@ -8,6 +15,31 @@
 
   .mat-raised-button.mat-primary {
     padding: 0 36px;
+  }
+
+  .card-payment mat-list-item.mat-list-item {
+    font-size: 12px;
+  }
+
+  .reset-pwd {
+    padding-left: 20px;
+  }
+
+  .card-payment span {
+    line-height: 16px;
+  }
+
+  .commonleft-pd label.mat-radio-label {
+    white-space: normal;
+  }
+
+  .user-right {
+    padding: 0 15px 0 10px;
+  }
+
+  .grid-11a mat-list-item.mat-list-item span {
+    font-weight: 500;
+    min-width: 200px;
   }
 
 }
@@ -22,59 +54,163 @@
   }
 
 }
-@media screen and (max-width: 1249px){
-.responsive-table {
+
+@media screen and (max-width: 1249px) {
+  .responsive-table {
     width: 100%;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
-  .responsive-table>table>tbody>tr>td, .responsive-table>table>tbody>tr>th, .responsive-table>table>tfoot>tr>td, .responsive-table>table>tfoot>tr>th, .responsive-table>table>thead>tr>td, .responsive-table>table>thead>tr>th {
+
+  .responsive-table>table>tbody>tr>td,
+  .responsive-table>table>tbody>tr>th,
+  .responsive-table>table>tfoot>tr>td,
+  .responsive-table>table>tfoot>tr>th,
+  .responsive-table>table>thead>tr>td,
+  .responsive-table>table>thead>tr>th {
     white-space: nowrap;
     padding: 15px;
+  }
 }
-}
+
 @media(max-width:767px) {
+
   /* .login-form .mat-raised-button+.mat-raised-button {
     margin-left: 0;
     margin-top: 20px;
 } */
+  .text-right.mtop24 {
+    text-align: left;
+  }
+
+  .endpoint-left b {
+    font-size: 12px;
+  }
+
+  .card-payment {
+    padding: 6px 0;
+  }
+
+  .endpoint-left mat-list-item {
+    font-size: 12px !important;
+  }
 
   button.btn-large.btn-icon {
     display: block;
     margin-left: 0;
     margin-top: 15px;
-}
+  }
+
+  .sub-heading {
+    margin-top: 0;
+  }
+
+  .grid-11a.pd0 .cb-info {
+    line-height: 18px;
+  }
+
+  .endpoint-left b {
+    min-width: 145px;
+  }
+
+  mat-list.pd0-mobile.mat-list.mat-list-base .mat-list-item-content {
+    padding: 0;
+  }
+
+  .grid-11a {
+    flex: 0 0 0 85%;
+    max-width: 0 0 85%;
+  }
+
+  .grid-10a {
+    flex: 0 0 84%;
+    max-width: 84%;
+  }
+
+  .commonleft-pd {
+    padding-left: 0;
+  }
+
+  .text-right.mtop60 {
+    margin-top: 24px;
+    position: relative;
+    top: 0;
+    text-align: left;
+  }
+
+  .endpoint-left h3 {
+    padding-left: 0;
+  }
+
+  .user-access-type {
+    padding-left: 10px !important;
+  }
+
+  .reset-pwd {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .mb30 {
+    margin-bottom: 30px;
+  }
+
+  .user-wrap-f.user-right>div {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .user-right mat-list-item.pd0.mat-list-item {
+    background: #f0f4ff;
+    margin-bottom: 10px;
+    height: auto;
+    padding: 10px 7px !important;
+    min-height: 59px;
+    line-height: 13px;
+  }
+
   mat-card.alert {
     padding: 15px;
     border-radius: 8px;
     line-height: 24px;
     font-size: 14px;
-}
-  .grid-1,.grid-2, .grid-3, .grid-4, .grid-4 {
+  }
+
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-4 {
     flex: 0 0 100%;
     max-width: 100%;
     width: 100%;
   }
+
   /* .d-flex {
     flex-direction: column;
 } */
-.product-name{
-  flex-direction: column;
-}
-.pro-del-in {
-  width: 100%;
-}
-.pro-del-in + .pro-del-in {
-  padding-left: 0;
-  padding-top: 15px;
-}
-.login-form {
-  height: initial;
-  padding: 0 15px;
-}
-  .payment-card > div > div + div {
+  .product-name {
+    flex-direction: column;
+  }
+
+  .pro-del-in {
+    width: 100%;
+  }
+
+  .pro-del-in+.pro-del-in {
+    padding-left: 0;
+    padding-top: 15px;
+  }
+
+  .login-form {
+    height: initial;
+    padding: 0 15px;
+  }
+
+  .payment-card>div>div+div {
     margin-top: 15px;
-}
+  }
+
   .login-wrapper {
     flex-direction: column;
   }
@@ -101,27 +237,34 @@
   .login-right {
     display: none;
   }
+
   .stage-content h2 {
     font-size: 20px;
     margin-bottom: 5px;
     line-height: 25px;
   }
+
   .stage-content h4 {
     font-size: 16px;
     line-height: 25px;
   }
+
   .mat-raised-button.mat-primary {
     padding: 0 20px;
     font-size: 12px;
-}
-  .heading-main, .heading-main-2 {
+  }
+
+  .heading-main,
+  .heading-main-2 {
     font-size: 16px;
     line-height: 25px;
   }
+
   .product-name label {
     font-size: 12px;
-}
-.mx-80 table {
-  table-layout: inherit;
-}
+  }
+
+  .mx-80 table {
+    table-layout: inherit;
+  }
 }
