@@ -10,41 +10,41 @@
     <mat-list role="list">
       <mat-list-item role="listitem" *ngIf="!listUpdate1">The API ID of person accesing the API</mat-list-item>
       <mat-list-item role="listitem" *ngIf="listUpdate1">
-        <mat-form-field>
-          <input  value="The API ID of person accesing the API">
-        </mat-form-field>
+        <!-- <mat-form-field> -->
+        <input value="The API ID of person accesing the API">
+        <!-- </mat-form-field> -->
       </mat-list-item>
 
       <mat-list-item role="listitem" *ngIf="!listUpdate2">The API key for specific API ID</mat-list-item>
       <mat-list-item role="listitem" *ngIf="listUpdate2">
-        <mat-form-field>
-          <input  value="The API key for specific API ID">
-        </mat-form-field>
+        <!-- <mat-form-field> -->
+        <input value="The API key for specific API ID">
+        <!-- </mat-form-field> -->
       </mat-list-item>
 
     </mat-list>
   </div>
 
- <div class="grid-3">
-        <mat-list role="list">
-            <mat-list-item role="listitem">
-                <a *ngIf="!listUpdate1" class="btn-action" matTooltip="Edit" matTooltipPosition="above"
-                    matTooltipClass="custom-tooltip" (click)="onEdit1()">
-                    <img src="assets/img/icn_edit _blue.svg" alt="" />
-                </a>
-                <button *ngIf="listUpdate1" mat-stroked-button color="primary" class="btn-small"
-                    (click)="update1()">Save</button>
-            </mat-list-item>
-            <mat-list-item role="listitem">
-                <a *ngIf="!listUpdate2" class="btn-action" matTooltip="Edit" matTooltipPosition="above"
-                    matTooltipClass="custom-tooltip" (click)="onEdit2()">
-                    <img src="assets/img/icn_edit _blue.svg" alt="" />
-                </a>
-                <button *ngIf="listUpdate2" mat-stroked-button color="primary" class="btn-small"
-                    (click)="update2()">Save</button>
+  <div class="grid-3">
+    <mat-list role="list" *ngIf="canEdit">
+      <mat-list-item role="listitem">
+        <a *ngIf="!listUpdate1" class="btn-action" matTooltip="Edit" matTooltipPosition="above"
+          matTooltipClass="custom-tooltip" (click)="onEdit1()">
+          <img src="assets/img/icn_edit _blue.svg" alt="" />
+        </a>
+        <button *ngIf="listUpdate1" mat-stroked-button color="primary" class="btn-small"
+          (click)="update1()">Save</button>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <a *ngIf="!listUpdate2" class="btn-action" matTooltip="Edit" matTooltipPosition="above"
+          matTooltipClass="custom-tooltip" (click)="onEdit2()">
+          <img src="assets/img/icn_edit _blue.svg" alt="" />
+        </a>
+        <button *ngIf="listUpdate2" mat-stroked-button color="primary" class="btn-small"
+          (click)="update2()">Save</button>
 
-            </mat-list-item>
-        </mat-list>
-    </div>
+      </mat-list-item>
+    </mat-list>
+  </div>
 
 </div>

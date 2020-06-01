@@ -7,6 +7,7 @@ import { SuccessPaymentComponent } from "./views/success-payment/success-payment
 import { ErrorPaymentComponent } from "./views/error-payment/error-payment.component";
 import { ProductApplicationFunnelComponent } from './views/product-application-funnel/product-application-funnel.component';
 import { DefaultWithSubHeaderComponent } from './default-with-sub-header/default-with-sub-header.component';
+import { ApiDetailsComponent } from './views/api-details/api-details.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
         path: "home",
         loadChildren: () =>
           import("./views/home/home.module").then((m) => m.HomeModule),
+      },
+      {
+        path: "api-details",
+        component: ApiDetailsComponent
       }
     ],
   },

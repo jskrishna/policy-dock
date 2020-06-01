@@ -11,6 +11,8 @@ import { ErrorPaymentComponent } from './views/error-payment/error-payment.compo
 import { MaterialModule } from '../material/material.module';
 import { ProductApplicationFunnelComponent } from './views/product-application-funnel/product-application-funnel.component';
 import { DefaultWithSubHeaderComponent } from './default-with-sub-header/default-with-sub-header.component';
+import { ApiDetailsComponent } from './views/api-details/api-details.component';
+import { ComponentsModule } from '../admin/components/components.module';
 
 
 @NgModule({
@@ -21,12 +23,14 @@ import { DefaultWithSubHeaderComponent } from './default-with-sub-header/default
     SuccessPaymentComponent,
     ErrorPaymentComponent,
     ProductApplicationFunnelComponent,
-    DefaultWithSubHeaderComponent
+    DefaultWithSubHeaderComponent,
+    ApiDetailsComponent
   ],
   imports: [
     CommonModule,
     FrontRoutingModule,
     SharedComponentsModule,
+    ComponentsModule,
     MaterialModule
   ]
 })
