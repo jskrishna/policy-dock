@@ -1,256 +1,400 @@
 <h2 class="heading-main">Product Provider Admin - Policy Administartion</h2>
 
 <div>
-    <mat-card layout-align="center">
-
-        <div class="d-flex row mt-10 flex-wrap">
-            <div class="grid-2">
-                <h2 class="heading-main">
-                    API Endpoints available on this microserver
-                </h2>
-            </div>
-
-            <div class="grid-2">
-                <h2 class="heading-main">
-                    Reset Password
-                </h2>
-            </div>
-
+  <mat-card layout-align="center">
+    <div class="d-flex row mt-10 flex-wrap">
+      <div class="grid-2">
+        <div class="endpoint-left">
+          <h3 class="sub-heading">
+            API Endpoints available on this microserver
+          </h3>
+          <mat-list class="">
+            <mat-list-item>
+              <b>Username / Email</b> jim@insure.com
+            </mat-list-item>
+            <mat-list-item> <b>Quote:</b> Admin01 </mat-list-item>
+            <mat-list-item>
+              <b>Get Quotation List:</b> Admin / Process only / Query
+            </mat-list-item>
+          </mat-list>
         </div>
+      </div>
 
-    </mat-card>
+      <div class="grid-2">
+        <div class="reset-pwd pdleft40">
+          <h3 class="sub-heading">Reset Password</h3>
+          <div class="form-group">
+            <label>Old Password</label>
+            <input class="customInput" placeholder="Text" type="password" />
+          </div>
+          <div class="form-group">
+            <label>New Password</label>
+            <input class="customInput" placeholder="Text" type="password" />
+          </div>
+          <div class="form-group">
+            <label>Confirm New Password</label>
+            <input class="customInput" placeholder="Text" type="password" />
+          </div>
+          <div class="text-right mtop24">
+            <button mat-raised-button type="submit" color="primary">
+              Download PDF
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
 </div>
 
 <div class="mt-30">
-    <mat-card layout-align="center">
+  <mat-card layout-align="center">
+    <div class="d-flex row mt-10 flex-wrap">
+      <div class="grid-2 user-access-type">
+        <h3 class="sub-heading">User Access Rights</h3>
+        <h5 class="sub2-heading">User Types</h5>
 
         <div class="d-flex row mt-10 flex-wrap">
-            <div class="grid-2">
-                <h2 class="heading-main">
-                    User Access Rights
-                </h2>
-                User Types
+          <div class="grid-8a">
+            <mat-list role="list" class="bg-gray">
+              <mat-list-item role="listitem">Admin </mat-list-item>
 
-                <div class="d-flex row mt-10 flex-wrap">
-                    <div class="grid-3">
-                        <mat-list role="list">
-                            <mat-list-item role="listitem">Admin
-                            </mat-list-item>
+              <mat-list-item role="listitem">Process Only </mat-list-item>
+              <mat-list-item role="listitem">Query Only </mat-list-item>
+              <mat-list-item role="listitem">Authorization </mat-list-item>
+            </mat-list>
+          </div>
 
-                            <mat-list-item role="listitem">Process Only
-                            </mat-list-item>
-
-                        </mat-list>
-                    </div>
-
-                    <div class="grid-3">
-                        <mat-list role="list">
-                            <mat-list-item role="listitem">
-                                <a class="btn-action" matTooltip="Edit" matTooltipPosition="above"
-                                    matTooltipClass="custom-tooltip">
-                                    <img src="assets/img/icn_edit _blue.svg" alt="" />
-                                </a>
-                            </mat-list-item>
-                            <mat-list-item role="listitem">
-                                <a class="btn-action" matTooltip="Edit" matTooltipPosition="above"
-                                    matTooltipClass="custom-tooltip">
-                                    <img src="assets/img/icn_edit _blue.svg" alt="" />
-                                </a>
-
-                            </mat-list-item>
-                        </mat-list>
-                    </div>
-
-                    <div class="grid-3">
-                        <mat-list role="list">
-                            <mat-list-item role="listitem">
-                                <a class="btn-action" matTooltip="Edit" matTooltipPosition="above"
-                                    matTooltipClass="custom-tooltip">
-                                    <img src="assets/img/icn_delete.svg" alt="" />
-                                </a>
-                            </mat-list-item>
-                            <mat-list-item role="listitem">
-                                <a class="btn-action" matTooltip="Edit" matTooltipPosition="above"
-                                    matTooltipClass="custom-tooltip">
-                                    <img src="assets/img/icn_delete.svg" alt="" />
-                                </a>
-
-                            </mat-list-item>
-                        </mat-list>
-                    </div>
-
-                </div>
+          <div class="grid-3a">
+            <div class="d-flex">
+              <mat-list role="list" class="sameheight">
+                <mat-list-item role="listitem" class="pd0">
+                  <a
+                    class="btn-action"
+                    matTooltip="Edit"
+                    matTooltipPosition="above"
+                    matTooltipClass="custom-tooltip"
+                  >
+                    <img src="assets/img/icn_edit _blue.svg" alt="" />
+                  </a>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="pd0">
+                  <a
+                    class="btn-action"
+                    matTooltip="Edit"
+                    matTooltipPosition="above"
+                    matTooltipClass="custom-tooltip"
+                  >
+                    <img src="assets/img/icn_edit _blue.svg" alt="" />
+                  </a>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="pd0">
+                  <a
+                    class="btn-action"
+                    matTooltip="Edit"
+                    matTooltipPosition="above"
+                    matTooltipClass="custom-tooltip"
+                  >
+                    <img src="assets/img/icn_edit _blue.svg" alt="" />
+                  </a>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="pd0">
+                  <a
+                    class="btn-action"
+                    matTooltip="Edit"
+                    matTooltipPosition="above"
+                    matTooltipClass="custom-tooltip"
+                  >
+                    <img src="assets/img/icn_edit _blue.svg" alt="" />
+                  </a>
+                </mat-list-item>
+              </mat-list>
+              <mat-list role="list" class="sameheight">
+                <mat-list-item role="listitem" class="pd0">
+                  <a
+                    class="btn-action"
+                    matTooltip="Delete"
+                    matTooltipPosition="above"
+                    matTooltipClass="custom-tooltip"
+                  >
+                    <img src="assets/img/icn_delete.svg" alt="" />
+                  </a>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="pd0">
+                  <a
+                    class="btn-action"
+                    matTooltip="Delete"
+                    matTooltipPosition="above"
+                    matTooltipClass="custom-tooltip"
+                  >
+                    <img src="assets/img/icn_delete.svg" alt="" />
+                  </a>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="pd0">
+                  <a
+                    class="btn-action"
+                    matTooltip="Delete"
+                    matTooltipPosition="above"
+                    matTooltipClass="custom-tooltip"
+                  >
+                    <img src="assets/img/icn_delete.svg" alt="" />
+                  </a>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="pd0">
+                  <a
+                    class="btn-action"
+                    matTooltip="Delete"
+                    matTooltipPosition="above"
+                    matTooltipClass="custom-tooltip"
+                  >
+                    <img src="assets/img/icn_delete.svg" alt="" />
+                  </a>
+                </mat-list-item>
+              </mat-list>
             </div>
-
-            <div class="grid-2">
-                <h2 class="heading-main">
-                    Users
-                </h2>
-
-
-
-                <div class="d-flex row mt-10 flex-wrap">
-                    User
-                    <div class="grid-6">
-                        <mat-list role="list">
-                            <mat-list-item role="listitem">process01
-                            </mat-list-item>
-
-                            <mat-list-item role="listitem">admin01
-                            </mat-list-item>
-
-                        </mat-list>
-                    </div>
-
-                    Email
-                    <div class="grid-6">
-                        <mat-list role="list">
-                            <mat-list-item role="listitem">p@insure.com
-                            </mat-list-item>
-
-                            <mat-list-item role="listitem">admin@insure.com
-                            </mat-list-item>
-
-                        </mat-list>
-                    </div>
-
-                    Rights
-                    <div class="grid-6">
-                        <mat-list role="list">
-                            <mat-list-item role="listitem">process only
-                            </mat-list-item>
-
-                            <mat-list-item role="listitem">admin
-                            </mat-list-item>
-
-                        </mat-list>
-                    </div>
-
-                    Action
-                    <div class="grid-6">
-                        <mat-list role="list">
-                            <mat-list-item role="listitem">
-                                <a class="btn-action" matTooltip="Edit" matTooltipPosition="above"
-                                    matTooltipClass="custom-tooltip">
-                                    <img src="assets/img/icn_edit _blue.svg" alt="" />
-                                </a>
-                            </mat-list-item>
-                            <mat-list-item role="listitem">
-                                <a class="btn-action" matTooltip="Edit" matTooltipPosition="above"
-                                    matTooltipClass="custom-tooltip">
-                                    <img src="assets/img/icn_edit _blue.svg" alt="" />
-                                </a>
-                            </mat-list-item>
-                        </mat-list>
-                    </div>
-
-                    <div class="grid-6">
-                        <mat-list role="list">
-                            <mat-list-item role="listitem">
-                                <a class="btn-action" matTooltip="Delete" matTooltipPosition="above"
-                                    matTooltipClass="custom-tooltip">
-                                    <img src="assets/img/icn_delete.svg" alt="" />
-                                </a>
-                            </mat-list-item>
-                            <mat-list-item role="listitem">
-                                <a class="btn-action" matTooltip="Delete" matTooltipPosition="above"
-                                    matTooltipClass="custom-tooltip">
-                                    <img src="assets/img/icn_delete.svg" alt="" />
-                                </a>
-
-                            </mat-list-item>
-                        </mat-list>
-                    </div>
-
-                </div>
-            </div>
-
+          </div>
         </div>
+      </div>
 
-    </mat-card>
+      <div class="grid-2">
+        <div class="reset-pwd">
+          <h3 class="sub-heading">Users</h3>
+          <div class="d-flex row mt-10 flex-wrap user-right">
+            <div class="grid-4 pd0">
+              <h5 class="user-hd">User</h5>
+              <mat-list role="list">
+                <mat-list-item role="listitem" class="pd0"
+                  >process01
+                </mat-list-item>
+
+                <mat-list-item role="listitem" class="pd0"
+                  >admin01
+                </mat-list-item>
+              </mat-list>
+            </div>
+
+            <div class="grid-3 pd0">
+              <h5 class="user-hd">Email</h5>
+              <mat-list role="list">
+                <mat-list-item role="listitem" class="pd0"
+                  >p@insure.com
+                </mat-list-item>
+
+                <mat-list-item role="listitem" class="pd0"
+                  >admin@insure.com
+                </mat-list-item>
+              </mat-list>
+            </div>
+
+            <div class="grid-4 pd0">
+              <h5 class="user-hd">Rights</h5>
+              <mat-list role="list">
+                <mat-list-item role="listitem" class="pd0"
+                  >process only
+                </mat-list-item>
+
+                <mat-list-item role="listitem" class="pd0"
+                  >admin
+                </mat-list-item>
+              </mat-list>
+            </div>
+
+            <div class="pd0">
+              <h5 class="user-hd">Action</h5>
+              <div class="d-flex">
+                <mat-list role="list">
+                  <mat-list-item role="listitem" class="pd0">
+                    <a
+                      class="btn-action"
+                      matTooltip="Edit"
+                      matTooltipPosition="above"
+                      matTooltipClass="custom-tooltip"
+                    >
+                      <img src="assets/img/icn_edit _blue.svg" alt="" />
+                    </a>
+                  </mat-list-item>
+                  <mat-list-item role="listitem" class="pd0">
+                    <a
+                      class="btn-action"
+                      matTooltip="Edit"
+                      matTooltipPosition="above"
+                      matTooltipClass="custom-tooltip"
+                    >
+                      <img src="assets/img/icn_edit _blue.svg" alt="" />
+                    </a>
+                  </mat-list-item>
+                </mat-list>
+                <mat-list role="list" class="radius-b">
+                  <mat-list-item role="listitem" class="pd0">
+                    <a
+                      class="btn-action"
+                      matTooltip="Delete"
+                      matTooltipPosition="above"
+                      matTooltipClass="custom-tooltip"
+                    >
+                      <img src="assets/img/icn_delete.svg" alt="" />
+                    </a>
+                  </mat-list-item>
+                  <mat-list-item role="listitem" class="pd0">
+                    <a
+                      class="btn-action"
+                      matTooltip="Delete"
+                      matTooltipPosition="above"
+                      matTooltipClass="custom-tooltip"
+                    >
+                      <img src="assets/img/icn_delete.svg" alt="" />
+                    </a>
+                  </mat-list-item>
+                </mat-list>
+              </div>
+            </div>
+          </div>
+          <div class="text-right mtop24">
+            <button mat-raised-button color="primary">Add New User</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
 </div>
 
 <div class="mt-30">
-    <mat-card layout-align="center">
+  <mat-card layout-align="center">
+    <div class="d-flex row mt-10 flex-wrap">
+      <div class="grid-2">
+        <div class="commonleft-pd">
+          <h3 class="sub-heading">Product Authorization</h3>
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Completely Automate</mat-radio-button>
+            <mat-radio-button value="2">Authorization Only</mat-radio-button>
+            <mat-radio-button value="3"
+              >Manual Processing AND Authorization only</mat-radio-button
+            >
+            <mat-radio-button value="4"
+              >Manual Processing and NO Authorization required</mat-radio-button
+            >
+          </mat-radio-group>
 
-        <div class="d-flex row mt-10 flex-wrap">
-            <div class="grid-2">
-                <h2 class="heading-main">
-                    Product Authorization
-                </h2>
-            </div>
-
-            <div class="grid-2">
-                <h2 class="heading-main">
-                    Payments
-                </h2>
-            </div>
-
+          <div class="text-right mtop24">
+            <button mat-raised-button color="primary">Add New Type</button>
+          </div>
         </div>
+      </div>
 
-    </mat-card>
+      <div class="grid-2">
+        <div class="reset-pwd">
+          <h3 class="sub-heading">Payments</h3>
+          <div class="card-payment">
+            <mat-list class="">
+              <mat-list-item>
+                <span>Edit Bank Settings Stripe Credit Card Processing:</span>
+                <span
+                  ><button
+                    _ngcontent-tum-c21=""
+                    class="btn-small mat-stroked-button mat-button-base mat-warn"
+                    color="warn"
+                    mat-stroked-button=""
+                    ng-reflect-color="warn"
+                  >
+                    Delete
+                  </button></span
+                ></mat-list-item
+              >
+              <mat-list-item>
+                <span>Paypal:</span>
+                <span>
+                  <button
+                    _ngcontent-yyl-c11=""
+                    class="btn-small mat-stroked-button mat-button-base mat-success"
+                    color="success"
+                    mat-stroked-button=""
+                    ng-reflect-color="success"
+                  >
+                    Enabled
+                  </button></span
+                ></mat-list-item
+              >
+              <mat-list-item>
+                <span>Bank Settings:</span>
+                <span><b>Bank of America XXXXXX79</b></span>
+              </mat-list-item>
+            </mat-list>
+          </div>
+          <div class="text-right mtop24">
+            <button mat-raised-button color="primary">
+              Edit Bank Settings
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
 </div>
 
 <div class="mt-30">
-    <mat-card layout-align="center">
+  <mat-card layout-align="center">
+    <div class="d-flex row mt-10 flex-wrap">
+      <div class="grid-2 user-access-type">
+        <h3 class="sub-heading">API/ Data Rights</h3>
+        <h5 class="sub2-heading">API/ Access Types</h5>
 
         <div class="d-flex row mt-10 flex-wrap">
-            <div class="grid-2">
-                <h2 class="heading-main">
-                    API/ Data Rights
-                </h2>
+          <div class="grid-8a">
+            <mat-list role="list" class="bg-gray">
+              <mat-list-item role="listitem">Super user(all) </mat-list-item>
 
-                API/ Access Types
+              <mat-list-item role="listitem"
+                >Query Data (internal)
+              </mat-list-item>
 
-                <div class="d-flex row mt-10 flex-wrap">
-                    <div class="grid-2">
-                        <mat-list role="list">
-                            <mat-list-item role="listitem">Super user(all)
-                            </mat-list-item>
+              <mat-list-item role="listitem">Quote and Pay </mat-list-item>
+            </mat-list>
+          </div>
 
-                            <mat-list-item role="listitem">Query Data (internal)
-                            </mat-list-item>
-
-                            <mat-list-item role="listitem">Quote and Pay
-                            </mat-list-item>
-
-                        </mat-list>
-                    </div>
-
-                    <div class="grid-2">
-                        <mat-list role="list">
-                            <mat-list-item role="listitem">
-                                <a class="btn-action" matTooltip="Delete" matTooltipPosition="above"
-                                    matTooltipClass="custom-tooltip">
-                                    <img src="assets/img/icn_delete.svg" alt="" />
-                                </a>
-                            </mat-list-item>
-                            <mat-list-item role="listitem">
-                                <a class="btn-action" matTooltip="Delete" matTooltipPosition="above"
-                                    matTooltipClass="custom-tooltip">
-                                    <img src="assets/img/icn_delete.svg" alt="" />
-                                </a>
-                            </mat-list-item>
-                            <mat-list-item role="listitem">
-                                <a class="btn-action" matTooltip="Delete" matTooltipPosition="above"
-                                    matTooltipClass="custom-tooltip">
-                                    <img src="assets/img/icn_delete.svg" alt="" />
-                                </a>
-
-                            </mat-list-item>
-                        </mat-list>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="grid-2">
-                <h2 class="heading-main">
-                    Server/ Billing Information
-                </h2>
-            </div>
-
+          <div class="grid-3a">
+            <mat-list role="list" class="sameheight">
+              <mat-list-item role="listitem">
+                <a
+                  class="btn-action"
+                  matTooltip="Delete"
+                  matTooltipPosition="above"
+                  matTooltipClass="custom-tooltip"
+                >
+                  <img src="assets/img/icn_delete.svg" alt="" />
+                </a>
+              </mat-list-item>
+              <mat-list-item role="listitem">
+                <a
+                  class="btn-action"
+                  matTooltip="Delete"
+                  matTooltipPosition="above"
+                  matTooltipClass="custom-tooltip"
+                >
+                  <img src="assets/img/icn_delete.svg" alt="" />
+                </a>
+              </mat-list-item>
+              <mat-list-item role="listitem">
+                <a
+                  class="btn-action"
+                  matTooltip="Delete"
+                  matTooltipPosition="above"
+                  matTooltipClass="custom-tooltip"
+                >
+                  <img src="assets/img/icn_delete.svg" alt="" />
+                </a>
+              </mat-list-item>
+            </mat-list>
+          </div>
         </div>
+      </div>
 
-    </mat-card>
+      <div class="grid-2">
+        <div class="reset-pwd">
+          <h3 class="sub-heading">Server/ Billing Information</h3>
+          <div class="text-right mtop24">
+            <button mat-raised-button color="primary">Pay Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
 </div>
