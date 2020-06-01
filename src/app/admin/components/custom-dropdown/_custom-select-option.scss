@@ -10,27 +10,28 @@
   text-overflow: ellipsis;
   user-select: none;
   cursor: pointer;
+  border-radius: 5px;
 
   &.selected {
-    color: #0079cc;
-    background-color: #eee;
-    font-weight: bold;
-
+    background-color: #EBF1FF;
+    font-weight: 600;
+    color: #4080fe;
+    
     &:hover, &.active {
-      background-color: #eee;
+      background-color: #EBF1FF;
 
       @media screen and (-ms-high-contrast: active) {
-        background-color: #eee;
+        background-color: #EBF1FF;
       }
     }
   }
 
   &:hover, &.active {
     outline: none;
-    background-color: #eee;
+    background-color: #EBF1FF;
 
     @media screen and (-ms-high-contrast: active) {
-      background-color: #eee;
+      background-color: #EBF1FF;
     }
   }
 

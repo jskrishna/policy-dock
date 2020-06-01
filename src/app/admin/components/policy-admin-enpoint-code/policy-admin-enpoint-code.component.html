@@ -1,1 +1,36 @@
 <h2 class="heading-main">Endpoint Code Example: /get_Quote[GET]</h2>
+
+<custom-select placeholder="Default Value" class="transparent-select">
+    <custom-select-option key="1" value="Python"></custom-select-option>
+    <custom-select-option key="2" value="Java"></custom-select-option>
+    <custom-select-option key="2" value="C#"></custom-select-option>
+    <custom-select-option key="2" value="ROR"></custom-select-option>
+</custom-select>
+
+<pre>
+<code>
+<span class="red">import</span> policydock
+policydock.api_id = 
+<span class="light-green">“api_id_123123zxcasd12”</span>
+policydock.api_key = 
+“api_key_asdad1321231”
+policydock.get_quote(
+<span class="red">policy_holder_i</span>d=“XASD123132”,
+proposal_id=<span class="green">“A00001”</span>
+)
+</code>
+</pre>
+
+<h2 class="heading-main">Endpoint Response: /Get_Quote</h2>
+<pre>
+<code>{{ '{' }}
+<span class="red">"id":</span>
+<span class="light-green">"ba_1GTZbG2eZvKYlo2CF42uVlw4",</span>
+“quote_id”: “xasd1231238asd”,
+“Premium_amount”: <span class="green">1000</span>,
+“premium_currency”: <span class="green">“USD”</span>,
+<span class="red">"status":</span> “quote ready”,
+<span class="light-green">“expiry_date”:</span> “20200410”
+{{'}'}}
+</code>
+</pre>

@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 // @import '@angular/material/prebuilt-themes/indigo-pink.css';
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
 
 @import '~@angular/material/theming';
 // Define a custom typography config that overrides the font-family as well as the
@@ -118,3 +118,44 @@ table td.mat-cell, table td.mat-footer-cell, table th.mat-header-cell {
 // .mat-form-field-appearance-outline .mat-form-field-outline-end {
 //   border-radius: 0 5px 5px 0 !important;
 // }
+
+.tr-width table tbody tr td:nth-child(4) {
+  min-width: 170px;
+}
+.transparent-select .input-wrapper .input input {
+  background: transparent !important;
+  color: #fff !important;
+}
+
+.transparent-select .input-wrapper .input input::-webkit-input-placeholder { /* Edge */
+  color: #fff !important;
+}
+
+.transparent-select .input-wrapper .input input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff !important;
+}
+
+.transparent-select .input-wrapper .input input::placeholder {
+  color: #fff !important;
+}
+code{
+  font-family: 'Fira Code', monospace;
+  color: #fff;
+  font-size: 12px;
+  line-height: 19px;
+}
+.red {
+  color: #E77856;
+}
+.light-green{
+  color: #88DCCE;
+}
+.green{
+  color: #B1D390;
+}
+
+@media(max-width:767px){
+  .big-padding.mat-card {
+    padding: 20px;
+  }
+}
