@@ -9,12 +9,18 @@ import { ComponentsModule } from 'src/app/admin/components/components.module';
 import { PortalModule } from '@angular/cdk/portal';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { HomeEndpointsComponent } from './home-endpoints/home-endpoints.component';
+import { BasicInfoComponent } from './basic-info/basic-info.component';
+import { CarInfoComponent } from './car-info/car-info.component';
+import { SubHeaderComponent } from './sub-header/sub-header.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    HomeEndpointsComponent
+    HomeEndpointsComponent,
+    BasicInfoComponent,
+    CarInfoComponent,
+    SubHeaderComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +35,10 @@ import { HomeEndpointsComponent } from './home-endpoints/home-endpoints.componen
   exports: [
     HeaderComponent,
     FooterComponent,
-    HomeEndpointsComponent
+    HomeEndpointsComponent,
+    BasicInfoComponent,
+    CarInfoComponent,
+    SubHeaderComponent
   ]
 })
 export class SharedComponentsModule { }
