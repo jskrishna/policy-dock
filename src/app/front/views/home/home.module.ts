@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeRoutingModule } from './home-routing.module';
-import { ComponentsModule } from '../../components/components.module';
+import { SharedComponentsModule } from '../../shared-components/shared-components.module';
 import { MaterialModule } from 'src/app/material/material.module';
 
 @NgModule({
@@ -15,7 +15,7 @@ import { MaterialModule } from 'src/app/material/material.module';
     HomeRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    ComponentsModule,
+    SharedComponentsModule,
     MaterialModule
   ],
   exports: [
