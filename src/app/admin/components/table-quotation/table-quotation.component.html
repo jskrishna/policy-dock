@@ -29,16 +29,16 @@
         <ng-container matColumnDef="insuredAmount">
             <th mat-header-cell *matHeaderCellDef>  Rate %</th>
 
-            <ng-container *ngIf="!element?.insuredAmount">
+            <!-- <ng-container *ngIf="!element?.insuredAmount"> -->
                 <td mat-cell *matCellDef="let element"> {{element?.insuredAmount}} </td>
-            </ng-container>
-            <ng-container *ngIf="!element?.insuredAmount">
+            <!-- </ng-container> -->
+            <!-- <ng-container *ngIf="!element?.insuredAmount">
                 <td mat-cell *matCellDef="let element">
                     <mat-form-field appearance="outline">
                         <input matInput placeholder="Enter">
                     </mat-form-field>
                 </td>
-            </ng-container>
+            </ng-container> -->
 
             <ng-container *ngIf="tableData?.name == 'clausesAndExtensions'">
                 <td mat-footer-cell *matFooterCellDef> $12000 </td>
