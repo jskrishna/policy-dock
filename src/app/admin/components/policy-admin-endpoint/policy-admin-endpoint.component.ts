@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-policy-admin-endpoint',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./policy-admin-endpoint.component.scss']
 })
 export class PolicyAdminEndpointComponent implements OnInit {
+
+  @Input('editable') editable: boolean;
 
   constructor() { }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-policy-admin-endpoint-edit',
@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PolicyAdminEndpointEditComponent implements OnInit {
 
+  @Input('canEdit') canEdit: boolean;
   public listUpdate1: boolean = false;
   public listUpdate2: boolean = false;
-
 
   constructor() { }
 
