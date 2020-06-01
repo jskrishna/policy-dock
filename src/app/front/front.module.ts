@@ -9,6 +9,8 @@ import { PageNotFoundComponent } from './views/page-not-found/page-not-found.com
 import { SuccessPaymentComponent } from './views/success-payment/success-payment.component';
 import { ErrorPaymentComponent } from './views/error-payment/error-payment.component';
 import { MaterialModule } from '../material/material.module';
+import { ProductApplicationFunnelComponent } from './views/product-application-funnel/product-application-funnel.component';
+import { DefaultWithSubHeaderComponent } from './default-with-sub-header/default-with-sub-header.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { MaterialModule } from '../material/material.module';
     NewsLetterComponent,
     PageNotFoundComponent,
     SuccessPaymentComponent,
-    ErrorPaymentComponent
+    ErrorPaymentComponent,
+    ProductApplicationFunnelComponent,
+    DefaultWithSubHeaderComponent
   ],
   imports: [
     CommonModule,
