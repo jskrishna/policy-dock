@@ -267,4 +267,14 @@
   .mx-80 table {
     table-layout: inherit;
   }
+  .reset-pwd .card-payment {
+    padding: 12px 0 6px;
+}
+mat-radio-button {
+  font-size: 12px;
+}
+
+.reset-pwd .card-payment+div {
+  top: 0;
+}
 }
