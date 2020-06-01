@@ -2,10 +2,10 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { AuthRoutingModule } from "./auth-routing.module";
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
-import { ComponentsModule } from "../../components/components.module";
 import { LoginComponent } from "./login/login.component";
 import { ForgotPasswordComponent } from "./forgot-password/forgot-password.component";
 import { MaterialModule } from "../../../material/material.module";
+import { SharedComponentsModule } from '../../shared-components/shared-components.module';
 
 @NgModule({
   declarations: [LoginComponent, ForgotPasswordComponent],
@@ -14,9 +14,9 @@ import { MaterialModule } from "../../../material/material.module";
     AuthRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    ComponentsModule,
+    SharedComponentsModule,
     MaterialModule,
   ],
   exports: [],
 })
-export class AuthModule {}
+export class AuthModule { }

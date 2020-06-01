@@ -1,30 +1,35 @@
 <div>
-  <mat-toolbar color="primary">
-    <span>
-      <!-- <mat-icon>PD</mat-icon> -->
-    </span>
 
-    <span>Hello, Material in Angular!</span>
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-2">
+      <div class="left">
+        <mat-card layout-align="center">
 
-    <button mat-icon-button [mat-menu-trigger-for]="menu">
-      <mat-icon>more_vert</mat-icon>
-    </button>
-  </mat-toolbar>
-  <mat-menu x-position="before" #menu="matMenu">
-    <button mat-menu-item>Option 1</button>
-    <button mat-menu-item>Option 2</button>
-  </mat-menu>
+          <h2 class="heading-main">Pre-formatted Excel</h2>
 
-  <mat-card>
-    <button mat-button>All</button>
-    <button mat-raised-button>Of</button>
-    <button mat-raised-button color="primary">The</button>
-    <button mat-raised-button color="accent">Buttons</button>
-  </mat-card>
+        </mat-card>
 
-  <span class="done">
-    <button mat-fab>
-      <mat-icon>Check circle</mat-icon>
-    </button>
-  </span>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="right">
+
+        <mat-card layout-align="center">
+
+          <h2 class="heading-main">Web Online Application Forms</h2>
+          <p>
+            <img src="assets/img/icn_delete.svg" alt="" />
+          </p>
+
+          <button mat-raised-button color="primary">Fill Now</button>
+        </mat-card>
+
+      </div>
+    </div>
+
+  </div>
+
 </div>
+
+<app-home-endpoints></app-home-endpoints>
