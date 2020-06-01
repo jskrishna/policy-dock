@@ -11,13 +11,11 @@
         <ng-container matColumnDef="keyPolicyTerms">
             <th mat-header-cell *matHeaderCellDef> Key Policy Terms </th>
             <td mat-cell *matCellDef="let element">
-       
-                <mat-form-field appearance="outline">
-                    <mat-select disableRipple>
-                        <mat-option value="1">Premiums</mat-option>
-                        <mat-option value="2">Deductible</mat-option>
-                    </mat-select>
-                </mat-form-field>
+
+                <custom-select placeholder="Default Value">
+                    <custom-select-option key="1" value="Premiums"></custom-select-option>
+                    <custom-select-option key="2" value="Deductible"></custom-select-option>
+                </custom-select>
             </td>
         </ng-container>
 
