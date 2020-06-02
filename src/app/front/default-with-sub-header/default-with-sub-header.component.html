@@ -1,4 +1,6 @@
 <app-header></app-header>
-<app-sub-header [activeRouteName]="title"></app-sub-header>
-<router-outlet (activate)="onActivate($event)"></router-outlet>
+<main class="main-wrapper">
+  <app-sub-header [activeRouteName]="title"></app-sub-header>
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
+</main>
 <app-footer></app-footer>
