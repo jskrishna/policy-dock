@@ -1,21 +1,31 @@
 <h2 class="heading-main">Product Provider Admin - Policy Administration</h2>
 
 <mat-card class="big-radius big-padding">
-    <h3 class="sub-heading text-center"><b>API Endpoints <span>(carmvp.microserver.com/(endpoint)</span></b></h3>
-    <app-api-endpoints class="pl-0 color-text mx-80"></app-api-endpoints>
+  <h3 class="sub-heading text-center"><b>API Endpoints <span>(carmvp.microserver.com/(endpoint)</span></b></h3>
+  <app-api-endpoints class="pl-0 color-text mx-80"></app-api-endpoints>
 </mat-card>
 
 <div class="d-flex row mt-30 flex-wrap">
-    <div class="grid-2">
-        <mat-card class="big-radius big-padding">
-            <app-policy-admin-endpoint [editable]="true"></app-policy-admin-endpoint>
-        </mat-card>
-    </div>
+  <div class="grid-2">
+    <mat-card class="big-radius big-padding">
+      <app-policy-admin-endpoint [editable]="true"></app-policy-admin-endpoint>
+      <h3 class="sub-heading">Comments</h3>
+      <div class="card-comment">
 
-    <div class="grid-2">
-        <mat-card class="big-radius big-padding card-colored">
-            <app-policy-admin-enpoint-code></app-policy-admin-enpoint-code>
-        </mat-card>
-    </div>
+        <div class="form-group">
+          <label>Create your comment</label>
+          <textarea class="customInput" placeholder="Type"> </textarea>
+        </div>
+
+      </div>
+    </mat-card>
+
+  </div>
+
+  <div class="grid-2">
+    <mat-card class="big-radius big-padding card-colored">
+      <app-policy-admin-enpoint-code></app-policy-admin-enpoint-code>
+    </mat-card>
+  </div>
 
 </div>

@@ -155,6 +155,10 @@
     margin-bottom: 30px;
   }
 
+  .big-padding.mat-card {
+    height: auto;
+  }
+
   .user-wrap-f.user-right>div {
     flex: 0 0 25%;
     max-width: 25%;
@@ -267,14 +271,45 @@
   .mx-80 table {
     table-layout: inherit;
   }
+
   .reset-pwd .card-payment {
     padding: 12px 0 6px;
-}
-mat-radio-button {
-  font-size: 12px;
-}
+  }
 
-.reset-pwd .card-payment+div {
-  top: 0;
-}
+  mat-radio-button {
+    font-size: 12px;
+  }
+
+  .reset-pwd .card-payment+div {
+    top: 0;
+  }
+
+  .grid-70.pd0 mat-list-item.pd0.mat-list-item.ng-star-inserted .mat-list-item-content {
+    font-size: 10px;
+  }
+
+  .grid-30 mat-list-item.mat-list-item {
+    font-size: 10px;
+  }
+
+  .d-flex.row.quote-end {
+    overflow-x: auto;
+  }
+
+  .card-colored {
+    margin-top: 20px;
+  }
+
+  td.mat-cell {
+    font-size: 12px;
+  }
+
+  .mat-card.big-radius {
+    border-radius: 12px !important;
+  }
+
+  .mt-30 {
+    margin-top: 20px !important;
+  }
+
 }
