@@ -1,14 +1,14 @@
 <h2 class="heading-main"
-    [ngClass]="{'red': selectedValue == 'python' , 'green': selectedValue == 'java', 'pink': selectedValue == 'ror'}">
-    Endpoint Code Example: /get_Quote[GET]
+  [ngClass]="{'red': selectedValue == 'python' , 'green': selectedValue == 'java', 'pink': selectedValue == 'ror'}">
+  Endpoint Code Example: /get_Quote[GET]
 </h2>
 
 <custom-select placeholder="Default Value" class="transparent-select" [(ngModel)]="selectedValue"
-    (change)="selectedLang($event)">
-    <custom-select-option key="python" value="Python"></custom-select-option>
-    <custom-select-option key="java" value="Java"></custom-select-option>
-    <custom-select-option key="ror" value="ROR"></custom-select-option>
-    <custom-select-option key="c#" value="C#"></custom-select-option>
+  (change)="selectedLang($event)">
+  <custom-select-option key="python" value="Python"></custom-select-option>
+  <custom-select-option key="java" value="Java"></custom-select-option>
+  <custom-select-option key="ror" value="ROR"></custom-select-option>
+  <custom-select-option key="c#" value="C#"></custom-select-option>
 </custom-select>
 
 <pre>
@@ -26,8 +26,8 @@ proposal_id=<span class="green">“A00001”</span>
 </pre>
 
 <h2 class="heading-main"
-    [ngClass]="{'red': selectedValue == 'python' , 'green': selectedValue == 'java', 'pink': selectedValue == 'ror'}">
-    Endpoint Response: /Get_Quote
+  [ngClass]="{'red': selectedValue == 'python' , 'green': selectedValue == 'java', 'pink': selectedValue == 'ror'}">
+  Endpoint Response: /Get_Quote
 </h2>
 <pre>
 <code>{{ '{' }}

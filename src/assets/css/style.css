@@ -1039,3 +1039,327 @@ mat-list.radius-b.mat-list.mat-list-base {
 .d-flex.row.quote-end mat-list.mat-list.mat-list-base {
   padding-top: 0;
 }
+
+
+/*============= Header =========*/
+.language-menus {
+  width: 65px !important;
+}
+
+.language-menus input {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  color: #4080FE !important;
+  font-size: 14px !important;
+  font-weight: 600;
+  height: auto !important;
+}
+
+span.head-lang .dropdown-arrow {
+  background: url(../img/icn_arrow-full.svg);
+  height: 20px;
+  width: 12px;
+  display: inline-block;
+  background-size: 21px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 9px !important;
+  right: 8px !important;
+}
+
+span.head-lang .dropdown-arrow img {
+  display: none;
+}
+
+.m-logo h1 a {
+  color: #384053 !important;
+  font-weight: 600 !important;
+  font-size: 14px;
+  padding: 0;
+}
+
+.m-logo p {
+  color: #384053;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.m-logo {
+  display: flex;
+}
+
+.m-logo h1 {
+  margin-right: 30px !important;
+  position: relative;
+  top: -1px;
+}
+
+
+.menu-language {
+  display: flex;
+}
+
+.menu-links a {
+  font-size: 14px;
+  color: #797B80;
+  font-weight: 500;
+  position: relative;
+  height: 100%;
+  border-radius: 0;
+  display: inline;
+  padding: 0;
+  margin: 0 15px;
+}
+
+.menu-links a::after {
+  content: "";
+  background: transparent;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  right: 0;
+}
+
+a.mat-button.mat-button-base.active-link::after {
+  background: #4080FE;
+}
+
+a.mat-button.mat-button-base.active-link {
+  color: #4080FE;
+  font-weight: 600;
+}
+
+.language-menus {
+  margin-left: 57px;
+}
+
+mat-toolbar-row.menu-bar-header {
+  justify-content: space-between;
+}
+
+.menu-bar-header {
+  padding: 0 32px 0 45px !important;
+}
+
+.change-bg-header {
+  background: #fff;
+}
+
+.toggle-menu-mobile {
+  display: none;
+}
+
+.sub-menbus {
+  box-shadow: 0px 1px 5px 0px rgba(204, 204, 204, 0.2);
+  top: 22px !important;
+  position: relative;
+}
+
+.sub-menbus a {
+  display: block;
+  text-align: left;
+  min-width: 170px;
+  color: #797B80;
+  font-size: 14px;
+}
+
+.sub-menbus .mat-menu-content {
+  padding: 0 !important;
+}
+
+.sub-menbus a:hover {
+  background-color: #EBF1FF;
+}
+
+/*============= Header =========*/
+
+/*============= Home =========*/
+.policy-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+main.main-wrapper {
+  background: #F6FBFF;
+  min-height: calc(100vh - 64px);
+}
+
+.cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container {
+  left: -64px !important;
+  position: relative !important;
+  top: 9px;
+  min-width: 160px;
+}
+
+.cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container custom-select-option:hover {
+  border-radius: 5px;
+  border-left: 3px solid #ffffff;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container custom-select-option.active {
+  border-radius: 5px;
+  border-left: 3px solid #4080fd !important;
+  font-weight: 500;
+  margin-bottom: 14px;
+  color: #4080fd;
+}
+
+.cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container custom-select-option {
+  border-radius: 5px;
+  border-left: 3px solid #ffffff;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container custom-select-option:last-child {
+  margin-bottom: 0;
+}
+
+.cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container custom-select-option:hover {
+  border-color: #ebf1ff;
+}
+
+.cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container {
+  border: none;
+  background: #fff;
+}
+
+.pre-format mat-card.mat-card {
+  max-width: 100%;
+}
+
+.pre-format .sub-heading,
+.home-end .sub-heading {
+  margin-bottom: 19px !important;
+  margin-top: 7px !important;
+  font-weight: 600;
+}
+
+
+.drop-drag {
+  position: relative;
+}
+
+.drop-drag input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.drop-drag {
+  border: 2px dashed #4080FE;
+  border-radius: 8px;
+  background: #F6FBFF;
+  width: 100%;
+  max-width: 413px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+.pre-format p {
+  color: #384053;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 7px 0 8px;
+}
+
+.pre-format button.mat-raised-button.mat-button-base.mat-primary {
+  min-width: 198px;
+  margin-bottom: 7px;
+  margin-top: 5px;
+}
+
+.pre-format.pre-pd p {
+  padding-top: 24px;
+}
+
+.pre-format img {
+  max-width: 160px;
+}
+
+.home-bg-clr {
+  padding-top: 8px;
+}
+
+.home-end-list .mat-list-item-content {
+  font-weight: 600;
+  font-size: 14px;
+  color: #797B80;
+  line-height: 24px;
+}
+
+.home-end-list .mat-list-item-content span {
+  min-width: 165px;
+}
+
+.home-end-list mat-list-item.mat-list-item b {
+  background: #FFF0DA;
+  border-radius: 4px;
+  color: #F8A92F;
+  font-size: 12px;
+  padding: 0px 20px;
+  min-width: 140px;
+  text-align: center;
+}
+
+.home-end-list {
+  width: 100%;
+  max-width: 306px;
+  margin: 0 auto;
+}
+
+.home-end-list mat-list-item.mat-list-item:nth-child(2) b {
+  background: #F0FEF8;
+  border-radius: 4px;
+  color: #60C798;
+  font-size: 12px;
+  padding: 0px 20px;
+  min-width: 140px;
+  text-align: center;
+}
+
+.home-end-list mat-list-item.mat-list-item:nth-child(3) b {
+  background: #E7EFFF;
+  border-radius: 4px;
+  color: #4080FE;
+  font-size: 12px;
+  min-width: 140px;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.home-end-list.pdleft70 {
+  margin: 0;
+  padding-left: 45px;
+}
+
+.home-end mat-card.mat-card {
+  padding-bottom: 75px;
+}
+
+span.back-arw {
+  font-size: 18px;
+  color: #384053;
+  font-weight: 600;
+  display: flex;
+}
+
+span.back-arw img {
+  position: relative;
+  margin-right: 13px;
+}
+
+/*============= Home =========*/

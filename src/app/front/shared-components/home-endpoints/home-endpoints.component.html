@@ -1,8 +1,28 @@
 <div class="d-flex row mt-10 flex-wrap">
-    <div class="grid-1">
-        <mat-card layout-align="center">
-
-            <h2 class="heading-main">API Endpoints available on this server</h2>
-        </mat-card>
+  <div class="grid-1">
+    <div class="home-end">
+      <mat-card layout-align="center">
+        <h2 class="sub-heading text-center">API Endpoints available on this server</h2>
+        <div class="d-flex row mt-10 flex-wrap">
+          <div class="grid-2">
+            <div class="home-end-list">
+              <mat-list>
+                <mat-list-item> <span>Get Product Detail:</span> <b>/product_detail</b></mat-list-item>
+                <mat-list-item> <span>Quote:</span> <b>/quote</b></mat-list-item>
+                <mat-list-item> <span>Get Quotation List:</span> <b>/quote_list</b></mat-list-item>
+              </mat-list>
+            </div>
+          </div>
+          <div class="grid-2">
+            <div class="home-end-list pdleft70">
+              <mat-list>
+                <mat-list-item> <span>Pay for Quote:</span> <b> /pay</b></mat-list-item>
+                <mat-list-item> <span>Query client:</span> <b> /client_query</b></mat-list-item>
+              </mat-list>
+            </div>
+          </div>
+        </div>
+      </mat-card>
     </div>
+  </div>
 </div>

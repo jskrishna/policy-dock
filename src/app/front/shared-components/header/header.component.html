@@ -1,25 +1,35 @@
-<mat-toolbar>
-  <mat-toolbar-row>
-    <h1>LOGO</h1>
+<mat-toolbar class="change-bg-header">
+  <mat-toolbar-row class="menu-bar-header">
+    <div class="m-logo">
+      <h1><a mat-button [routerLink]="'/home'"> LOGO </a></h1>
+      <p>Car Insurance Microserver </p>
+    </div>
+    <div class="toggle-menu-mobile">
+      <mat-icon _ngcontent-ojf-c0="" class="mat-icon notranslate material-icons mat-icon-no-color" role="img"
+        aria-hidden="true">menu</mat-icon>
+    </div>
+    <div class="menu-language">
+      <div class="menu-links">
+        <a mat-button [routerLink]="'/home'" routerLinkActive="active-link"> Home </a>
+        <a mat-button> Car Product Info </a>
+        <a mat-button [matMenuTriggerFor]="beforeMenu"> API Documentation </a>
+        <mat-menu #beforeMenu="matMenu" xPosition="before" class="sub-menbus">
+          <a mat-button> Text </a>
+          <a mat-button> Text </a>
+          <a mat-button> Text </a>
+        </mat-menu>
+        <a mat-button> Client Register/Login </a>
+        <a mat-button> Admin Login </a>
 
-    <p>Car Insurance Microserver </p>
-
-    <span c lass="menu-spacer"></span>
-
-    <div>
-      <a mat-button [routerLink]="'/home'"> Home </a>
-      <a mat-button> Car Product Info </a>
-      <a mat-button> API Documentation </a>
-      <a mat-button> Client Register/Login </a>
-      <a mat-button> Admin Login </a>
-
-      <span class="head-lang">
-        <custom-select placeholder="En">
-          <custom-select-option key="1" value="En"></custom-select-option>
-          <custom-select-option key="2" value="Fr"></custom-select-option>
-        </custom-select>
-      </span>
-
+      </div>
+      <div class="language-menus">
+        <span class="head-lang">
+          <custom-select placeholder="En">
+            <custom-select-option key="1" value="En"></custom-select-option>
+            <custom-select-option key="2" value="Fr"></custom-select-option>
+          </custom-select>
+        </span>
+      </div>
     </div>
 
   </mat-toolbar-row>

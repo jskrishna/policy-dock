@@ -1,35 +1,45 @@
-<div>
+<div class="home-bg-clr">
+  <div class="policy-container">
+    <div class="d-flex row mt-10 flex-wrap">
+      <div class="grid-2">
+        <div class="pre-format">
+          <mat-card layout-align="center">
 
-  <div class="d-flex row mt-10 flex-wrap">
-    <div class="grid-2">
-      <div class="left">
-        <mat-card layout-align="center">
+            <h2 class="sub-heading">Pre-formatted Excel</h2>
+            <div class="drop-drag">
+              <form>
+                <input type="file" accept=".csv" />
+                <img src="assets/img/drop-edit.svg" />
+              </form>
+            </div>
+            <p>Drag & Drop a pre-formatted Excel</p>
+          </mat-card>
 
-          <h2 class="heading-main">Pre-formatted Excel</h2>
+        </div>
+      </div>
 
-        </mat-card>
+      <div class="grid-2">
+        <div class="pre-format pre-pd">
 
+          <mat-card layout-align="center">
+
+            <h2 class="sub-heading">Web Online Application Forms</h2>
+            <p>
+              <img src="assets/img/page-editor.svg" alt="" />
+            </p>
+
+            <button mat-raised-button color="primary">Fill Now</button>
+          </mat-card>
+
+        </div>
       </div>
     </div>
 
-    <div class="grid-2">
-      <div class="right">
-
-        <mat-card layout-align="center">
-
-          <h2 class="heading-main">Web Online Application Forms</h2>
-          <p>
-            <img src="assets/img/icn_delete.svg" alt="" />
-          </p>
-
-          <button mat-raised-button color="primary">Fill Now</button>
-        </mat-card>
-
+    <div class="d-flex row mt-10 flex-wrap">
+      <div class="grid-1">
+        <app-home-endpoints></app-home-endpoints>
       </div>
     </div>
 
   </div>
-
 </div>
-
-<app-home-endpoints></app-home-endpoints>
