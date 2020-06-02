@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PolicyAdminEnpointCodeComponent implements OnInit {
 
-  public selectedValue: string;
+  public selectedValue: any;
 
   constructor() { }
 
