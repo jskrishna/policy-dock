@@ -6,7 +6,8 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./policy-admin-enpoint-code.component.scss"],
 })
 export class PolicyAdminEnpointCodeComponent implements OnInit {
-  public selectedValue: string;
+
+  public selectedValue: any;
 
   constructor() {}
 
