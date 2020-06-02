@@ -1,6 +1,6 @@
 <div class="d-flex row mt-10 flex-wrap">
   <div class="grid-1">
-    <mat-card layout-align="center">
+    <mat-card class="big-radius">
       <h2 class="sub-heading">Required Basic Info</h2>
       <div class="d-flex row mt-10 flex-wrap">
         <div class="grid-2 mb-25">
@@ -23,8 +23,14 @@
         </div>
         <div class="grid-2 mb-25">
           <div class="form-group">
-            <label>ID Number</label>
-            <input class="customInput" placeholder="Text" type="text">
+            <label>Do you want windscreen coverage?</label>
+             <div class="custom-ck">
+              <div class="d-flex align-items-center">
+                <mat-checkbox>Back</mat-checkbox>
+                <mat-checkbox>Front</mat-checkbox>
+                <mat-checkbox>Sunroof</mat-checkbox>
+            </div>
+             </div>
           </div>
         </div>
         <div class="grid-1 mb-25">

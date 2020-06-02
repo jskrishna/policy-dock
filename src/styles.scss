@@ -194,9 +194,63 @@ code{
 .home-bg-clr {
   padding: 8px 0 20px 0;
 }
-
+span.back-arw {
+  cursor: pointer;
+}
+input:focus {
+  outline-offset: 0;
+}
+:focus {
+  outline: -webkit-focus-ring-color auto 0;
+}
+.custom-ra >label {
+  width: 100px;
+}
+.custom-ra mat-radio-group.mat-radio-group {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.custom-ra mat-radio-group.mat-radio-group .mat-radio-button.mat-accent {
+  margin-bottom: 0 !important;
+}
+.custom-ra mat-radio-group.mat-radio-group .mat-radio-button.mat-accent  + .mat-radio-button.mat-accent{
+  margin-left: 40px;
+}
+.custom-ra label {
+  font-weight: 500;
+  font-size: 14px;
+}
+.custom-ra {
+  margin-top: 37px;
+}
+.custom-ra {
+  display: flex;
+  align-items: center;
+}
+.custom-ck > div .mat-checkbox.mat-accent + .mat-checkbox.mat-accent {
+  margin-left: 40px;
+}
+.custom-ck {
+  margin-top: 18px;
+}
+.mat-radio-outer-circle {
+  border-color: #CCCCCC !important;
+}
+.custom-ck .mat-checkbox-layout .mat-checkbox-label {
+  position: relative;
+  top: 2px;
+}
 @media(max-width: 991px){
+  .menu-links a:hover {
+    color: #fff;
+}
+
   .menu-language {
+    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
     right: unset;
     left: -100%;
     transition: 300ms all;
@@ -227,12 +281,13 @@ a.mat-button.mat-button-base.active-link {
 left: 0;
 }
 .menu-links {
-  height: calc(100vh - 78px);
+  height: calc(100vh - 49px);
   overflow: auto;
 }
 .menu-links a {
   height: auto;
 }
+
 .language-menus input {
   color: #fff !important;
 }
@@ -295,7 +350,7 @@ span.head-lang .dropdown-arrow img{
   opacity: 1;
 }
 .menu-links a {
-  padding-left: 0;
+  padding: 0 16px;
   line-height: 38px;
 }
 body.app.isOpen {
@@ -305,11 +360,20 @@ body.app.isOpen {
 
 
 @media(max-width:767px){
+  .custom-ck {
+    margin-top: 0;
+}
   .home-end mat-card.mat-card {
     padding-bottom: 0;
 }
+.custom-ck > div .mat-checkbox.mat-accent + .mat-checkbox.mat-accent {
+  margin-left: 15px;
+}
   .home-end .d-flex.row.mt-10.flex-wrap {
     overflow: auto;
+}
+.custom-ra mat-radio-group.mat-radio-group .mat-radio-button.mat-accent + .mat-radio-button.mat-accent {
+  margin-left: 20px;
 }
   .home-bg-clr {
     padding: 0 0 20px 0;
@@ -324,4 +388,9 @@ body.app.isOpen {
     position: relative;
     top: 4px;
 }
+.custom-ra {
+  margin-top: 0;
+}
+
+
 }
