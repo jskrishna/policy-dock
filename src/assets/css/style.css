@@ -1130,7 +1130,7 @@ a.mat-button.mat-button-base.active-link::after {
 
 a.mat-button.mat-button-base.active-link {
   color: #4080FE;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .language-menus {
@@ -1185,7 +1185,7 @@ mat-toolbar-row.menu-bar-header {
   padding: 0 20px;
 }
 
-main.main-wrapper {
+.main-wrapper {
   background: #F6FBFF;
   min-height: calc(100vh - 64px);
 }
@@ -1253,6 +1253,7 @@ main.main-wrapper {
   top: 0;
   right: 0;
   left: 0;
+  cursor: pointer;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -1291,7 +1292,12 @@ main.main-wrapper {
 }
 
 .home-bg-clr {
-  padding-top: 8px;
+  padding: 8px 0 30px 0;
+}
+
+.polish-breadcom mat-card.mat-card {
+  padding: 24px;
+  margin-bottom: 24px;
 }
 
 .home-end-list .mat-list-item-content {
@@ -1355,11 +1361,90 @@ span.back-arw {
   color: #384053;
   font-weight: 600;
   display: flex;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.breadcum-home h2 {
+  margin: 0;
 }
 
 span.back-arw img {
   position: relative;
   margin-right: 13px;
+}
+
+.breadcum-home {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.polish-breadcom {
+  padding-top: 40px;
+}
+
+.basic-car-info {
+  padding-bottom: 40px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.basic-car-info mat-card.mat-card {
+  padding: 25px 35px 5px;
+}
+
+.basic-car-info .d-flex.row.mt-30.flex-wrap {
+  margin-top: 23px !important;
+}
+
+input[type="date"]:after {
+
+  color: rgba(0, 0, 0, 0);
+  opacity: 1
+}
+
+input[type="date"]:after {
+  content: '';
+  display: block;
+  background: url(../img/icn_calendar.svg) no-repeat;
+  width: 20px;
+  height: 22px;
+  position: absolute;
+  right: 13px;
+  top: 6px;
+  background-color: #fafafd;
+
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
+
+input[type="date"] {
+  position: relative;
+}
+
+/* adjust increase/decrease button */
+input[type="date"]::-webkit-inner-spin-button {
+  z-index: 1;
+}
+
+/* adjust clear button */
+input[type="date"]::-webkit-clear-button {
+  z-index: 1;
 }
 
 /*============= Home =========*/
