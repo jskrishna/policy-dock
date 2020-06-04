@@ -281,7 +281,7 @@ a.mat-button.mat-button-base.active-link {
 left: 0;
 }
 .menu-links {
-  height: calc(100vh - 49px);
+  height: calc(100vh - 70px);
   overflow: auto;
 }
 .menu-links a {
@@ -304,7 +304,7 @@ span.head-lang .dropdown-arrow img{
 .language-menus {
   width: 93%;
 }
-.input-wrapper .input .dropdown-arrow {
+.custom-kk .input-wrapper .input .dropdown-arrow {
   position: absolute;
   color: inherit;
   right: unset !important;
@@ -312,6 +312,7 @@ span.head-lang .dropdown-arrow img{
   cursor: pointer;
   left: 40px;
 }
+
 .cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container {
   left: unset !important;
 }
@@ -355,6 +356,12 @@ span.head-lang .dropdown-arrow img{
 }
 body.app.isOpen {
   overflow: hidden;
+}
+.custom-kk .input {
+  padding-left: 10px;
+}
+.input-wrapper .input .dropdown-arrow {
+  top: 13px !important;
 }
 }
 
