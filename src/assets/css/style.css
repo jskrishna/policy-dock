@@ -1154,7 +1154,7 @@ mat-toolbar-row.menu-bar-header {
 }
 
 .sub-menbus {
-  box-shadow: 0px 1px 5px 0px rgba(204, 204, 204, 0.2);
+  box-shadow: 0 2px 90px rgba(38, 80, 119, 0.1);
   top: 22px !important;
   position: relative;
 }
@@ -1199,24 +1199,27 @@ mat-toolbar-row.menu-bar-header {
 
 .cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container custom-select-option:hover {
   border-radius: 5px;
-  border-left: 3px solid #ffffff;
+  border-left: 3px solid transparent;
   font-weight: 500;
   margin-bottom: 14px;
+  background: #EBF1FF;
 }
 
 .cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container custom-select-option.active {
+  background: #EBF1FF;
   border-radius: 5px;
-  border-left: 3px solid #4080fd !important;
-  font-weight: 500;
+  border-left: 3px solid transparent !important;
+  font-weight: 600;
   margin-bottom: 14px;
   color: #4080fd;
 }
 
 .cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container custom-select-option {
   border-radius: 5px;
-  border-left: 3px solid #ffffff;
+  border-left: 3px solid transparent;
   font-weight: 500;
   margin-bottom: 14px;
+  background: transparent;
 }
 
 .cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container custom-select-option:last-child {
@@ -1226,11 +1229,11 @@ mat-toolbar-row.menu-bar-header {
 .cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container custom-select-option:hover {
   border-color: #ebf1ff;
 }
-
+/* 
 .cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container {
   border: none;
   background: #fff;
-}
+} */
 
 .pre-format mat-card.mat-card {
   max-width: 100%;
