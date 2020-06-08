@@ -10,6 +10,8 @@ import { QuotationOneComponent } from './views/quotation-one/quotation-one.compo
 import { ProductProviderComponent } from './views/product-provider/product-provider.component';
 import { AdministartionSettingsComponent } from './views/administartion-settings/administartion-settings.component';
 import { PolicyAdministrationComponent } from './views/policy-administration/policy-administration.component';
+import { ModalsComponent } from './views/modals/modals.component';
+import { AllComponentsComponent } from './views/all-components/all-components.component';
 
 
 export const routes: Routes = [
@@ -59,6 +61,14 @@ export const routes: Routes = [
       {
         path: 'sitemap',
         component: SitemapComponent
+      },
+      {
+        path: 'modals',
+        component: ModalsComponent
+      },
+      {
+        path: 'all-components',
+        component: AllComponentsComponent
       },
       {
         path: 'dashboard',

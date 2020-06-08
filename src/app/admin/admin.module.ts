@@ -14,6 +14,17 @@ import { QuotationOneComponent } from './views/quotation-one/quotation-one.compo
 import { ProductProviderComponent } from './views/product-provider/product-provider.component';
 import { AdministartionSettingsComponent } from './views/administartion-settings/administartion-settings.component';
 import { PolicyAdministrationComponent } from './views/policy-administration/policy-administration.component';
+import {
+  ModalsComponent,
+  DialogElementsLogout,
+  DialogCreditDebitCardDetails,
+  DialogUserAccessrights,
+  DialogApiAccessrights,
+  DialogEditPaymentDetails
+} from './views/modals/modals.component';
+
+import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material';
+import { AllComponentsComponent } from './views/all-components/all-components.component';
 
 const APP_CONTAINERS = [
   DefaultLayoutComponent
@@ -31,12 +42,29 @@ const APP_CONTAINERS = [
     ProductProviderComponent,
     AdministartionSettingsComponent,
     PolicyAdministrationComponent,
+    ModalsComponent,
+    DialogElementsLogout,
+    DialogCreditDebitCardDetails,
+    DialogUserAccessrights,
+    DialogApiAccessrights,
+    DialogEditPaymentDetails,
+    AllComponentsComponent
   ],
   imports: [
     CommonModule,
     AdminRoutingModule,
     ComponentsModule,
     MaterialModule
+  ],
+  entryComponents: [
+    DialogElementsLogout,
+    DialogCreditDebitCardDetails,
+    DialogUserAccessrights,
+    DialogApiAccessrights,
+    DialogEditPaymentDetails
+  ],
+  providers: [
+    { provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: { hasBackdrop: false } }
   ]
 })
 export class AdminModule { }
