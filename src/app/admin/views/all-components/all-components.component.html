@@ -1,4 +1,5 @@
-Buttons
+<h2 class="heading-main">Buttons</h2>
+
 <button mat-stroked-button mat-dialog-close color="primary" class="btn-medium">
     Download PDF
 </button>
@@ -6,4 +7,281 @@ Buttons
     Download PDF
 </button>
 
-Input
+
+<div class="d-flex row mt-20 flex-wrap">
+    <h2 class="heading-main">Input</h2>
+</div>
+
+<div class="d-flex row mt-10 flex-wrap">
+
+    <div class="grid-2 mb-25">
+        <div class="form-group">
+            <input class="customInput" placeholder="Text" type="email">
+        </div>
+    </div>
+
+    <div class="grid-2 mb-25">
+        <div class="form-group">
+            <label>Title</label>
+            <input class="customInput" placeholder="Text" type="email">
+        </div>
+    </div>
+
+    <div class="grid-2 mb-25">
+        <div class="form-group">
+            <label>Title</label>
+            <input class="customInput" placeholder="Text" type="text" value="$200" disabled>
+        </div>
+    </div>
+
+    <div class="grid-2 mb-25">
+        <div class="form-group">
+            <label>Title</label>
+            <input class="customInput" placeholder="Text" type="text" value="Lorem Ipsum">
+        </div>
+    </div>
+
+    <div class="grid-2 mb-25">
+        <div class="form-group">
+            <label>Title</label>
+            <input class="customInput" placeholder="Text" type="text" value="Text">
+            <p>
+                Error message
+            </p>
+        </div>
+    </div>
+
+    <div class="grid-2 mb-25">
+        <div class="form-group">
+            <label>Title</label>
+            <input class="customInput" placeholder="Text" type="date">
+        </div>
+    </div>
+
+    <div class="grid-2 mb-25">
+        <div class="form-group">
+            <label>Title</label>
+            <custom-select placeholder="Text">
+                <custom-select-option key="1" value="Text"></custom-select-option>
+                <custom-select-option key="2" value="Text"></custom-select-option>
+                <custom-select-option key="3" value="Text"></custom-select-option>
+            </custom-select>
+        </div>
+    </div>
+
+    <div class="grid-2 mb-25">
+        <div class="form-group">
+            <custom-select placeholder="Manual">
+                <custom-select-option key="1" value="Text"></custom-select-option>
+                <custom-select-option key="2" value="Text"></custom-select-option>
+                <custom-select-option key="3" value="Text"></custom-select-option>
+            </custom-select>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<div class="d-flex row mt-20 flex-wrap">
+    <h2 class="heading-main">Checkbox</h2>
+</div>
+
+<div class="d-flex row mt-10 flex-wrap">
+
+    <div class="grid-4 mb-25">
+        <div class="form-group">
+            <label>Text</label>
+            <div class="custom-ck">
+                <div class="d-flex align-items-center">
+                    <mat-checkbox>Text</mat-checkbox>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-4 mb-25">
+        <div class="form-group">
+            <label>Text</label>
+            <div class="custom-ck">
+                <div class="d-flex align-items-center">
+                    <mat-checkbox [(ngModel)]="checked">Text</mat-checkbox>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-4 mb-25">
+        <div class="form-group">
+            <label>Text</label>
+            <div class="custom-ck">
+                <div class="d-flex align-items-center">
+                    <mat-checkbox [disabled]="checked">Text</mat-checkbox>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="d-flex row mt-20 flex-wrap">
+    <h2 class="heading-main">Radiobutton</h2>
+</div>
+
+
+<div class="d-flex row mt-10 flex-wrap">
+
+    <div class="grid-4 mb-25">
+        <div class="form-group">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Text</mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </div>
+
+    <div class="grid-4 mb-25">
+        <div class="form-group">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1" [checked]="true">Text</mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </div>
+
+    <div class="grid-4 mb-25">
+        <div class="form-group">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1" [disabled]="checked">Text</mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="d-flex row mt-20 flex-wrap">
+    <h2 class="heading-main">Tooltip</h2>
+</div>
+
+<div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-4 mb-25">
+        <div class="form-group">
+            <button mat-raised-button mat-dialog-close class="btn-medium" color="primary" matTooltip="Download"
+                matTooltipPosition="above" matTooltipClass="custom-tooltip">
+                Tooltip button
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="d-flex row mt-20 flex-wrap">
+    <h2 class="heading-main">Wizard</h2>
+</div>
+
+<div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-4 mb-25">
+
+        <mat-horizontal-stepper linear>
+            <mat-step>
+            </mat-step>
+
+            <mat-step>
+            </mat-step>
+
+            <mat-step>
+            </mat-step>
+
+            <mat-step>
+            </mat-step>
+
+        </mat-horizontal-stepper>
+    </div>
+</div>
+
+<div class="d-flex row mt-20 flex-wrap">
+    <h2 class="heading-main">Notification</h2>
+</div>
+
+<div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-4 mb-25">
+
+    </div>
+</div>
+
+
+<div class="d-flex row mt-20 flex-wrap">
+    <h2 class="heading-main">Scroll</h2>
+</div>
+
+<div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-4 mb-25">
+
+    </div>
+</div>
+
+<div class="d-flex row mt-20 flex-wrap">
+    <h2 class="heading-main">Tabs</h2>
+</div>
+
+
+<div class="d-flex row mt-10 flex-wrap">
+    <div class="mb-25">
+        <mat-tab-group>
+            <mat-tab label="Simple Tab 1"> </mat-tab>
+            <mat-tab label="Simple Tab 2"> </mat-tab>
+            <mat-tab label="Simple Tab 3"> </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>
+
+
+<div class="d-flex row mt-20 flex-wrap">
+    <h2 class="heading-main">Text edit</h2>
+</div>
+
+<div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-4 mb-25">
+        <editor apiKey="oqnke9owt2yvuobo1w0ozgjymavd1fkn967k38bu9j7hmkhh" [init]="{
+          icons: 'material',
+          skin: 'borderless',
+          plugins: 'wordcount',
+          menubar: false,
+          min_height: 150
+        }"></editor>
+    </div>
+</div>
+
+<div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-4 mb-25">
+
+        <div class="form-group">
+            <label>Create your comment</label>
+            <textarea class="customInput" placeholder="Type"> </textarea>
+        </div>
+    </div>
+</div>
+
+
+<div class="d-flex row mt-20 flex-wrap">
+    <h2 class="heading-main">Header</h2>
+</div>
+
+<div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-4 mb-25">
+        <app-header></app-header>
+    </div>
+</div>
+
+
+<div class="d-flex row mt-20 flex-wrap">
+    <h2 class="heading-main">Table</h2>
+</div>
+
+<div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-4 mb-25">
+
+    </div>
+</div>
