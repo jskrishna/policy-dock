@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllComponentsComponent implements OnInit {
 
+  public checked: boolean = true;
+  
   constructor() { }
 
   ngOnInit() {
