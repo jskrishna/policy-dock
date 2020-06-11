@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 
 export class DefaultLayoutComponent implements OnInit, OnDestroy, AfterViewInit {
 
-  @ViewChild('snav', { static: false }) public sidenav: MatSidenav;
+  @ViewChild('snav', { static: true }) public sidenav: MatSidenav;
 
   private _mobileQueryListener: () => void;
   mobileQuery: MediaQueryList;
