@@ -1,52 +1,29 @@
-<h2 class="heading-main">Modal popups</h2>
+<mat-card>
+  <h2 class="heading-main">Modal popups</h2>
+  <div class="d-flex flex-wrap
+">
+    <button mat-raised-button class="btn-medium" type="submit" color="primary" (click)="openLogoutDialog()">
+      Launch Logout dialog
+    </button>
 
 
-<div class="d-flex align-items-center row flex-wrap">
+    <button mat-raised-button class="btn-medium" type="submit" color="primary" (click)="openCreditDebitDialog()">
+      Launch Credit/Debit Card
+    </button>
 
 
-    <div class="grid-3">
-        <mat-card class="pay-card no-gutter">
+    <button mat-raised-button class="btn-medium" type="submit" color="primary" (click)="openUserAccessRightsDialog()">
+      Launch User Access Rights
+    </button>
 
-            <button mat-raised-button class="btn-medium" type="submit" color="primary" (click)="openLogoutDialog()">
-                Launch Logout dialog
-            </button>
-        </mat-card>
-    </div>
 
-    <div class="grid-3">
-        <mat-card class="pay-card no-gutter">
-            <button mat-raised-button class="btn-medium" type="submit" color="primary"
-                (click)="openCreditDebitDialog()">
-                Launch Credit/Debit Card details dialog
-            </button>
-        </mat-card>
-    </div>
+    <button mat-raised-button class="btn-medium" type="submit" color="primary" (click)="openApiAccessRightsDialog()">
+      Launch API Access Rights
+    </button>
 
-    <div class="grid-3">
-        <mat-card class="pay-card no-gutter">
-            <button mat-raised-button class="btn-medium" type="submit" color="primary"
-                (click)="openUserAccessRightsDialog()">
-                Launch User Access Rights dialog
-            </button>
-        </mat-card>
-    </div>
 
-    <div class="grid-3">
-        <mat-card class="pay-card no-gutter">
-            <button mat-raised-button class="btn-medium" type="submit" color="primary"
-                (click)="openApiAccessRightsDialog()">
-                Launch API Access Rights dialog
-            </button>
-        </mat-card>
-    </div>
-
-    <div class="grid-3">
-        <mat-card class="pay-card no-gutter">
-            <button mat-raised-button class="btn-medium" type="submit" color="primary"
-                (click)="openEditPaymentsDialog()">
-                Launch Edit Recieving Payment Details dialog
-            </button>
-        </mat-card>
-    </div>
-
-</div>
+    <button mat-raised-button class="btn-medium" type="submit" color="primary" (click)="openEditPaymentsDialog()">
+      Launch Edit Recieving Payment
+    </button>
+  </div>
+</mat-card>

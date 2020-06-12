@@ -730,6 +730,10 @@ button.btn-large.btn-icon {
   margin-bottom: 24px;
 }
 
+.mt-25 {
+  margin-top: 25px;
+}
+
 .sub2-heading {
   font-weight: 600;
   color: #384053;
@@ -1229,6 +1233,7 @@ mat-toolbar-row.menu-bar-header {
 .cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container custom-select-option:hover {
   border-color: #ebf1ff;
 }
+
 /* 
 .cdk-overlay-connected-position-bounding-box .cdk-overlay-pane .dropdown-options-container {
   border: none;

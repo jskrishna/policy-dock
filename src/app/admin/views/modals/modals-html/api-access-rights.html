@@ -1,7 +1,35 @@
 <h2 class="heading-main">API Access Rights</h2>
-
+<div class="model-close" mat-dialog-close>
+  <img src="assets/img/icn_close.svg" alt="" />
+</div>
 <div mat-dialog-actions>
-    <button mat-raised-button mat-dialog-close class="btn-medium" color="primary">
-        Create
+
+
+  <div class="model-wrapper row">
+    <div class="grid-1">
+      <div class="form-group">
+        <label>Name of User Type</label>
+        <input class="customInput" placeholder="Text" type="text">
+      </div>
+      <div class="mt-25 mb-25">
+        <div class="form-group">
+          <mat-checkbox [(ngModel)]="checked">/product_details</mat-checkbox>
+          <mat-checkbox>/product_details</mat-checkbox>
+          <mat-checkbox>/product_details</mat-checkbox>
+          <mat-checkbox>/product_details</mat-checkbox>
+          <mat-checkbox>/product_details</mat-checkbox>
+          <mat-checkbox>/product_details</mat-checkbox>
+          <mat-checkbox>/product_details</mat-checkbox>
+          <mat-checkbox>/product_details</mat-checkbox>
+          <mat-checkbox>/product_details</mat-checkbox>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="btn-right">
+    <button mat-raised-button class="btn-medium" color="primary">
+      Create
     </button>
+  </div>
 </div>

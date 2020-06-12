@@ -16,7 +16,7 @@ export class ModalsComponent implements OnInit {
   openLogoutDialog() {
     this.dialog.open(DialogElementsLogout, {
       height: '100px',
-      width: '800px',
+      width: '520px',
     });
   }
 

@@ -1,7 +1,74 @@
 <h2 class="heading-main">Credit / Debit Card Details</h2>
+<div class="model-close" mat-dialog-close>
+  <img src="assets/img/icn_close.svg" alt="" />
+</div>
 
 <div mat-dialog-actions>
-    <button mat-raised-button mat-dialog-close class="btn-medium" color="primary">
-        Update Card
+
+  <div class="model-wrapper">
+    <div class="d-flex row mt-10 flex-wrap">
+      <div class="grid-1 mb-25">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input class="customInput" placeholder="Text" type="text">
+        </div>
+      </div>
+      <div class="grid-1 mb-25">
+        <div class="form-group">
+          <label>Card No.</label>
+          <input class="customInput" placeholder="Text" type="text">
+        </div>
+      </div>
+      <div class="grid-2 mb-25">
+        <div class="form-group">
+          <label>CVC No.</label>
+          <input class="customInput" placeholder="Text" type="text">
+        </div>
+      </div>
+      <div class="grid-2 mb-25">
+        <div class="form-group">
+          <label>Postal Code</label>
+          <input class="customInput" placeholder="Text" type="text">
+        </div>
+      </div>
+      <div class="grid-3 mb-25">
+        <div class="form-group">
+          <label>Expiry Date</label>
+          <custom-select placeholder="Default Value" class="transparent-select" [(ngModel)]="selectedValue">
+            <custom-select-option key="1" value="1"></custom-select-option>
+            <custom-select-option key="2" value="2"></custom-select-option>
+            <custom-select-option key="3" value="3"></custom-select-option>
+            <custom-select-option key="4" value="4"></custom-select-option>
+          </custom-select>
+        </div>
+      </div>
+      <div class="grid-3 mb-25">
+        <div class="form-group">
+          <label class="blank-height"></label>
+          <custom-select placeholder="Default Value" class="transparent-select" [(ngModel)]="selectedValue">
+            <custom-select-option key="Jan" value="Jan"></custom-select-option>
+            <custom-select-option key="Feb" value="Feb"></custom-select-option>
+            <custom-select-option key="Mar" value="Mar"></custom-select-option>
+            <custom-select-option key="Apr" value="Aprs"></custom-select-option>
+          </custom-select>
+        </div>
+      </div>
+      <div class="grid-3 mb-25">
+        <div class="form-group">
+          <label class="blank-height"></label>
+          <custom-select placeholder="Default Value" class="transparent-select" [(ngModel)]="selectedValue">
+            <custom-select-option key="2020" value="2020"></custom-select-option>
+            <custom-select-option key="2021" value="2021"></custom-select-option>
+            <custom-select-option key="2022" value="2022"></custom-select-option>
+            <custom-select-option key="2023" value="2023"></custom-select-option>
+          </custom-select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="btn-right">
+    <button mat-raised-button class="btn-medium" color="primary">
+      Update Card
     </button>
+  </div>
 </div>
