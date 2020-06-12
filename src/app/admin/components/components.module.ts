@@ -21,6 +21,14 @@ import { PortalModule } from '@angular/cdk/portal';
 import { CustomSelectComponent } from './custom-dropdown/custom-select.component';
 import { CustomSelectOptionComponent } from './custom-dropdown/custom-select-option.component';
 import { DropdownComponent } from './custom-dropdown/dropdown.component';
+import { ButtonComponent } from './all-components-subcomponents/button/button.component';
+import { InputFieldComponent } from './all-components-subcomponents/input-field/input-field.component';
+import { CheckboxComponent } from './all-components-subcomponents/checkbox/checkbox.component';
+import { RadioButtonComponent } from './all-components-subcomponents/radio-button/radio-button.component';
+import { TabsComponent } from './all-components-subcomponents/tabs/tabs.component';
+import { TextEditorComponent } from './all-components-subcomponents/text-editor/text-editor.component';
+import { EditorModule } from "@tinymce/tinymce-angular";
+import { StepperComponent } from './all-components-subcomponents/stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +47,14 @@ import { DropdownComponent } from './custom-dropdown/dropdown.component';
     PolicyAdminEndpointEditComponent,
     CustomSelectComponent,
     CustomSelectOptionComponent,
-    DropdownComponent
+    DropdownComponent,
+    ButtonComponent,
+    InputFieldComponent,
+    CheckboxComponent,
+    RadioButtonComponent,
+    TabsComponent,
+    TextEditorComponent,
+    StepperComponent
   ],
   imports: [
     CommonModule,
@@ -49,7 +64,8 @@ import { DropdownComponent } from './custom-dropdown/dropdown.component';
     MaterialModule,
     FormsModule,
     OverlayModule,
-    PortalModule
+    PortalModule,
+    EditorModule,
   ],
   exports: [
     TablePolicyComponent,
@@ -67,7 +83,14 @@ import { DropdownComponent } from './custom-dropdown/dropdown.component';
     PolicyAdminEndpointEditComponent,
     CustomSelectComponent,
     CustomSelectOptionComponent,
-    DropdownComponent
+    DropdownComponent,
+    ButtonComponent,
+    InputFieldComponent,
+    CheckboxComponent,
+    RadioButtonComponent,
+    TabsComponent,
+    TextEditorComponent,
+    StepperComponent
   ]
 })
 export class ComponentsModule { }
