@@ -1,29 +1,36 @@
 <h2 class="heading-main">Buttons</h2>
-<button mat-stroked-button mat-dialog-close color="primary" class="btn-medium">
-  Download PDF
-</button>
-<button mat-raised-button mat-dialog-close class="btn-medium" color="primary">
-  Download PDF
-</button>
+
+<div class="d-flex row mt-10 flex-wrap">
+
+  <div class="grid-2 mb-25">
+    <app-button [buttonMeta]="{ type: 'buttonStyle1', value: 'Download PDF'}">
+    </app-button>
+  </div>
+
+  <div class="grid-10 mb-25">
+    <app-button [buttonMeta]="{ type: 'buttonStyle2', value: 'Download PDF'}">
+    </app-button>
+  </div>
+
+</div>
+
 
 
 <h2 class="heading-main">Input</h2>
 
 <div class="d-flex row mt-10 flex-wrap">
 
-
-
   <div class="grid-2 mb-25">
     <div class="form-group">
       <label>Title</label>
-      <input class="customInput" placeholder="Text" type="text" value="Lorem Ipsum">
+      <app-input-field [inputMeta]="{ type: 'text', value: 'Lorem Ipsum', disabled: false}"></app-input-field>
     </div>
   </div>
 
   <div class="grid-2 mb-25">
     <div class="form-group">
       <label>Title</label>
-      <input class="customInput" placeholder="Text" type="text" value="$200" disabled>
+      <app-input-field [inputMeta]="{ type: 'text', value: '$200', disabled: true}"></app-input-field>
     </div>
   </div>
 
@@ -31,7 +38,7 @@
   <div class="grid-2 mb-25">
     <div class="form-group">
       <label>Title</label>
-      <input class="customInput" placeholder="Text" type="text" value="Text">
+      <app-input-field [inputMeta]="{ type: 'text', value: 'Text', disabled: false}"></app-input-field>
       <p>
         Error message
       </p>
@@ -41,7 +48,7 @@
   <div class="grid-2 mb-25">
     <div class="form-group">
       <label>Title</label>
-      <input class="customInput" placeholder="Text" type="date">
+      <app-input-field [inputMeta]="{ type: 'date', value: '', disabled: false}"></app-input-field>
     </div>
   </div>
 
@@ -66,47 +73,45 @@
     </div>
   </div>
 
-
-
 </div>
+
+
 
 <h2 class="heading-main">Checkbox</h2>
 
 <div class="d-flex row mt-10 flex-wrap">
-
   <div class="grid-2 mb-25">
     <div class="form-group">
       <div class="d-flex align-items-center">
-        <mat-checkbox [(ngModel)]="checked">Back</mat-checkbox>
-        <mat-checkbox>Front</mat-checkbox>
-        <mat-checkbox>Sunroof</mat-checkbox>
+        <app-checkbox [checkboxMeta]="{ value: 'Back', checked: true}"></app-checkbox>
+        <app-checkbox [checkboxMeta]="{ value: 'Front', checked: false}"></app-checkbox>
+        <app-checkbox [checkboxMeta]="{ value: 'Sunroof', checked: false}"></app-checkbox>
       </div>
     </div>
   </div>
-
 </div>
+
 
 
 <h2 class="heading-main">Radiobutton</h2>
 
-
 <div class="d-flex row mt-10 flex-wrap">
   <div class="grid-4">
-    <mat-radio-group aria-label="Select an option">
-      <mat-radio-button value="1">Male</mat-radio-button>
-      <mat-radio-button value="2">Female</mat-radio-button>
-      <mat-radio-button value="3">Shemale</mat-radio-button>
-    </mat-radio-group>
+    <app-radio-button [radioMeta]="{ value: '1', valueDisplay: 'Male'}"></app-radio-button>
+    <app-radio-button [radioMeta]="{ value: '2', valueDisplay: 'Female'}"></app-radio-button>
+    <app-radio-button [radioMeta]="{ value: '3', valueDisplay: 'Other'}"></app-radio-button>
   </div>
 </div>
+
+
 
 <h2 class="heading-main">Tooltip</h2>
 
 <div class="d-flex row mt-10 flex-wrap">
   <div class="grid-4 mb-25">
     <div class="form-group">
-      <button mat-raised-button mat-dialog-close class="btn-medium" color="primary" matTooltip="Download"
-        matTooltipPosition="above" matTooltipClass="custom-tooltip">
+      <button mat-raised-button class="btn-medium" color="primary" matTooltip="Download" matTooltipPosition="above"
+        matTooltipClass="custom-tooltip">
         Tooltip button
       </button>
     </div>
@@ -119,63 +124,42 @@
 
 <div class="d-flex row mt-10 flex-wrap">
   <div class="grid-4 mb-25">
-
-    <mat-horizontal-stepper linear>
-      <mat-step>
-      </mat-step>
-
-      <mat-step>
-      </mat-step>
-
-      <mat-step>
-      </mat-step>
-
-      <mat-step>
-      </mat-step>
-
-    </mat-horizontal-stepper>
+    <app-stepper></app-stepper>
   </div>
 </div>
+
+
 
 <h2 class="heading-main">Notification</h2>
 
 <div class="d-flex row mt-10 flex-wrap">
   <div class="grid-4 mb-25">
-
   </div>
 </div>
 
 
-
-<div class="d-flex row mt-10 flex-wrap">
-  <div class="grid-4 mb-25">
-
-  </div>
-</div>
 <h2 class="heading-main">Tabs</h2>
 
 
 <div class="d-flex row mt-10 flex-wrap">
   <div class="mb-25">
-    <mat-tab-group>
-      <mat-tab label="Simple Tab 1"> </mat-tab>
-      <mat-tab label="Simple Tab 2"> </mat-tab>
-      <mat-tab label="Simple Tab 3"> </mat-tab>
-    </mat-tab-group>
+
+    <app-tabs [tabMeta]="[
+    {label: 'Simple Tab 1', name: 'Tab 1'},
+    {label: 'Simple Tab 2', name: 'Tab 2'},
+    {label: 'Simple Tab 2', name: 'Tab 3'}]">
+    </app-tabs>
+
   </div>
 </div>
+
+
 
 <h2 class="heading-main">Text edit</h2>
 
 <div class="d-flex row mt-10 flex-wrap">
   <div class="grid-12 mb-25">
-    <editor apiKey="oqnke9owt2yvuobo1w0ozgjymavd1fkn967k38bu9j7hmkhh" [init]="{
-          icons: 'material',
-          skin: 'borderless',
-          plugins: 'wordcount',
-          menubar: false,
-          min_height: 150
-        }"></editor>
+    <app-text-editor></app-text-editor>
   </div>
 </div>
 
@@ -190,6 +174,7 @@
 </div>
 
 
+
 <h2 class="heading-main">Header</h2>
 
 <div class="d-flex row mt-10 flex-wrap">
@@ -197,6 +182,7 @@
     <app-header></app-header>
   </div>
 </div>
+
 
 
 <h2 class="heading-main">Table</h2>

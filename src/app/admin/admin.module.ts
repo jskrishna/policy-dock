@@ -26,7 +26,6 @@ import {
 import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material';
 import { AllComponentsComponent } from './views/all-components/all-components.component';
 import { FormsModule } from '@angular/forms';
-import { EditorModule } from "@tinymce/tinymce-angular";
 import { SharedComponentsModule } from '../front/shared-components/shared-components.module';
 
 
@@ -60,7 +59,6 @@ const APP_CONTAINERS = [
     ComponentsModule,
     MaterialModule,
     FormsModule,
-    EditorModule,
     SharedComponentsModule
   ],
   entryComponents: [
