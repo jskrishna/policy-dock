@@ -147,7 +147,7 @@
     <app-tabs [tabMeta]="[
     {label: 'Simple Tab 1', name: 'Tab 1'},
     {label: 'Simple Tab 2', name: 'Tab 2'},
-    {label: 'Simple Tab 2', name: 'Tab 3'}]">
+    {label: 'Simple Tab 3', name: 'Tab 3'}]">
     </app-tabs>
 
   </div>
@@ -187,8 +187,82 @@
 
 <h2 class="heading-main">Table</h2>
 
-<div class="d-flex row mt-10 flex-wrap">
-  <div class="grid-4 mb-25">
+
+<div class="row mt-10">
+  <div class="mb-25">
+    <h2 class="heading-main">My Current Policies Table</h2>
+
+    <app-table-current-policy [tablePolicyMeta]="policyTableData"></app-table-current-policy>
+
+  </div>
+</div>
+
+
+<div class="row mt-10">
+  <div class="mb-25">
+    <h2 class="heading-main">Application Details</h2>
+
+    <app-table-application-details [tableApplicationMeta]="applicationTableData1"></app-table-application-details>
+
+  </div>
+</div>
+
+
+<div class="row mt-10">
+  <div class="mb-25">
+    <h2 class="heading-main">Application Details</h2>
+
+    <app-table-application-details [tableApplicationMeta]="applicationTableData2"></app-table-application-details>
+
+  </div>
+</div>
+
+
+<div class="row mt-10">
+  <div class="mb-25">
+    <h2 class="heading-main">Application Details</h2>
+
+    <app-table-application-details [tableApplicationMeta]="applicationTableData3"></app-table-application-details>
+
+  </div>
+</div>
+
+
+<div class="row mt-10">
+  <div class="mb-25">
+    <h2 class="heading-main">Process of Quotation</h2>
+
+    <app-table-quotation [tableData]="quotation" class="no-color"></app-table-quotation>
+
+  </div>
+</div>
+
+
+<div class="row mt-10">
+  <div class="mb-25">
+    <h2 class="heading-main">Product Provider Admin - Policy Administration</h2>
+
+    <app-table-policy-administration [tableMeta]="adminstrationData"></app-table-policy-administration>
+
+  </div>
+</div>
+
+
+<div class="row mt-10">
+  <div class="mb-25">
+    <h2 class="heading-main">Available Endpoints</h2>
+
+    <app-table-available-endpoints [tableMeta]="endpointData"></app-table-available-endpoints>
+
+  </div>
+</div>
+
+
+<div class="row mt-10">
+  <div class="mb-25">
+    <h2 class="heading-main">Product Provider Admin - Policy Administration</h2>
+
+    <app-table-product-provider-policy-admin class="tr-width" [tableMeta]="administrationDetails"></app-table-product-provider-policy-admin>
 
   </div>
 </div>

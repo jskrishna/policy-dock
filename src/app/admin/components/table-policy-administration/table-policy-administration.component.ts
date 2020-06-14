@@ -1,33 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { MatTableDataSource } from "@angular/material/table";
-
-export interface AdminstrationData {
-  username: string;
-  nameCompany: string;
-  apiKey: string;
-  totalQueries: number;
-  quotesProvided: number;
-  policiesSold: number;
-}
-
-const ELEMENT_DATA: AdminstrationData[] = [
-  {
-    username: "user1",
-    nameCompany: "Co.APP",
-    apiKey: "asdadad12331mcs",
-    totalQueries: 5000,
-    quotesProvided: 34,
-    policiesSold: 23
-  },
-  {
-    username: "user1",
-    nameCompany: "Co.APP",
-    apiKey: "asdadad12331mcs",
-    totalQueries: 5000,
-    quotesProvided: 34,
-    policiesSold: 23
-  }
-];
 
 @Component({
   selector: 'app-table-policy-administration',
@@ -36,6 +8,8 @@ const ELEMENT_DATA: AdminstrationData[] = [
 })
 
 export class TablePolicyAdministrationComponent implements OnInit {
+
+  @Input('tableMeta') tableMeta: any;
 
   displayedColumns: string[] = [
     "username",
@@ -47,10 +21,15 @@ export class TablePolicyAdministrationComponent implements OnInit {
     "permissions",
     "action"
   ];
-  dataSource = new MatTableDataSource(ELEMENT_DATA);
+  
+  dataSource;
 
-  constructor() { }
-
+  constructor() {
+    setTimeout(() => {
+      this.dataSource = new MatTableDataSource(this.tableMeta.value);
+    }, 0);
+  }
+  
   ngOnInit() {
   }
 }

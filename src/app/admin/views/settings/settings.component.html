@@ -2,7 +2,7 @@
 
 <mat-card class="no-gutter">
   <mat-card-content>
-    <app-table-policy-administration></app-table-policy-administration>
+    <app-table-policy-administration [tableMeta]="adminstrationData"></app-table-policy-administration>
   </mat-card-content>
 </mat-card>
 
@@ -15,7 +15,7 @@
 
   <mat-card class="no-gutter">
     <mat-card-content>
-      <app-table-available-endpoints></app-table-available-endpoints>
+      <app-table-available-endpoints [tableMeta]="endpointData"></app-table-available-endpoints>
     </mat-card-content>
   </mat-card>
 </div>

@@ -3,25 +3,25 @@
 
         <!-- sections Column -->
         <ng-container matColumnDef="sections">
-            <th mat-header-cell *matHeaderCellDef> Sections </th>
+            <th mat-header-cell *matHeaderCellDef> {{tableMeta?.component == 'allComponent' ? ' ' : 'Sections'}} </th>
             <td mat-cell *matCellDef="let element"> {{element.sections}} </td>
         </ng-container>
 
         <!-- sumInsuredMin Column -->
         <ng-container matColumnDef="sumInsuredMin">
-            <th mat-header-cell *matHeaderCellDef> Sum Insured Min. </th>
+            <th mat-header-cell *matHeaderCellDef> {{tableMeta?.component == 'allComponent' ? ' ' : 'Sum Insured Min.'}} </th>
             <td mat-cell *matCellDef="let element"> {{element.sumInsuredMin}} </td>
         </ng-container>
 
         <!-- sumInsuredMax Column -->
         <ng-container matColumnDef="sumInsuredMax">
-            <th mat-header-cell *matHeaderCellDef> Sum Insured Max. </th>
+            <th mat-header-cell *matHeaderCellDef> {{tableMeta?.component == 'allComponent' ? ' ' : 'Sum Insured Max.'}} </th>
             <td mat-cell *matCellDef="let element"> {{element.sumInsuredMax}} </td>
         </ng-container>
 
         <!-- rate Column -->
         <ng-container matColumnDef="rate">
-            <th mat-header-cell *matHeaderCellDef> Rate % </th>
+            <th mat-header-cell *matHeaderCellDef> {{tableMeta?.component == 'allComponent' ? ' ' : 'Rate %'}}  </th>
             <td mat-cell *matCellDef="let element">
 
                 <custom-select placeholder="Manual">
@@ -36,7 +36,7 @@
 
         <!-- overridePremium Column -->
         <ng-container matColumnDef="overridePremium">
-            <th mat-header-cell *matHeaderCellDef> Override Premium % </th>
+            <th mat-header-cell *matHeaderCellDef> {{tableMeta?.component == 'allComponent' ? ' ' : 'Override Premium %'}} </th>
             <td mat-cell *matCellDef="let element">
 
                 <custom-select placeholder="Default Value">
@@ -48,7 +48,7 @@
 
         <!-- possibleTypes Column -->
         <ng-container matColumnDef="possibleTypes">
-            <th mat-header-cell *matHeaderCellDef> Possible Types/ Values </th>
+            <th mat-header-cell *matHeaderCellDef> {{tableMeta?.component == 'allComponent' ? ' ' : 'Possible Types/ Values'}} </th>
             <td mat-cell *matCellDef="let element">
 
                 <custom-select placeholder="Manual">

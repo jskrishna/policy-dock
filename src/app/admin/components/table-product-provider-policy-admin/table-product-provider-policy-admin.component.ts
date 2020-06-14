@@ -1,37 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { MatTableDataSource } from "@angular/material/table";
-
-export interface ProductProviderPolicyAdministration {
-  sections: string;
-  sumInsuredMin: string;
-  sumInsuredMax: string;
-  rate?: string;
-  overridePremium?: string;
-  possibleTypes?: string;
-}
-
-const ELEMENT_DATA: ProductProviderPolicyAdministration[] = [
-  {
-    sections: "Tires",
-    sumInsuredMin: "200",
-    sumInsuredMax: "10,000",
-  },
-  {
-    sections: "Engine",
-    sumInsuredMin: "200",
-    sumInsuredMax: "10,000",
-  },
-  {
-    sections: "Chasy",
-    sumInsuredMin: "200",
-    sumInsuredMax: "10,000",
-  },
-  {
-    sections: "Seats",
-    sumInsuredMin: "200",
-    sumInsuredMax: "10,000",
-  },
-];
 
 @Component({
   selector: 'app-table-product-provider-policy-admin',
@@ -39,7 +7,8 @@ const ELEMENT_DATA: ProductProviderPolicyAdministration[] = [
   styleUrls: ['./table-product-provider-policy-admin.component.scss']
 })
 export class TableProductProviderPolicyAdminComponent implements OnInit {
-
+  @Input('tableMeta') tableMeta: any;
+  
   displayedColumns: string[] = [
     "sections",
     "sumInsuredMin",
@@ -48,9 +17,13 @@ export class TableProductProviderPolicyAdminComponent implements OnInit {
     "overridePremium",
     "possibleTypes"
   ];
-  dataSource = new MatTableDataSource(ELEMENT_DATA);
+  dataSource;
 
-  constructor() { }
+  constructor() {
+    setTimeout(() => {
+      this.dataSource = new MatTableDataSource(this.tableMeta.value);
+    }, 0);
+  }
 
   ngOnInit() {
   }
