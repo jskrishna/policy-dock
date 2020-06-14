@@ -1,51 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { MatTableDataSource } from "@angular/material/table";
-
-export interface EndpointsData {
-  endpoint: string;
-  requestType: string;
-  queries: number;
-  enabled: boolean;
-}
-
-const ELEMENT_DATA: EndpointsData[] = [
-  {
-    endpoint: "Application",
-    requestType: "POST",
-    queries: 234,
-    enabled: true,
-  },
-  {
-    endpoint: "Proposal",
-    requestType: "POST",
-    queries: 234,
-    enabled: true,
-  },
-  {
-    endpoint: "Quotation",
-    requestType: "POST",
-    queries: 234,
-    enabled: true,
-  },
-  {
-    endpoint: "Get Policy",
-    requestType: "POST",
-    queries: 234,
-    enabled: true,
-  },
-  {
-    endpoint: "Account Query",
-    requestType: "POST",
-    queries: 234,
-    enabled: true,
-  },
-  {
-    endpoint: "Benefit Illustration",
-    requestType: "POST",
-    queries: 234,
-    enabled: true,
-  }
-];
 
 @Component({
   selector: 'app-table-available-endpoints',
@@ -55,6 +9,8 @@ const ELEMENT_DATA: EndpointsData[] = [
 
 export class TableAvailableEndpointsComponent implements OnInit {
 
+  @Input('tableMeta') tableMeta: any;
+
   displayedColumns: string[] = [
     "endpoint",
     "requestType",
@@ -62,9 +18,13 @@ export class TableAvailableEndpointsComponent implements OnInit {
     "enabled",
     "action"
   ];
-  dataSource = new MatTableDataSource(ELEMENT_DATA);
+  dataSource;
 
-  constructor() { }
+  constructor() {
+    setTimeout(() => {
+      this.dataSource = new MatTableDataSource(this.tableMeta.value);
+    }, 0);
+  }
 
   ngOnInit() {
   }

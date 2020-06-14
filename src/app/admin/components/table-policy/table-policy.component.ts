@@ -1,9 +1,7 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
-import { MatSort } from "@angular/material/sort";
 import { MatTableDataSource } from "@angular/material/table";
-import { Title } from "@angular/platform-browser";
 
-export interface PeriodicElement {
+export interface PolicyElement {
   date: string;
   renewDate: string;
   policy: string;
@@ -12,7 +10,7 @@ export interface PeriodicElement {
   payment: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
+const ELEMENT_DATA: PolicyElement[] = [
   {
     date: "12/02/2020",
     renewDate: "11/03/2021",
@@ -53,7 +51,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ["./table-policy.component.scss"],
 })
 export class TablePolicyComponent implements OnInit {
-  @ViewChild(MatSort, { static: true }) sort: MatSort;
 
   displayedColumns: string[] = [
     "date",
@@ -68,9 +65,7 @@ export class TablePolicyComponent implements OnInit {
   ];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
-  constructor(private titleService: Title) {}
+  constructor() { }
 
-  ngOnInit() {
-    this.dataSource.sort = this.sort;
-  }
+  ngOnInit() { }
 }

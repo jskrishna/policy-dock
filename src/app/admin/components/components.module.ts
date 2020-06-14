@@ -29,6 +29,8 @@ import { TabsComponent } from './all-components-subcomponents/tabs/tabs.componen
 import { TextEditorComponent } from './all-components-subcomponents/text-editor/text-editor.component';
 import { EditorModule } from "@tinymce/tinymce-angular";
 import { StepperComponent } from './all-components-subcomponents/stepper/stepper.component';
+import { TableCurrentPolicyComponent } from './all-components-subcomponents/table-current-policy/table-current-policy.component';
+import { TableApplicationDetailsComponent } from './all-components-subcomponents/table-application-details/table-application-details.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { StepperComponent } from './all-components-subcomponents/stepper/stepper
     RadioButtonComponent,
     TabsComponent,
     TextEditorComponent,
-    StepperComponent
+    StepperComponent,
+    TableCurrentPolicyComponent,
+    TableApplicationDetailsComponent
   ],
   imports: [
     CommonModule,
@@ -90,7 +94,9 @@ import { StepperComponent } from './all-components-subcomponents/stepper/stepper
     RadioButtonComponent,
     TabsComponent,
     TextEditorComponent,
-    StepperComponent
+    StepperComponent,
+    TableCurrentPolicyComponent,
+    TableApplicationDetailsComponent
   ]
 })
 export class ComponentsModule { }

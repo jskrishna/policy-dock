@@ -3,14 +3,18 @@
 
         <!--  productItems Column -->
         <ng-container matColumnDef="productItems">
-            <th mat-header-cell *matHeaderCellDef> Product Items </th>
+            <th mat-header-cell *matHeaderCellDef>
+                {{tableData?.component == 'allComponent' ? ' ' : 'Product Items'}}
+            </th>
             <td mat-cell *matCellDef="let element"> {{element.productItems}} </td>
             <td mat-footer-cell *matFooterCellDef> </td>
         </ng-container>
 
         <!--  detail Column -->
         <ng-container matColumnDef="detail">
-            <th mat-header-cell *matHeaderCellDef> Detail </th>
+            <th mat-header-cell *matHeaderCellDef> {{tableData?.component == 'allComponent' ? ' ' : 'Detail'}}
+
+            </th>
             <td mat-cell *matCellDef="let element"> {{element.detail}} </td>
             <ng-container *ngIf="tableData?.name == 'clausesAndExtensions'">
                 <td mat-footer-cell *matFooterCellDef> Total </td>
@@ -19,7 +23,9 @@
 
         <!--  included Column -->
         <ng-container matColumnDef="included">
-            <th mat-header-cell *matHeaderCellDef> Included </th>
+            <th mat-header-cell *matHeaderCellDef> {{tableData?.component == 'allComponent' ? ' ' : 'Included'}}
+
+            </th>
             <td mat-cell *matCellDef="let element"> {{element.included}} </td>
             <td mat-footer-cell *matFooterCellDef> </td>
 
@@ -27,10 +33,12 @@
 
         <!--  insuredAmount Column -->
         <ng-container matColumnDef="insuredAmount">
-            <th mat-header-cell *matHeaderCellDef>  Rate %</th>
+            <th mat-header-cell *matHeaderCellDef> {{tableData?.component == 'allComponent' ? ' ' : 'Rate %'}}
+
+            </th>
 
             <!-- <ng-container *ngIf="!element?.insuredAmount"> -->
-                <td mat-cell *matCellDef="let element"> {{element?.insuredAmount}} </td>
+            <td mat-cell *matCellDef="let element"> {{element?.insuredAmount}} </td>
             <!-- </ng-container> -->
             <!-- <ng-container *ngIf="!element?.insuredAmount">
                 <td mat-cell *matCellDef="let element">
@@ -47,7 +55,8 @@
 
         <!--  rate Column -->
         <ng-container matColumnDef="rate">
-            <th mat-header-cell *matHeaderCellDef> Insured Amount </th>
+            <th mat-header-cell *matHeaderCellDef> {{tableData?.component == 'allComponent' ? ' ' : 'Insured Amount'}}
+            </th>
             <td mat-cell *matCellDef="let element"> {{element.rate}} </td>
             <td mat-footer-cell *matFooterCellDef> </td>
 
@@ -55,21 +64,24 @@
 
         <!--  calculatedPremium Column -->
         <ng-container matColumnDef="calculatedPremium">
-            <th mat-header-cell *matHeaderCellDef> Calculated Premium </th>
+            <th mat-header-cell *matHeaderCellDef>
+                {{tableData?.component == 'allComponent' ? ' ' : 'Calculated Premium'}} </th>
             <td mat-cell *matCellDef="let element"> {{element.calculatedPremium}} </td>
             <td mat-footer-cell *matFooterCellDef> </td>
         </ng-container>
 
         <!--  overridePremium Column -->
         <ng-container matColumnDef="overridePremium">
-            <th mat-header-cell *matHeaderCellDef> Override Premium </th>
+            <th mat-header-cell *matHeaderCellDef> {{tableData?.component == 'allComponent' ? ' ' : 'Override Premium'}}
+            </th>
             <td mat-cell *matCellDef="let element"> {{element.overridePremium}} </td>
             <td mat-footer-cell *matFooterCellDef> </td>
         </ng-container>
 
         <!--  premiumAmount Column -->
         <ng-container matColumnDef="premiumAmount">
-            <th mat-header-cell *matHeaderCellDef> Premium Amount </th>
+            <th mat-header-cell *matHeaderCellDef> {{tableData?.component == 'allComponent' ? ' ' : 'Premium Amount'}}
+            </th>
             <td mat-cell *matCellDef="let element"> {{element.premiumAmount}} </td>
             <ng-container *ngIf="tableData?.name == 'clausesAndExtensions'">
                 <td mat-footer-cell *matFooterCellDef> $12000 </td>
