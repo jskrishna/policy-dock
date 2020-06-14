@@ -1,319 +1,321 @@
-<h2 class="heading-main">Buttons</h2>
+<div class="pd30">
+  <h2 class="heading-main">Buttons</h2>
 
-<div class="d-flex row mt-10 flex-wrap">
+  <div class="d-flex row mt-10 flex-wrap">
 
-  <div class="grid-2 mb-25">
-    <app-button class="btn-stoke" [buttonMeta]="{ type: 'buttonStyle1', value: 'Download PDF'}">
-    </app-button>
-  </div>
-
-  <div class="grid-10 mb-25">
-    <app-button [buttonMeta]="{ type: 'buttonStyle2', value: 'Download PDF'}">
-    </app-button>
-  </div>
-
-</div>
-
-
-
-<h2 class="heading-main">Input</h2>
-
-<div class="d-flex row mt-10 flex-wrap">
-
-  <div class="grid-2 mb-25">
-    <div class="form-group">
-      <label>Title</label>
-      <app-input-field [inputMeta]="{ type: 'text', value: 'Lorem Ipsum', disabled: false}"></app-input-field>
+    <div class="grid-2 mb-25">
+      <app-button class="btn-stoke" [buttonMeta]="{ type: 'buttonStyle1', value: 'Download PDF'}">
+      </app-button>
     </div>
-  </div>
 
-  <div class="grid-2 mb-25">
-    <div class="form-group">
-      <label>Title</label>
-      <app-input-field [inputMeta]="{ type: 'text', value: '$200', disabled: true}"></app-input-field>
+    <div class="grid-10 mb-25">
+      <app-button [buttonMeta]="{ type: 'buttonStyle2', value: 'Download PDF'}">
+      </app-button>
     </div>
-  </div>
 
-
-  <div class="grid-2 mb-25">
-    <div class="form-group">
-      <label>Title</label>
-      <app-input-field class="error" [inputMeta]="{ type: 'text', value: 'Text', disabled: false}">
-      </app-input-field>
-      <p class="error-alert">
-        Error message
-      </p>
-    </div>
-  </div>
-
-  <div class="grid-2 mb-25">
-    <div class="form-group">
-      <label>Title</label>
-      <app-input-field [inputMeta]="{ type: 'date', value: '', disabled: false}"></app-input-field>
-    </div>
   </div>
 
 
 
-</div>
+  <h2 class="heading-main">Input</h2>
 
+  <div class="d-flex row mt-10 flex-wrap">
 
-<h2 class="heading-main">Select Option</h2>
-<div class="d-flex row mt-10 flex-wrap">
-  <div class="grid-2 mb-25">
-    <div class="form-group">
-      <label>Title</label>
-      <custom-select placeholder="Text">
-        <custom-select-option key="1" value="1"></custom-select-option>
-        <custom-select-option key="2" value="2"></custom-select-option>
-        <custom-select-option key="3" value="3"></custom-select-option>
-      </custom-select>
-    </div>
-  </div>
-</div>
-
-<h2 class="heading-main">Checkbox</h2>
-
-<div class="d-flex row mt-10 flex-wrap">
-  <div class="grid-2 mb-25">
-    <div class="form-group">
-      <div class="d-flex align-items-center">
-        <app-checkbox [checkboxMeta]="{ value: 'Back', checked: true}"></app-checkbox>
-        <app-checkbox [checkboxMeta]="{ value: 'Front', checked: false}"></app-checkbox>
-        <app-checkbox [checkboxMeta]="{ value: 'Sunroof', checked: false}"></app-checkbox>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<h2 class="heading-main">Radio Button</h2>
-<div class="d-flex row mt-10 flex-wrap">
-  <div class="grid-2 mb-25">
-    <div class="form-group cs-radio">
-      <div class="d-flex align-items-center">
-        <app-radio-button [radioMeta]="{ value: '1', valueDisplay: 'Male'}"></app-radio-button>
-        <app-radio-button [radioMeta]="{ value: '2', valueDisplay: 'Female'}"></app-radio-button>
-        <app-radio-button [radioMeta]="{ value: '3', valueDisplay: 'Other'}"></app-radio-button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-<h2 class="heading-main">Tooltip</h2>
-
-<div class="d-flex row mt-10 flex-wrap">
-  <div class="grid-4 mb-25">
-    <div class="form-group">
-      <button mat-raised-button class="btn-medium" color="primary" matTooltip="Download" matTooltipPosition="above"
-        matTooltipClass="custom-tooltip">
-        Tooltip button
-      </button>
-    </div>
-  </div>
-</div>
-
-
-
-<h2 class="heading-main">Wizard</h2>
-
-<div class="d-flex row mt-10 flex-wrap">
-  <div class="grid-1 mb-25">
-    <app-stepper></app-stepper>
-  </div>
-</div>
-
-
-
-<h2 class="heading-main">Notification</h2>
-
-<div class="d-flex row mt-10 flex-wrap">
-  <div class="grid-4 mb-25">
-    <div class="notification">
-      <img src="assets/img/icn_notification.svg" alt="" />
-      <span class="notification-counter">1</span>
-      <div class="noti-data">
-        <div class="noti-wrapper d-flex">
-          <div class="noti-left">
-            <div class="noti noti-info">
-              <img src="assets/img/info.svg" alt="" />
-            </div>
-          </div>
-          <div class="noti-right">
-            <div class="d-flex">
-              <span>Breaking News</span>
-              <span>20 seconds ago</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-          </div>
-        </div>
-        <div class="noti-wrapper d-flex">
-          <div class="noti-left">
-            <div class="noti noti-green">
-              <img src="assets/img/mark.svg" alt="" />
-            </div>
-          </div>
-          <div class="noti-right">
-            <div class="d-flex">
-              <span>Breaking News</span>
-              <span>20 seconds ago</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-          </div>
-        </div>
-        <div class="noti-wrapper d-flex">
-          <div class="noti-left">
-            <div class="noti noti-info">
-              <img src="assets/img/info.svg" alt="" />
-            </div>
-          </div>
-          <div class="noti-right">
-            <div class="d-flex">
-              <span>Breaking News</span>
-              <span>20 seconds ago</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-          </div>
-        </div>
+    <div class="grid-2 mb-25">
+      <div class="form-group">
+        <label>Title</label>
+        <app-input-field [inputMeta]="{ type: 'text', value: 'Lorem Ipsum', disabled: false}"></app-input-field>
       </div>
     </div>
 
-    <app-notifications></app-notifications>
-    
+    <div class="grid-2 mb-25">
+      <div class="form-group">
+        <label>Title</label>
+        <app-input-field [inputMeta]="{ type: 'text', value: '$200', disabled: true}"></app-input-field>
+      </div>
+    </div>
+
+
+    <div class="grid-2 mb-25">
+      <div class="form-group">
+        <label>Title</label>
+        <app-input-field class="error" [inputMeta]="{ type: 'text', value: 'Text', disabled: false}">
+        </app-input-field>
+        <p class="error-alert">
+          Error message
+        </p>
+      </div>
+    </div>
+
+    <div class="grid-2 mb-25">
+      <div class="form-group">
+        <label>Title</label>
+        <app-input-field [inputMeta]="{ type: 'date', value: '', disabled: false}"></app-input-field>
+      </div>
+    </div>
+
+
+
   </div>
-</div>
 
 
-<h2 class="heading-main">Tabs</h2>
-<div class="d-flex row mt-10 flex-wrap">
-  <div class="mb-25">
-    <app-tabs [tabMeta]="[
+  <h2 class="heading-main">Select Option</h2>
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-2 mb-25">
+      <div class="form-group">
+        <label>Title</label>
+        <custom-select placeholder="Text">
+          <custom-select-option key="1" value="1"></custom-select-option>
+          <custom-select-option key="2" value="2"></custom-select-option>
+          <custom-select-option key="3" value="3"></custom-select-option>
+        </custom-select>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="heading-main">Checkbox</h2>
+
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-2 mb-25">
+      <div class="form-group">
+        <div class="d-flex align-items-center">
+          <app-checkbox [checkboxMeta]="{ value: 'Back', checked: true}"></app-checkbox>
+          <app-checkbox [checkboxMeta]="{ value: 'Front', checked: false}"></app-checkbox>
+          <app-checkbox [checkboxMeta]="{ value: 'Sunroof', checked: false}"></app-checkbox>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <h2 class="heading-main">Radio Button</h2>
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-2 mb-25">
+      <div class="form-group cs-radio">
+        <div class="d-flex align-items-center">
+          <app-radio-button [radioMeta]="{ value: '1', valueDisplay: 'Male'}"></app-radio-button>
+          <app-radio-button [radioMeta]="{ value: '2', valueDisplay: 'Female'}"></app-radio-button>
+          <app-radio-button [radioMeta]="{ value: '3', valueDisplay: 'Other'}"></app-radio-button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <h2 class="heading-main">Tooltip</h2>
+
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-4 mb-25">
+      <div class="form-group">
+        <button mat-raised-button class="btn-medium" color="primary" matTooltip="Download" matTooltipPosition="above"
+          matTooltipClass="custom-tooltip">
+          Tooltip button
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <h2 class="heading-main">Wizard</h2>
+
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-1 mb-25">
+      <app-stepper></app-stepper>
+    </div>
+  </div>
+
+
+
+  <h2 class="heading-main">Notification</h2>
+
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-4 mb-25">
+      <div class="notification">
+        <img src="assets/img/icn_notification.svg" alt="" />
+        <span class="notification-counter">1</span>
+        <div class="noti-data">
+          <div class="noti-wrapper d-flex">
+            <div class="noti-left">
+              <div class="noti noti-info">
+                <img src="assets/img/info.svg" alt="" />
+              </div>
+            </div>
+            <div class="noti-right">
+              <div class="d-flex">
+                <span>Breaking News</span>
+                <span>20 seconds ago</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+            </div>
+          </div>
+          <div class="noti-wrapper d-flex">
+            <div class="noti-left">
+              <div class="noti noti-green">
+                <img src="assets/img/mark.svg" alt="" />
+              </div>
+            </div>
+            <div class="noti-right">
+              <div class="d-flex">
+                <span>Breaking News</span>
+                <span>20 seconds ago</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+            </div>
+          </div>
+          <div class="noti-wrapper d-flex">
+            <div class="noti-left">
+              <div class="noti noti-info">
+                <img src="assets/img/info.svg" alt="" />
+              </div>
+            </div>
+            <div class="noti-right">
+              <div class="d-flex">
+                <span>Breaking News</span>
+                <span>20 seconds ago</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <app-notifications></app-notifications>
+
+    </div>
+  </div>
+
+
+  <h2 class="heading-main">Tabs</h2>
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="mb-25">
+      <app-tabs [tabMeta]="[
     {label: 'Simple Tab 1', name: 'Tab 1'},
     {label: 'Simple Tab 2', name: 'Tab 2'},
     {label: 'Simple Tab 3', name: 'Tab 3'}]">
-    </app-tabs>
+      </app-tabs>
 
+    </div>
   </div>
-</div>
 
-<h2 class="heading-main">Alerts</h2>
-<div class="d-flex row mt-10 flex-wrap">
-  <div class="grid-2 mb-25">
-    Need 4 alerts
+  <h2 class="heading-main">Alerts</h2>
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-2 mb-25">
+      Need 4 alerts
+    </div>
   </div>
-</div>
 
-<h2 class="heading-main">Text edit</h2>
+  <h2 class="heading-main">Text edit</h2>
 
-<div class="d-flex row mt-10 flex-wrap">
-  <div class="grid-2 mb-25">
-    <app-text-editor></app-text-editor>
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-2 mb-25">
+      <app-text-editor></app-text-editor>
+    </div>
   </div>
-</div>
 
 
-<h2 class="heading-main">Header</h2>
-<div class="d-flex row mt-10 flex-wrap">
-  <div class="grid-4 mb-25">
-    <app-header></app-header>
+  <h2 class="heading-main">Header</h2>
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-4 mb-25">
+      <app-header></app-header>
+    </div>
   </div>
-</div>
 
 
 
-<h2 class="heading-main">Table</h2>
+  <h2 class="heading-main">Table</h2>
 
 
-<div class="row mt-10">
-  <div class="mb-25">
-    <h2 class="heading-main">My Current Policies Table</h2>
+  <div class="row mt-10">
+    <div class="mb-25">
+      <h2 class="heading-main">My Current Policies Table</h2>
 
-    <app-table-current-policy [tablePolicyMeta]="policyTableData"></app-table-current-policy>
+      <app-table-current-policy [tablePolicyMeta]="policyTableData"></app-table-current-policy>
 
+    </div>
   </div>
-</div>
 
 
-<div class="row mt-10">
-  <div class="mb-25">
-    <h2 class="heading-main">Application Details</h2>
+  <div class="row mt-10">
+    <div class="mb-25">
+      <h2 class="heading-main">Application Details</h2>
 
-    <app-table-application-details [tableApplicationMeta]="applicationTableData1"></app-table-application-details>
+      <app-table-application-details [tableApplicationMeta]="applicationTableData1"></app-table-application-details>
 
+    </div>
   </div>
-</div>
 
 
-<div class="row mt-10">
-  <div class="mb-25">
-    <h2 class="heading-main">Application Details</h2>
+  <div class="row mt-10">
+    <div class="mb-25">
+      <h2 class="heading-main">Application Details</h2>
 
-    <app-table-application-details [tableApplicationMeta]="applicationTableData2"></app-table-application-details>
+      <app-table-application-details [tableApplicationMeta]="applicationTableData2"></app-table-application-details>
 
+    </div>
   </div>
-</div>
 
 
-<div class="row mt-10">
-  <div class="mb-25">
-    <h2 class="heading-main">Application Details</h2>
+  <div class="row mt-10">
+    <div class="mb-25">
+      <h2 class="heading-main">Application Details</h2>
 
-    <app-table-application-details [tableApplicationMeta]="applicationTableData3"></app-table-application-details>
+      <app-table-application-details [tableApplicationMeta]="applicationTableData3"></app-table-application-details>
 
+    </div>
   </div>
-</div>
 
 
-<div class="row mt-10">
-  <div class="mb-25">
-    <h2 class="heading-main">Process of Quotation</h2>
+  <div class="row mt-10">
+    <div class="mb-25">
+      <h2 class="heading-main">Process of Quotation</h2>
 
-    <app-table-quotation [tableData]="quotation" class="no-color"></app-table-quotation>
+      <app-table-quotation [tableData]="quotation" class="no-color"></app-table-quotation>
 
+    </div>
   </div>
-</div>
 
 
-<div class="row mt-10">
-  <div class="mb-25">
-    <h2 class="heading-main">Product Provider Admin - Policy Administration</h2>
+  <div class="row mt-10">
+    <div class="mb-25">
+      <h2 class="heading-main">Product Provider Admin - Policy Administration</h2>
 
-    <app-table-policy-administration [tableMeta]="adminstrationData"></app-table-policy-administration>
+      <app-table-policy-administration [tableMeta]="adminstrationData"></app-table-policy-administration>
 
+    </div>
   </div>
-</div>
 
 
-<div class="row mt-10">
-  <div class="mb-25">
-    <h2 class="heading-main">Available Endpoints</h2>
+  <div class="row mt-10">
+    <div class="mb-25">
+      <h2 class="heading-main">Available Endpoints</h2>
 
-    <app-table-available-endpoints [tableMeta]="endpointData"></app-table-available-endpoints>
+      <app-table-available-endpoints [tableMeta]="endpointData"></app-table-available-endpoints>
 
+    </div>
   </div>
-</div>
 
 
-<div class="row mt-10">
-  <div class="mb-25">
-    <h2 class="heading-main">Product Provider Admin - Policy Administration</h2>
+  <div class="row mt-10">
+    <div class="mb-25">
+      <h2 class="heading-main">Product Provider Admin - Policy Administration</h2>
 
-    <app-table-product-provider-policy-admin class="tr-width" [tableMeta]="administrationDetails">
-    </app-table-product-provider-policy-admin>
+      <app-table-product-provider-policy-admin class="tr-width" [tableMeta]="administrationDetails">
+      </app-table-product-provider-policy-admin>
 
+    </div>
   </div>
-</div>
 
 
-<div class="row mt-10">
-  <div class="mb-25">
-    <h2 class="heading-main">Policy Schedule</h2>
+  <div class="row mt-10">
+    <div class="mb-25">
+      <h2 class="heading-main">Policy Schedule</h2>
 
-    <app-table-policy-schedule [tableMeta]="policyDetails"></app-table-policy-schedule>
+      <app-table-policy-schedule [tableMeta]="policyDetails"></app-table-policy-schedule>
 
+    </div>
   </div>
 </div>
