@@ -135,7 +135,7 @@ button.mat-raised-button {
 .mat-raised-button.mat-secondary:hover {
   /* background: #dae5ff; */
   background: #4080fe;
-  color: #fff;
+  color: #fff !important;
 }
 
 .mat-raised-button.mat-secondary {
