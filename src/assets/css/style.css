@@ -126,6 +126,7 @@ button.mat-raised-button {
   box-shadow: none !important;
   line-height: 40px;
   text-transform: capitalize;
+
 }
 
 .mat-raised-button.mat-primary:hover {

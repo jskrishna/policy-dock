@@ -27,6 +27,7 @@ import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material';
 import { AllComponentsComponent } from './views/all-components/all-components.component';
 import { FormsModule } from '@angular/forms';
 import { SharedComponentsModule } from '../front/shared-components/shared-components.module';
+import { IllustrationComponent } from './views/illustration/illustration.component';
 
 
 const APP_CONTAINERS = [
@@ -51,7 +52,8 @@ const APP_CONTAINERS = [
     DialogUserAccessrights,
     DialogApiAccessrights,
     DialogEditPaymentDetails,
-    AllComponentsComponent
+    AllComponentsComponent,
+    IllustrationComponent
   ],
   imports: [
     CommonModule,

@@ -653,6 +653,7 @@ input:focus {
 .notification {
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 .notification-counter {
@@ -665,4 +666,74 @@ input:focus {
   line-height: 14px;
   font-weight: 600;
   border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: -3px;
+}
+
+.noti {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #3070ff;
+  text-align: center;
+  line-height: 35px;
+}
+
+.noti.noti-green {
+  background: #60C798;
+}
+
+.noti-data {
+  background: #fff;
+  border-radius: 5px;
+  min-width: 407px;
+  font-size: 14px;
+}
+
+.noti-right span+span {
+  margin-left: 20px;
+}
+
+.noti-left {
+  margin-right: 10px;
+}
+
+.noti-wrapper {
+  padding: 10px;
+}
+
+.noti-wrapper+.noti-wrapper {
+  border-top: 1px solid #EDEDF3;
+}
+
+.noti-right p {
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #384053;
+}
+
+.noti-right span {
+  color: #797B80;
+  font-size: 12px;
+}
+
+.noti-data {
+  background: #fff;
+  border-radius: 5px;
+  min-width: 407px;
+  font-size: 14px;
+  position: absolute;
+  z-index: 99;
+  top: 120%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 300ms all;
+  box-shadow: 0 2px 90px rgba(38, 80, 119, 0.2);
+}
+
+.notification:hover .noti-data {
+  top: 100%;
+  visibility: visible;
+  opacity: 1;
 }
