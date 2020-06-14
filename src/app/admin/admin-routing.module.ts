@@ -16,6 +16,10 @@ import { AllComponentsComponent } from './views/all-components/all-components.co
 
 export const routes: Routes = [
   {
+    path: 'all-components',
+    component: AllComponentsComponent
+  },
+  {
     path: '',
     component: DefaultLayoutComponent,
     data: {
@@ -65,10 +69,6 @@ export const routes: Routes = [
       {
         path: 'modals',
         component: ModalsComponent
-      },
-      {
-        path: 'all-components',
-        component: AllComponentsComponent
       },
       {
         path: 'dashboard',
