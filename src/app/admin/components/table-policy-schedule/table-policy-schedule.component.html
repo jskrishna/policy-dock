@@ -3,13 +3,15 @@
 
         <!-- legalDocument Column -->
         <ng-container matColumnDef="legalDocument">
-            <th mat-header-cell *matHeaderCellDef> Legal Document </th>
-            <td mat-cell *matCellDef="let element"> {{element.document}} </td>
+            <th mat-header-cell *matHeaderCellDef> {{tableMeta?.component == 'allComponent' ? ' ' : 'Legal Document'}}
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element?.document}} </td>
         </ng-container>
 
         <!-- legalDocument Column -->
         <ng-container matColumnDef="keyPolicyTerms">
-            <th mat-header-cell *matHeaderCellDef> Key Policy Terms </th>
+            <th mat-header-cell *matHeaderCellDef> {{tableMeta?.component == 'allComponent' ? ' ' : 'Key Policy Terms'}}
+            </th>
             <td mat-cell *matCellDef="let element">
 
                 <custom-select placeholder="Default Value">
@@ -21,7 +23,8 @@
 
         <!-- insertIntoDoc Column -->
         <ng-container matColumnDef="insertIntoDoc">
-            <th mat-header-cell *matHeaderCellDef> Insert Into Doc </th>
+            <th mat-header-cell *matHeaderCellDef> {{tableMeta?.component == 'allComponent' ? ' ' : 'Insert Into Doc'}}
+            </th>
             <td mat-cell *matCellDef="let element">
                 <button mat-stroked-button color="primary" class="btn-small">Edit</button>
             </td>

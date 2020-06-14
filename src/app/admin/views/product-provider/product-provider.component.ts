@@ -9,6 +9,10 @@ export interface ProductProviderPolicyAdministration {
   possibleTypes?: string;
 }
 
+export interface PolicySchedule {
+  document: string;
+}
+
 @Component({
   selector: 'app-product-provider',
   templateUrl: './product-provider.component.html',
@@ -42,6 +46,17 @@ export class ProductProviderComponent implements OnInit {
   ];
   public administrationDetails;
 
+
+  public POLICY_ELEMENT_DATA: PolicySchedule[] = [
+    {
+      document: "Application"
+    },
+    {
+      document: "Application"
+    },
+  ];
+  public policyDetails;
+
   constructor() {
     this.bannerDetail = [
       { id: 1, imagePath: 'assets/img/authorization.svg', name: 'Check Report and Send to Authorization' },
@@ -50,6 +65,7 @@ export class ProductProviderComponent implements OnInit {
     ];
 
     this.administrationDetails = { name: 'administrationDetails', value: this.ADMIN_ELEMENT_DATA, component: 'productProvider' };
+    this.policyDetails = { name: 'policyDetails', value: this.POLICY_ELEMENT_DATA, component: 'productProvider' };
 
   }
 

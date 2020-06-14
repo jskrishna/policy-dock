@@ -53,6 +53,10 @@ export interface ProductProviderPolicyAdministration {
   possibleTypes?: string;
 }
 
+export interface PolicySchedule {
+  document: string;
+}
+
 @Component({
   selector: 'app-all-components',
   templateUrl: './all-components.component.html',
@@ -155,12 +159,20 @@ export class AllComponentsComponent implements OnInit {
   ];
   public administrationDetails;
 
+  public POLICY_ELEMENT_DATA: PolicySchedule[] = [
+    {
+      document: "Application"
+    }
+  ];
+  public policyDetails;
+
 
   constructor() {
     this.quotation = { name: 'quotation', value: this.quotationTableData, component: 'allComponent' };
     this.adminstrationData = { name: 'adminstrationData', value: this.adminstrationTableData, component: 'allComponent' };
     this.endpointData = { name: 'endpointData', value: this.ENDPOINTS_DATA, component: 'allComponent' };
     this.administrationDetails = { name: 'administrationDetails', value: this.ADMIN_ELEMENT_DATA, component: 'allComponent' };
+    this.policyDetails = { name: 'policyDetails', value: this.POLICY_ELEMENT_DATA, component: 'allComponent' };
   }
 
   ngOnInit() {

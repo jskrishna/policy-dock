@@ -31,6 +31,7 @@ import { EditorModule } from "@tinymce/tinymce-angular";
 import { StepperComponent } from './all-components-subcomponents/stepper/stepper.component';
 import { TableCurrentPolicyComponent } from './all-components-subcomponents/table-current-policy/table-current-policy.component';
 import { TableApplicationDetailsComponent } from './all-components-subcomponents/table-application-details/table-application-details.component';
+import { NotificationsComponent } from './all-components-subcomponents/notifications/notifications.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { TableApplicationDetailsComponent } from './all-components-subcomponents
     TextEditorComponent,
     StepperComponent,
     TableCurrentPolicyComponent,
-    TableApplicationDetailsComponent
+    TableApplicationDetailsComponent,
+    NotificationsComponent
   ],
   imports: [
     CommonModule,
@@ -96,7 +98,8 @@ import { TableApplicationDetailsComponent } from './all-components-subcomponents
     TextEditorComponent,
     StepperComponent,
     TableCurrentPolicyComponent,
-    TableApplicationDetailsComponent
+    TableApplicationDetailsComponent,
+    NotificationsComponent
   ]
 })
 export class ComponentsModule { }

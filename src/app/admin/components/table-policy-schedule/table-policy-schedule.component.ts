@@ -1,18 +1,6 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { MatTableDataSource } from "@angular/material/table";
 
-export interface PolicySchedule {
-  document: string;
-}
-
-const ELEMENT_DATA: PolicySchedule[] = [
-  {
-    document: "Application"
-  },
-  {
-    document: "Application"
-  },
-];
 
 @Component({
   selector: 'app-table-policy-schedule',
@@ -21,14 +9,22 @@ const ELEMENT_DATA: PolicySchedule[] = [
 })
 export class TablePolicyScheduleComponent implements OnInit {
 
+  @Input('tableMeta') tableMeta: any;
+
   displayedColumns: string[] = [
     "legalDocument",
     "keyPolicyTerms",
     "insertIntoDoc"
   ];
-  dataSource = new MatTableDataSource(ELEMENT_DATA);
 
-  constructor() { }
+
+  dataSource;
+
+  constructor() {
+    setTimeout(() => {
+      this.dataSource = new MatTableDataSource(this.tableMeta.value);
+    }, 0);
+  }
 
   ngOnInit() {
   }
