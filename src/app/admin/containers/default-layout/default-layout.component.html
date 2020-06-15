@@ -11,7 +11,8 @@
   <mat-sidenav-container class="navbar-sidenav-container">
     <!-- Side nav -->
     <mat-sidenav #snav [opened]="!mobileQuery.matches" [mode]="mobileQuery.matches ? 'over' : 'side'"
-      [fixedInViewport]="mobileQuery.matches" fixedTopGap="0" class="sidenav">
+      [fixedInViewport]="mobileQuery.matches" fixedTopGap="0" class="sidenav"
+      [ngClass]="{'red': selectedSidebarTheme == 'default' , 'green': selectedSidebarTheme == 'white', 'pink': selectedSidebarTheme == 'dark'}">
 
       <mat-nav-list>
         <a class="admin-logo" href="javascript:void(0);">
@@ -55,7 +56,7 @@
               <span>Sitemap</span>
             </p>
           </a>
-          
+
           <!-- 
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/all-components']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_sitemap.svg" alt="" />
@@ -68,6 +69,20 @@
               <span>Illustration</span>
             </p>
           </a>
+
+
+          <ul>
+            <li>
+              <a (click)="onValueClicked('default')">Default</a>
+            </li>
+            <li>
+              <a (click)="onValueClicked('white')">White</a>
+            </li>
+            <li>
+              <a (click)="onValueClicked('dark')">Dark</a>
+            </li>
+          </ul>
+
 
         </div>
 

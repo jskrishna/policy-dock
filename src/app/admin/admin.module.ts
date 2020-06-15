@@ -53,7 +53,7 @@ const APP_CONTAINERS = [
     DialogApiAccessrights,
     DialogEditPaymentDetails,
     AllComponentsComponent,
-    IllustrationComponent
+    IllustrationComponent,
   ],
   imports: [
     CommonModule,
