@@ -1,0 +1,21 @@
+.left-side-icons p {
+  flex: 0 0 12%;
+  max-width: 12%;
+}
+
+.left-side-icons,
+.right-side-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right-side-icons p {
+  flex: 0 0 12%;
+  max-width: 10%;
+}
+
+.right-side-icons p {
+  flex: 0 0 7%;
+  max-width: 7%;
+  margin-bottom: 0;
+}

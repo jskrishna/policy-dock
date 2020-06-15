@@ -1,0 +1,16 @@
+<mat-card>
+  <h2 class="heading-main">Icons 24 px</h2>
+
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-2">
+      <div class="left-side-icons">
+        <p *ngFor="let image of imagesLeft"><img src="{{image}}" /></p>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="right-side-icons">
+        <p *ngFor="let images of imagesRight"><img src="{{images}}" /></p>
+      </div>
+    </div>
+  </div>
+</mat-card>

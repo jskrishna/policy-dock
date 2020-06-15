@@ -34,6 +34,7 @@ import { TableApplicationDetailsComponent } from './all-components-subcomponents
 import { NotificationsComponent } from './all-components-subcomponents/notifications/notifications.component';
 import { HeaderAfterLoginComponent } from './all-components-subcomponents/header-after-login/header-after-login.component';
 import { AlertComponent } from './all-components-subcomponents/alert/alert.component';
+import { IconsComponent } from './icons/icons.component';
 
 @NgModule({
   declarations: [
@@ -63,8 +64,12 @@ import { AlertComponent } from './all-components-subcomponents/alert/alert.compo
     TableCurrentPolicyComponent,
     TableApplicationDetailsComponent,
     NotificationsComponent,
+<<<<<<< Updated upstream
     HeaderAfterLoginComponent,
     AlertComponent
+=======
+    IconsComponent
+>>>>>>> Stashed changes
   ],
   imports: [
     CommonModule,

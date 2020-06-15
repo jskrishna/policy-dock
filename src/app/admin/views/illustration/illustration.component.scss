@@ -1,0 +1,31 @@
+.illustration-image p img {
+  width: 100%;
+  max-width: 65%;
+  margin: 0 auto;
+  display: block;
+}
+
+.illustration-image p {
+  flex: 0 0 33%;
+  max-width: 33%;
+  margin-bottom: 40px;
+}
+
+.illustration-image,
+.illustration-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.illustration-image p {
+  flex: 0 0 33%;
+  max-width: 33%;
+  margin-bottom: 40px;
+}
+
+.illustration-right p {
+  flex: 0 0 14%;
+  max-width: 14%;
+  margin-bottom: 40px;
+}
