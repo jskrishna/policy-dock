@@ -134,54 +134,6 @@
 
   <div class="d-flex row mt-10 flex-wrap">
     <div class="grid-4 mb-25">
-      <div class="notification">
-        <img src="assets/img/icn_notification.svg" alt="" />
-        <span class="notification-counter">1</span>
-        <div class="noti-data">
-          <div class="noti-wrapper d-flex">
-            <div class="noti-left">
-              <div class="noti noti-info">
-                <img src="assets/img/info.svg" alt="" />
-              </div>
-            </div>
-            <div class="noti-right">
-              <div class="d-flex">
-                <span>Breaking News</span>
-                <span>20 seconds ago</span>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-            </div>
-          </div>
-          <div class="noti-wrapper d-flex">
-            <div class="noti-left">
-              <div class="noti noti-green">
-                <img src="assets/img/mark.svg" alt="" />
-              </div>
-            </div>
-            <div class="noti-right">
-              <div class="d-flex">
-                <span>Breaking News</span>
-                <span>20 seconds ago</span>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-            </div>
-          </div>
-          <div class="noti-wrapper d-flex">
-            <div class="noti-left">
-              <div class="noti noti-info">
-                <img src="assets/img/info.svg" alt="" />
-              </div>
-            </div>
-            <div class="noti-right">
-              <div class="d-flex">
-                <span>Breaking News</span>
-                <span>20 seconds ago</span>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <app-notifications></app-notifications>
 
@@ -204,7 +156,43 @@
   <h2 class="heading-main">Alerts</h2>
   <div class="d-flex row mt-10 flex-wrap">
     <div class="grid-2 mb-25">
-      Need 4 alerts
+
+      <app-alert [alertMeta]="{ 
+        imagePath: 'assets/img/mark.svg', 
+        alertHead: 'Price Alert', 
+        alertTime: '2 minutes', 
+        alertName: 'Success',
+        alertClass: 'noti-green'
+      }">
+      </app-alert>
+
+      <app-alert [alertMeta]="{ 
+        imagePath: 'assets/img/info.svg', 
+        alertHead: 'Price Alert', 
+        alertTime: '2 minutes', 
+        alertName: 'Info',
+        alertClass: 'noti-info'
+      }">
+      </app-alert>
+
+      <app-alert [alertMeta]="{ 
+        imagePath: 'assets/img/icn_warn.svg', 
+        alertHead: 'Price Alert', 
+        alertTime: '2 minutes', 
+        alertName: 'Warning',
+        alertClass: 'noti-warn'
+      }">
+      </app-alert>
+
+      <app-alert [alertMeta]="{ 
+        imagePath: 'assets/img/icn_error.svg', 
+        alertHead: 'Price Alert', 
+        alertTime: '2 minutes', 
+        alertName: 'Error',
+        alertClass: 'noti-error'
+      }">
+      </app-alert>
+
     </div>
   </div>
 
@@ -217,10 +205,18 @@
   </div>
 
 
-  <h2 class="heading-main">Header</h2>
+  <h2 class="heading-main">Header(Style 1)</h2>
   <div class="d-flex row mt-10 flex-wrap">
     <div class="grid-4 mb-25">
       <app-header></app-header>
+    </div>
+  </div>
+
+
+  <h2 class="heading-main">Header (Style 2)after login</h2>
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-4 mb-25">
+      <app-header-after-login></app-header-after-login>
     </div>
   </div>
 

@@ -1,0 +1,40 @@
+<mat-toolbar class="change-bg-header">
+    <mat-toolbar-row class="menu-bar-header">
+        <div class="m-logo">
+            <h1><a mat-button [routerLink]="'/home'"> LOGO </a></h1>
+        </div>
+
+        <div class="toggle-menu-mobile">
+            <mat-icon _ngcontent-ojf-c0="" class="mat-icon notranslate material-icons mat-icon-no-color" role="img"
+                aria-hidden="true">menu</mat-icon>
+        </div>
+
+        <div class="menu-language">
+
+            <div class="menu-links">
+                <a mat-button>
+                    <img src="assets/img/icn_mail.png" alt="mail">
+                    contact@mail.com
+                </a>
+
+            </div>
+
+            <app-notifications></app-notifications>
+
+
+            <div class="language-menus">
+
+                <a mat-button>
+                    <img src="assets/img/icn_user.png" alt="user">
+                    Nick Jones
+                </a>
+
+                <span class="head-lang">
+                </span>
+            </div>
+
+        </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>
+<div class="overlay"></div>

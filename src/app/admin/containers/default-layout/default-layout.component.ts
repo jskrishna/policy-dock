@@ -14,9 +14,10 @@ export class DefaultLayoutComponent implements OnInit, OnDestroy, AfterViewInit 
   @ViewChild('snav', { static: true }) public sidenav: MatSidenav;
 
   private _mobileQueryListener: () => void;
-  mobileQuery: MediaQueryList;
-  showSpinner: boolean;
-  title: string;
+  public mobileQuery: MediaQueryList;
+  public showSpinner: boolean;
+  public title: string;
+  public selectedSidebarTheme: string;
 
   /**
    * Constructor of the class.
@@ -64,4 +65,9 @@ export class DefaultLayoutComponent implements OnInit, OnDestroy, AfterViewInit 
   ngAfterViewInit(): void {
     this.changeDetectorRef.detectChanges();
   }
+
+  onValueClicked(value) {
+    this.selectedSidebarTheme = value;
+  }
+  
 }

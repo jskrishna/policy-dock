@@ -32,6 +32,8 @@ import { StepperComponent } from './all-components-subcomponents/stepper/stepper
 import { TableCurrentPolicyComponent } from './all-components-subcomponents/table-current-policy/table-current-policy.component';
 import { TableApplicationDetailsComponent } from './all-components-subcomponents/table-application-details/table-application-details.component';
 import { NotificationsComponent } from './all-components-subcomponents/notifications/notifications.component';
+import { HeaderAfterLoginComponent } from './all-components-subcomponents/header-after-login/header-after-login.component';
+import { AlertComponent } from './all-components-subcomponents/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { NotificationsComponent } from './all-components-subcomponents/notificat
     StepperComponent,
     TableCurrentPolicyComponent,
     TableApplicationDetailsComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    HeaderAfterLoginComponent,
+    AlertComponent
   ],
   imports: [
     CommonModule,
@@ -99,7 +103,9 @@ import { NotificationsComponent } from './all-components-subcomponents/notificat
     StepperComponent,
     TableCurrentPolicyComponent,
     TableApplicationDetailsComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    HeaderAfterLoginComponent,
+    AlertComponent
   ]
 })
 export class ComponentsModule { }
