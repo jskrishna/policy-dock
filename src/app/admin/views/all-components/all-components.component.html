@@ -129,6 +129,62 @@
   </div>
 
 
+  <h2 class="heading-main">Scroll</h2>
+
+  <div class="d-flex row mt-10 flex-wrap">
+    <div class="grid-3 mb-25">
+      <div class="custom-scroll custom-scroll-01">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+      </div>
+    </div>
+    <div class="grid-3 mb-25">
+      <div class="custom-scroll custom-scroll-02">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque voluptates excepturi totam
+          eligendi reprehenderit laboriosam provident suscipit quibusdam ex enim, culpa, fugit nesciunt adipisci numquam
+          doloribus vitae minima natus?</p>
+      </div>
+    </div>
+  </div>
+
+
 
   <h2 class="heading-main">Notification</h2>
 
@@ -139,7 +195,13 @@
 
     </div>
   </div>
-
+  <h2 class="heading-main">Calender</h2>
+  <div class="grid-2 mb-25">
+    <div class="form-group">
+      <label>Title</label>
+      <app-input-field [inputMeta]="{ type: 'date', value: '', disabled: false}"></app-input-field>
+    </div>
+  </div>
 
   <h2 class="heading-main">Tabs</h2>
   <div class="d-flex row mt-10 flex-wrap">
@@ -225,96 +287,104 @@
 
 
 
+
+
+
   <h2 class="heading-main">Table</h2>
 
 
-  <div class="row mt-10">
-    <div class="mb-25">
-      <h2 class="heading-main">My Current Policies Table</h2>
+  <div class="table-grp">
+    <div class="row mt-10">
+      <div class="mb-25">
+        <h2 class="heading-main">My Current Policies Table</h2>
 
-      <app-table-current-policy [tablePolicyMeta]="policyTableData"></app-table-current-policy>
+        <app-table-current-policy [tablePolicyMeta]="policyTableData"></app-table-current-policy>
 
+      </div>
     </div>
+
+
+    <div class="row mt-10">
+      <div class="mb-25">
+        <h2 class="heading-main">Application Details</h2>
+
+        <app-table-application-details class="color-header" [tableApplicationMeta]="applicationTableData1">
+        </app-table-application-details>
+
+      </div>
+    </div>
+
+
+    <div class="row mt-10">
+      <div class="mb-25">
+        <h2 class="heading-main">Application Details</h2>
+
+        <app-table-application-details [tableApplicationMeta]="applicationTableData2"></app-table-application-details>
+
+      </div>
+    </div>
+
+
+    <div class="row mt-10">
+      <div class="mb-25">
+        <h2 class="heading-main">Application Details</h2>
+
+        <app-table-application-details [tableApplicationMeta]="applicationTableData3"></app-table-application-details>
+
+      </div>
+    </div>
+
+
+    <div class="row mt-10">
+      <div class="mb-25">
+        <h2 class="heading-main">Process of Quotation</h2>
+
+        <app-table-quotation [tableData]="quotation" class="no-color"></app-table-quotation>
+
+      </div>
+    </div>
+
+
+    <div class="row mt-10">
+      <div class="mb-25">
+        <h2 class="heading-main">Product Provider Admin - Policy Administration</h2>
+
+        <app-table-policy-administration [tableMeta]="adminstrationData"></app-table-policy-administration>
+
+      </div>
+    </div>
+
+
+    <div class="row mt-10">
+      <div class="mb-25">
+        <h2 class="heading-main">Available Endpoints</h2>
+
+        <app-table-available-endpoints [tableMeta]="endpointData"></app-table-available-endpoints>
+
+      </div>
+    </div>
+
+
+    <div class="row mt-10">
+      <div class="mb-25">
+        <h2 class="heading-main">Product Provider Admin - Policy Administration</h2>
+
+        <app-table-product-provider-policy-admin class="tr-width" [tableMeta]="administrationDetails">
+        </app-table-product-provider-policy-admin>
+
+      </div>
+    </div>
+
+
+    <div class="row mt-10">
+      <div class="mb-25">
+        <h2 class="heading-main">Policy Schedule</h2>
+
+        <app-table-policy-schedule [tableMeta]="policyDetails"></app-table-policy-schedule>
+
+      </div>
+    </div>
+
   </div>
 
-
-  <div class="row mt-10">
-    <div class="mb-25">
-      <h2 class="heading-main">Application Details</h2>
-
-      <app-table-application-details [tableApplicationMeta]="applicationTableData1"></app-table-application-details>
-
-    </div>
-  </div>
-
-
-  <div class="row mt-10">
-    <div class="mb-25">
-      <h2 class="heading-main">Application Details</h2>
-
-      <app-table-application-details [tableApplicationMeta]="applicationTableData2"></app-table-application-details>
-
-    </div>
-  </div>
-
-
-  <div class="row mt-10">
-    <div class="mb-25">
-      <h2 class="heading-main">Application Details</h2>
-
-      <app-table-application-details [tableApplicationMeta]="applicationTableData3"></app-table-application-details>
-
-    </div>
-  </div>
-
-
-  <div class="row mt-10">
-    <div class="mb-25">
-      <h2 class="heading-main">Process of Quotation</h2>
-
-      <app-table-quotation [tableData]="quotation" class="no-color"></app-table-quotation>
-
-    </div>
-  </div>
-
-
-  <div class="row mt-10">
-    <div class="mb-25">
-      <h2 class="heading-main">Product Provider Admin - Policy Administration</h2>
-
-      <app-table-policy-administration [tableMeta]="adminstrationData"></app-table-policy-administration>
-
-    </div>
-  </div>
-
-
-  <div class="row mt-10">
-    <div class="mb-25">
-      <h2 class="heading-main">Available Endpoints</h2>
-
-      <app-table-available-endpoints [tableMeta]="endpointData"></app-table-available-endpoints>
-
-    </div>
-  </div>
-
-
-  <div class="row mt-10">
-    <div class="mb-25">
-      <h2 class="heading-main">Product Provider Admin - Policy Administration</h2>
-
-      <app-table-product-provider-policy-admin class="tr-width" [tableMeta]="administrationDetails">
-      </app-table-product-provider-policy-admin>
-
-    </div>
-  </div>
-
-
-  <div class="row mt-10">
-    <div class="mb-25">
-      <h2 class="heading-main">Policy Schedule</h2>
-
-      <app-table-policy-schedule [tableMeta]="policyDetails"></app-table-policy-schedule>
-
-    </div>
-  </div>
 </div>

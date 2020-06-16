@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-
 export interface PolicyElement {
   date: string;
   renewDate: string;

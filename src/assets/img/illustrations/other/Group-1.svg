@@ -1,0 +1,15 @@
+<svg width="64" height="63" viewBox="0 0 64 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M33.332 38.9939C43.8243 38.8145 52.1846 30.1633 52.0052 19.6709C51.8257 9.17857 43.1745 0.818295 32.6822 0.997732C22.1898 1.17717 13.8295 9.82837 14.009 20.3207C14.1884 30.8131 22.8396 39.1734 33.332 38.9939Z" fill="#E9EAEB"/>
+<path d="M48 55V37L30 19L12 37V55H48Z" fill="white"/>
+<path d="M0 5.99999H3.96C4.62 4.99999 5.99 3.94999 7.63 4.14999C8.35 2.91999 9.66 1.98999 11.19 1.98999C13.46 1.98999 15.3 3.99999 15.32 5.99999H25" stroke="#BCC0C4" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M15 12V24L21 18V12H15Z" fill="white" stroke="#2A5082" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M12 55V37" stroke="#2A5082" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M30 9L4 35L9 40L30 19L51 40L56 35L30 9Z" fill="#A3D4FF" stroke="#2A5082" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M27 41H19V55H27V41Z" stroke="#2A5082" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M6 55H30" stroke="#2A5082" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M36 52C38.2091 52 40 50.2091 40 48C40 45.7909 38.2091 44 36 44C33.7909 44 32 45.7909 32 48C32 50.2091 33.7909 52 36 52Z" stroke="#2A5082" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M48 62C45.79 62 44 60.21 44 58C44 55.79 45.79 54 48 54C50.21 54 52 55.79 52 58C52 60.21 50.21 62 48 62Z" stroke="#2A5082" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M34 62L50 44" stroke="#2A5082" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M30 32C31.6569 32 33 30.6569 33 29C33 27.3431 31.6569 26 30 26C28.3431 26 27 27.3431 27 29C27 30.6569 28.3431 32 30 32Z" stroke="#2A5082" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M64 12.9999H58.17C57.73 11.9999 56.69 11.1699 55.49 11.1699C55.11 11.1699 54.74 11.2199 54.41 11.3499C53.74 9.55991 52.01 8.27991 49.98 8.27991C47.37 8.27991 45.25 11.0099 45.25 13.0099H40" stroke="#BCC0C4" stroke-width="2" stroke-miterlimit="10"/>
+</svg>
