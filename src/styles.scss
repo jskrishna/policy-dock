@@ -779,11 +779,12 @@ button.tox-tbtn:hover svg {
 
 .mat-step-header .mat-step-icon {
   border-radius: 50%;
-  height: 48px;
-  width: 48px;
-  background: rgb(219, 229, 255);
+  height: 50px;
+  width: 50px;
+  background: #dbe5ff;
   opacity: 1;
-
+  flex: 0 0 50px !important;
+  max-width: 50px !important;
 }
 
 .mat-step-header .mat-step-icon-state-number.mat-step-icon.mat-step-icon-selected {
@@ -797,6 +798,8 @@ button.tox-tbtn:hover svg {
   background: rgb(150, 182, 255);
   text-align: center;
   line-height: 33px;
+  flex: 0 0 33px !important;
+  max-width: 33px !important;
 }
 
 .mat-step-header {
@@ -987,6 +990,12 @@ button.tox-tbtn:hover,
   background: #4080fe;
 }
 
+.mat-step-header .mat-step-icon .mat-step-icon-content span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .alert-wrap .noti-wrapper:hover {
   background: #fff;
 }
@@ -1013,4 +1022,8 @@ button.tox-tbtn:hover,
   color: #4080fe;
   font-weight: 500;
   font-size: 16px;
+}
+
+.mr-10 {
+  margin-right: 20px;
 }
