@@ -16,24 +16,30 @@
 
       <mat-nav-list>
         <a class="admin-logo" href="javascript:void(0);">
-          <img src="assets/img/PolicyDock-Logo-White.svg">
+          <div class="logo-wrapper">
+            <img src="assets/img/PolicyDock-Logo-White.svg">
+            <img src="assets/img/PolicyDock-Logo.svg" class="colored-logo">
+          </div>
         </a>
 
         <div class="nav-sidebar">
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/current-policies']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_grid.svg" alt="" />
+              <img src="assets/img/white-sidebar/icn_grid.svg" alt="" class="white-icon" />
               <span>My Current Policies </span>
             </p>
           </a>
 
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/applications']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_aplications.svg" alt="" />
+              <img src="assets/img/white-sidebar/icn_aplications.svg" alt="" class="white-icon" />
               <span>My Applications</span>
             </p>
           </a>
 
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/quotation']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_file-text.svg" alt="" />
+              <img src="assets/img/white-sidebar/icn_file-text.svg" alt="" class="white-icon" />
               <span>Quotations</span>
             </p>
           </a>
@@ -46,13 +52,16 @@
 
 
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/settings']" routerLinkActive="active">
+
             <p mat-line> <img src="assets/img/icn_settings.svg" alt="" />
+              <img src="assets/img/white-sidebar/icn_settings.svg" alt="" class="white-icon" />
               <span>Settings</span>
             </p>
           </a>
 
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/sitemap']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_sitemap.svg" alt="" />
+              <img src="assets/img/white-sidebar/icn_sitemap.svg" alt="" class="white-icon" />
               <span>Sitemap</span>
             </p>
           </a>
@@ -66,34 +75,38 @@
 
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/illustration']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_sitemap.svg" alt="" />
+              <img src="assets/img/white-sidebar/icn_sitemap.svg" alt="" class="white-icon" />
               <span>Illustration</span>
             </p>
           </a>
 
 
-          <ul>
-            <li>
-              <a (click)="onValueClicked('default')">Default</a>
-            </li>
-            <li>
-              <a (click)="onValueClicked('white')">White</a>
-            </li>
-            <li>
-              <a (click)="onValueClicked('dark')">Dark</a>
-            </li>
-          </ul>
 
           <a class="nav-menus" mat-list-item [routerLink]="['/admin/icons']" routerLinkActive="active">
             <p mat-line> <img src="assets/img/icn_sitemap.svg" alt="" />
+              <img src="assets/img/white-sidebar/icn_sitemap.svg" alt="" class="white-icon" />
               <span>Icons</span>
             </p>
           </a>
 
+
+          <ul class="sidebar-change">
+            <li>
+              <a (click)="onValueClicked('default')">Default Sidebar</a>
+            </li>
+            <li>
+              <a (click)="onValueClicked('white')">White Sidebar</a>
+            </li>
+            <li>
+              <a (click)="onValueClicked('dark')">Dark Sidebar</a>
+            </li>
+          </ul>
         </div>
 
 
         <a id="push-bottom" class="nav-menus" mat-list-item [routerLink]="['/auth/login']">
           <p mat-line> <img src="assets/img/icn_log-in.svg" alt="" />
+            <img src="assets/img/white-sidebar/icn_log-in.svg" alt="" class="white-icon" />
             <span>Logout</span>
           </p>
         </a>

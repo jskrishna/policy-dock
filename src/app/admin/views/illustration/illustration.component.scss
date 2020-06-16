@@ -1,6 +1,6 @@
 .illustration-image p img {
   width: 100%;
-  max-width: 65%;
+  max-width: 230px;
   margin: 0 auto;
   display: block;
 }
@@ -19,13 +19,28 @@
 }
 
 .illustration-image p {
-  flex: 0 0 33%;
-  max-width: 33%;
-  margin-bottom: 40px;
-}
-
-.illustration-right p {
   flex: 0 0 14%;
   max-width: 14%;
   margin-bottom: 40px;
+  padding: 0 20px;
+  text-align: center;
+
+}
+
+.illustration-right p {
+  padding: 0 20px;
+  text-align: center;
+  flex: 0 0 14%;
+  max-width: 14%;
+  margin-bottom: 40px;
+}
+
+@media(max-width:767px) {
+
+  .illustration-image p,
+  .illustration-right p {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
 }

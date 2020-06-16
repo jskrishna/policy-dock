@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 export interface PolicyElement {
   date: string;
@@ -58,12 +58,11 @@ export interface PolicySchedule {
 }
 
 @Component({
-  selector: 'app-all-components',
-  templateUrl: './all-components.component.html',
-  styleUrls: ['./all-components.component.scss']
+  selector: "app-all-components",
+  templateUrl: "./all-components.component.html",
+  styleUrls: ["./all-components.component.scss"],
 })
 export class AllComponentsComponent implements OnInit {
-
   public checked: boolean = true;
   public policyTableData: PolicyElement[] = [
     {
@@ -81,7 +80,7 @@ export class AllComponentsComponent implements OnInit {
       policyHolder: "Bob Brown",
       payment: "Car",
       insurance: "Monthly",
-    }
+    },
   ];
 
   public applicationTableData1: ApplicationElement[] = [
@@ -90,8 +89,8 @@ export class AllComponentsComponent implements OnInit {
       detail: "10,000",
       included: 600,
       insuredAmount: "10,600",
-      calculatedPremium: "10,600"
-    }
+      calculatedPremium: "10,600",
+    },
   ];
 
   public applicationTableData2: ApplicationElement[] = [
@@ -100,8 +99,8 @@ export class AllComponentsComponent implements OnInit {
       detail: "10,000",
       included: 600,
       insuredAmount: "10,600",
-      calculatedPremium: ""
-    }
+      calculatedPremium: "",
+    },
   ];
 
   public applicationTableData3: ApplicationElement[] = [
@@ -110,8 +109,8 @@ export class AllComponentsComponent implements OnInit {
       detail: "0",
       included: 0,
       insuredAmount: "0",
-      calculatedPremium: ""
-    }
+      calculatedPremium: "",
+    },
   ];
 
   public quotationTableData: Quotation[] = [
@@ -123,8 +122,8 @@ export class AllComponentsComponent implements OnInit {
       rate: 0,
       calculatedPremium: 0,
       overridePremium: 0,
-      premiumAmount: 0
-    }
+      premiumAmount: 0,
+    },
   ];
   public quotation;
 
@@ -135,8 +134,8 @@ export class AllComponentsComponent implements OnInit {
       apiKey: "asdadad12331mcs",
       totalQueries: 5000,
       quotesProvided: 34,
-      policiesSold: 23
-    }
+      policiesSold: 23,
+    },
   ];
   public adminstrationData;
 
@@ -146,7 +145,7 @@ export class AllComponentsComponent implements OnInit {
       requestType: "POST",
       queries: 234,
       enabled: true,
-    }
+    },
   ];
   public endpointData;
 
@@ -155,28 +154,44 @@ export class AllComponentsComponent implements OnInit {
       sections: "Tires",
       sumInsuredMin: "200",
       sumInsuredMax: "10,000",
-    }
+    },
   ];
   public administrationDetails;
 
   public POLICY_ELEMENT_DATA: PolicySchedule[] = [
     {
-      document: "Application"
-    }
+      document: "Application",
+    },
   ];
   public policyDetails;
 
-
   constructor() {
-    this.quotation = { name: 'quotation', value: this.quotationTableData, component: 'allComponent' };
-    this.adminstrationData = { name: 'adminstrationData', value: this.adminstrationTableData, component: 'allComponent' };
-    this.endpointData = { name: 'endpointData', value: this.ENDPOINTS_DATA, component: 'allComponent' };
-    this.administrationDetails = { name: 'administrationDetails', value: this.ADMIN_ELEMENT_DATA, component: 'allComponent' };
-    this.policyDetails = { name: 'policyDetails', value: this.POLICY_ELEMENT_DATA, component: 'allComponent' };
+    this.quotation = {
+      name: "quotation",
+      value: this.quotationTableData,
+      component: "allComponent",
+    };
+    this.adminstrationData = {
+      name: "adminstrationData",
+      value: this.adminstrationTableData,
+      component: "allComponent",
+    };
+    this.endpointData = {
+      name: "endpointData",
+      value: this.ENDPOINTS_DATA,
+      component: "allComponent",
+    };
+    this.administrationDetails = {
+      name: "administrationDetails",
+      value: this.ADMIN_ELEMENT_DATA,
+      component: "allComponent",
+    };
+    this.policyDetails = {
+      name: "policyDetails",
+      value: this.POLICY_ELEMENT_DATA,
+      component: "allComponent",
+    };
   }
 
-  ngOnInit() {
-
-  }
-
+  ngOnInit() {}
 }

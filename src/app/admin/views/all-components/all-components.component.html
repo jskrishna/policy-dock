@@ -154,27 +154,29 @@
   </div>
 
   <h2 class="heading-main">Alerts</h2>
-  <div class="d-flex row mt-10 flex-wrap">
+  <div class="d-flex row mt-10 flex-wrap grid-2 full-width">
     <div class="grid-2 mb-25">
 
       <app-alert [alertMeta]="{ 
-        imagePath: 'assets/img/mark.svg', 
+        imagePath: 'assets/img/icn_mark.svg', 
         alertHead: 'Price Alert', 
         alertTime: '2 minutes', 
         alertName: 'Success',
         alertClass: 'noti-green'
       }">
       </app-alert>
-
+    </div>
+    <div class="grid-2 mb-25">
       <app-alert [alertMeta]="{ 
-        imagePath: 'assets/img/info.svg', 
+        imagePath: 'assets/img/icn_info.svg', 
         alertHead: 'Price Alert', 
         alertTime: '2 minutes', 
         alertName: 'Info',
         alertClass: 'noti-info'
       }">
       </app-alert>
-
+    </div>
+    <div class="grid-2 mb-25">
       <app-alert [alertMeta]="{ 
         imagePath: 'assets/img/icn_warn.svg', 
         alertHead: 'Price Alert', 
@@ -183,7 +185,8 @@
         alertClass: 'noti-warn'
       }">
       </app-alert>
-
+    </div>
+    <div class="grid-2 mb-25">
       <app-alert [alertMeta]="{ 
         imagePath: 'assets/img/icn_error.svg', 
         alertHead: 'Price Alert', 
@@ -192,8 +195,8 @@
         alertClass: 'noti-error'
       }">
       </app-alert>
-
     </div>
+
   </div>
 
   <h2 class="heading-main">Text edit</h2>
@@ -207,7 +210,7 @@
 
   <h2 class="heading-main">Header(Style 1)</h2>
   <div class="d-flex row mt-10 flex-wrap">
-    <div class="grid-4 mb-25">
+    <div class="grid-1 mb-25">
       <app-header></app-header>
     </div>
   </div>
@@ -215,8 +218,8 @@
 
   <h2 class="heading-main">Header (Style 2)after login</h2>
   <div class="d-flex row mt-10 flex-wrap">
-    <div class="grid-4 mb-25">
-      <app-header-after-login></app-header-after-login>
+    <div class="grid-1 mb-25">
+      <app-header-after-login class="after-login-header"></app-header-after-login>
     </div>
   </div>
 

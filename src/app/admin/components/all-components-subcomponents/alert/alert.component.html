@@ -1,23 +1,26 @@
-<div>
+<div class="alert-wrap">
 
-    <div class="noti-wrapper d-flex">
-        <div class="noti-left">
-            <div class="noti" [ngClass]="{
+  <div class="noti-wrapper d-flex policy-alertbox">
+    <div class="noti-left">
+      <div class="noti" [ngClass]="{
                 'noti-green': alertMeta?.alertClass == 'noti-green' , 
                 'noti-info': alertMeta?.alertClass == 'noti-info',
                 'noti-warn': alertMeta?.alertClass == 'noti-warn',
                 'noti-error': alertMeta?.alertClass == 'noti-error'
             }">
-                <img src="{{alertMeta?.imagePath}}" alt="" />
-            </div>
-        </div>
-        <div class="noti-right">
-            <div class="d-flex">
-                <span>{{alertMeta?.alertHead}}</span>
-                <span>{{alertMeta?.alertTime}}</span>
-            </div>
-            <p>{{alertMeta?.alertName}} </p>
-        </div>
+        <img src="{{alertMeta?.imagePath}}" alt="" />
+      </div>
     </div>
+    <div class="noti-right">
+      <div class="alert-close">
+        <img src="assets/img/icn_cross.svg" alt="">
+      </div>
+      <div class="d-flex">
+        <span>{{alertMeta?.alertHead}}</span>
+        <span>{{alertMeta?.alertTime}}</span>
+      </div>
+      <p>{{alertMeta?.alertName}} </p>
+    </div>
+  </div>
 
 </div>
